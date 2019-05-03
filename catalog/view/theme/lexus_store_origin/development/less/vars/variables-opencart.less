@@ -1,0 +1,183 @@
+// Global values
+// --------------------------------------------------
+
+// Variables
+// --------------------------------------------------
+@image-theme-path-base:'../image/';
+@image-theme-path : '../image/default/';
+@theme-image-path:@image-theme-path-base; 
+// themes colors
+// -------------------------
+@brown:					#b39770;
+@browndark: 			#e4dcd2;
+@lightbrown:			#f6eee3;
+@blue:                  #049cdb;
+@bluebright: 			#2bb5e9;
+@bluedark:              #0064cd;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+@white :			 	#FFFFFF;
+@black :				#000000;
+@cyandark:   			#4e4d49;
+@green:                 #7db641;
+@red:                   #C72828;
+@red-secondary: 		#B32424;
+@lightgray:             #f4f4f4;
+
+@theme-color-default   : @red; // using for default color of all pages such as background color for top menu, block header
+@theme-color-primary   : @red; // for hightligh block header, button as default it is  color
+@theme-color-secondary : @red-secondary; 
+
+
+@theme-color 			: @theme-color-default;
+@theme-color-hover      : @theme-color-secondary;
+
+@theme-padding           : @line-height-computed - 4;
+@theme-margin            : @line-height-computed ;
+
+@btn-theme-primary       : @theme-color ;
+@btn-theme-primary-hover : @theme-color-hover ;
+
+@text-primary-theme : @theme-color;
+@text-danger-theme : @theme-color-secondary;
+/**
+ * Heading Page
+ */
+@heading-border            :  2px solid @theme-color-primary;
+@heading-hightlight-border :  2px solid @theme-color-default;
+
+
+/* 
+ * product block
+ */
+@product-margin                     : @theme-padding - 5 ;
+@product-padding                    : @theme-margin - 5;
+@product-lineheight                 : 23px;
+@product-link-color  		        : @theme-color-secondary; 
+@product-name-font-size		        : @font-size-base + 6;
+@product-name-color  		        : @theme-color-secondary;
+@product-price-old-color 			: #959595;
+@product-price-color				: #EF5A60;
+@product-price-tax                  : #bbb;
+@product-action-link-color          : #8B8B8B;
+@product-action-bg  		        : @white;
+@product-action-hover-bg 	        :@theme-color-secondary;
+@product-boder-color                : #F1F1F1;
+@product-label-special-color        : @red;
+
+/*
+ * blog block
+ */
+ @blog-title-font-size				:@font-size-base + 2;
+ @blog-description-font-size		:@font-size-base + 1;
+
+/* buttons */
+@btn-wrap-border:   #CCC ;
+@btn-wrap-bg    : @white; 
+
+/* 
+ * htab module 
+ */
+@htab-border-color 	     : @nav-tabs-border-color; 
+@htab-border 		     : @nav-tabs-border-color; 
+@htab-nav-padding	     : 7px 25px 7px 25px;
+@htab-nav-color		     : @gray;
+@htab-bg    		     : @white;
+@htab-bg-selected     	 : @theme-color-default;
+@htab-nav-selected-color : @white;
+/* 
+ * Mega Menu Module
+ */
+@megamenu-bg: #000; 
+@megamenu-border-color:#D25353;
+
+/*
+ * Box sidebar
+ */
+ @box-sidebar-heading-bg:	@theme-color;
+
+/*
+*	Box sider category
+*/
+@box-category-heading-bg:#494949;
+@box-category-bg:#EEEEEE;
+@box-category-sub-bg: #FAFAFA;
+@box-category-border-color:#DEDEDE ;
+@box-category-sub-border-color:#F0F0F0 ;
+@box-category-active-color:#848484 ;
+
+
+/*
+ * Box Modules 
+ */
+
+@box-module-margin	         : @line-height-computed;
+@box-module-heading-border   : @gray-lighter;
+@box-module-heading-bg		 : @brown;
+@box-module-heading-padding  : @line-height-computed - 7;
+@box-module-heading-font     : @font-family-base;
+@box-module-heading-color    : @white;
+@box-module-heading-fontsize : @font-size-base + 8;
+@box-module-border-color     : #EBEBEB;
+@box-module-content-bg       : #eee;
+@box-module-content-padding  : @theme-padding;
+@box-module-badge            : @theme-color;
+@box-module-text-light       : @white;
+
+
+@box-module-heading-bg-green: #22BD22;
+@box-module-heading-bg-cyan: #2798C7;
+@box-module-heading-bg-orange: #C64F00;
+@box-moudule-heading-bg-black:#4A4A4A;
+
+ /* 
+  * LAYOUTS VAIRABLES 
+  */
+
+// topbar  
+@topbar-bg				: @lightgray;
+@topbar-color			: @gray-light;
+@topbar-font-size  		: @font-size-base + 1;
+@topbar-link-color      : #8c8c8c;
+@topbar-link-hover-color: @theme-color-secondary;
+@topbar-border-color :#DDDDDD;
+
+//header-main
+@header-main-bg				: @white;
+@header-main-padding        : auto;
+@header-main-height 		: 94px;
+
+//Pav-mainnav
+@mainnav-bg				: @lightbrown; 
+@mainnav-wrap-bg		: @theme-color-default;
+
+//Offcanvas
+@offcanvas-bg           : @theme-color-secondary;
+
+//Newsletter
+@newsletter-bg			:#F4F4F4;
+
+// footer position
+@footer-bg 				   : @white;
+@footer-color 			   : #8E8E8E;
+@footer-heading-font-size  : @font-size-base;
+@footer-heading-color	   : @footer-color;
+@footer-heading-boder-color: 2px solid transparent;
+@footer-link-color         : @footer-color;
+@footer-link-hover-color   : @theme-color-hover;
+@footer-padding            : @line-height-computed + 13;
+@footer-margin             : @line-height-computed + 13;
+//footer-top
+@footertop-bg 			   : @white;
+@footercenter-bg		   : #313131;
+@footertop-link            : @footer-link-hover-color;
+
+// powered by
+@power-bg             	   : @gray;
+@power-text-color          : #848484;
+@power-link-color          : @theme-color;
+@power-link-color-hover    : @theme-color-hover;
+@power-padding             : @footer-padding;
+@power-margin              : @footer-margin;

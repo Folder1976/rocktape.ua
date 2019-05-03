@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Allow: /catalog/view/theme/lexus_store/*
+Allow: /index.php?route=feed/google_sitemap
+Disallow: /admin
+Disallow: /cache
+Disallow: /niks
+Disallow: /catalog
+Disallow: /download
+Disallow: /export
+Disallow: /system
+Disallow: /index.php
+Disallow: /blog?
+Disallow: /rock-tape-producer/
+Disallow: /*?sort=
+Disallow: /*&sort=
+Disallow: /*?order=
+Disallow: /*&order=
+Disallow: /*?limit=
+Disallow: /*&limit=
+Disallow: /login
+Disallow: /create-account
+
+
+Host: https://rocktape.ua
+Sitemap: https://rocktape.ua/index.php?route=feed/google_sitemap

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>Acrescentar url amigável ao restante do opencart</id>
+	<version>1.0.0</version>
+	<vqmver>2.3.2</vqmver>
+	<author>Ibrahim Brumate</author>
+    
+	<file name="catalog/controller/common/seo_url.php">
+		<operation>
+			<search position="after">
+				<![CDATA[
+					class ControllerCommonSeoUrl extends Controller {
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+					private $url_list = array (
+						'common/home' => '',
+						'account/wishlist' => 'wishlist',
+						'account/account' => 'my-account',
+						'account/edit' => 'edit-account',
+						'account/password' => 'change-password',
+						'account/address' => 'address-book',
+						'account/reward' => 'reward-points',
+						'account/login' => 'login',
+						'account/logout' => 'logout',
+						'account/order' => 'order-history',
+						'account/newsletter' => 'newsletter',
+						'account/forgotten' => 'forgot-password',
+						'account/download' => 'downloads',
+						'account/return' => 'returns',
+						'account/transaction' => 'transactions',
+						'account/register' => 'create-account',
+						'account/return/insert' => 'request-return',
+						
+						'affiliate/account' => 'affiliates',
+						'affiliate/edit' => 'edit-account',
+						'affiliate/password' => 'change-affiliate-password',
+						'affiliate/payment' => 'affiliate-payment-options',
+						'affiliate/tracking' => 'affiliate-tracking-code',
+						'affiliate/transaction' => 'affiliate-transactions',
+						'affiliate/logout' => 'affiliate-logout',
+						'affiliate/forgotten' => 'affiliate-forgot-password',
+						'affiliate/register' => 'create-affiliate-account',
+						'affiliate/login' => 'affiliate-login',
+						'checkout/cart' => 'shopping-cart',
+						'checkout/checkout' => 'checkout',
+						'checkout/voucher' => 'gift-vouchers',
+						
+						'information/contact' => 'contact-us',
+						'information/sitemap' => 'sitemap',
+						'product/special' => 'specials',
+						'product/manufacturer' => 'manufacturers',
+						'product/compare' => 'compare-products',
+						'pavblog/blogs' => 'pavblog'
+					);
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="after" offset="2">
+				<![CDATA[
+					$this->request->get['route'] = 'error/not_found';
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+					if ( $_s = $this->setURL($this->request->get['_route_']) ) {
+						$this->request->get['route'] = $_s;
+					}
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="before" offset="3">
+				<![CDATA[
+					if ($url) {
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+					if( $_u = $this->getURL($data['route']) ){
+                        $url .= $_u;
+                        unset($data[$key]);
+                    }
+				]]>
+			</add>
+		</operation>
+		<operation>
+			<search position="after" offset="2">
+				<![CDATA[
+					return $link;
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+					public function getURL($route) {
+							if( count($this->url_list) > 0) {
+								 foreach ($this->url_list as $key => $value) {
+									if($route == $key) {
+										return '/'.$value;
+									}
+								 }
+							}
+							return false;
+					}
+					public function setURL($_route) {
+							if( count($this->url_list) > 0 ){
+								 foreach ($this->url_list as $key => $value) {
+									if($_route == $value) {
+										return $key;
+									}
+								 }
+							}
+							return false;
+					}
+				]]>
+			</add>
+		</operation>
+	</file>
+</modification>

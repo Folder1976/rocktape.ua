@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created using vQModerator's XML Generator by The Wizard of Osch for http://www.crystalcopy.nl //-->
+<!-- (Based on vQmod XML Generator by UKSB - http://www.opencart-extensions.co.uk) //-->
+<modification>
+	<id><![CDATA[[Registration] Simple Registration]]></id>
+	<version><![CDATA[1.0]]></version>
+	<vqmver><![CDATA[2.4.1]]></vqmver>
+	<author><![CDATA[Will Choi]]></author>
+	<file name="catalog/view/theme/*/template/account/register.tpl">
+		<operation error="log" info="Telephone not Required in Registration Page">
+			<search position="replace"><![CDATA[<td><span class="required">*</span> <?php echo $entry_telephone; ?></td>]]></search>
+			<add><![CDATA[<td><?php echo $entry_telephone; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Hide Address Form from Registration Page">
+			<search position="replace" offset="1"><![CDATA[<h2><?php echo $text_your_address; ?></h2>]]></search>
+			<add><![CDATA[    <h2 style="display:none"><?php echo $text_your_address; ?></h2>
+    <div style="display:none" class="content">]]></add>
+		</operation>
+		<operation error="log" info="Hide Fax from Registration Page">
+			<search position="replace"><![CDATA[<td><?php echo $entry_fax; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_fax; ?></td>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/account/edit.tpl">
+		<operation error="log" info="Hide Fax from Account Edit Page">
+			<search position="replace"><![CDATA[<td><?php echo $entry_fax; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_fax; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Telephone not Required in Edit Page">
+			<search position="replace"><![CDATA[<td><span class="required">*</span> <?php echo $entry_telephone; ?></td>]]></search>
+			<add><![CDATA[<td><?php echo $entry_telephone; ?></td>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/account/address_form.tpl">
+		<operation error="log" info="Hide Company from Edit Page">
+			<search position="replace"><![CDATA[<td><?php echo $entry_company; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_company; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Hide Address 2 from Edit Page">
+			<search position="replace"><![CDATA[<td><?php echo $entry_address_2; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_address_2; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Hide City from Edit Page">
+			<search position="replace"><![CDATA[<td><span class="required">*</span> <?php echo $entry_city; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_city; ?></td>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/checkout/guest.tpl">
+		<operation error="log" info="Hide Fax">
+			<search position="replace" offset="3"><![CDATA[<?php echo $entry_fax; ?><br />]]></search>
+			<add><![CDATA[  <div style="display:none">
+  <?php echo $entry_fax; ?><br />
+  <input type="text" name="fax" value="<?php echo $fax; ?>" class="large-field" />
+  </div>]]></add>
+		</operation>
+		<operation error="log" info="Telephone not Required">
+			<search position="replace"><![CDATA[<span class="required">*</span> <?php echo $entry_telephone; ?><br />]]></search>
+			<add><![CDATA[<?php echo $entry_telephone; ?><br />]]></add>
+		</operation>
+		<operation error="log" info="Hide Company">
+			<search position="replace" offset="3"><![CDATA[<?php echo $entry_company; ?><br />]]></search>
+			<add><![CDATA[<div style="display:none">
+    <?php echo $entry_company; ?><br />
+  <input type="text" name="company" value="<?php echo $company; ?>" class="large-field" />
+	  </div>]]></add>
+		</operation>
+		<operation error="log" info="Hide Address 2">
+			<search position="replace" offset="3"><![CDATA[<?php echo $entry_address_2; ?><br />]]></search>
+			<add><![CDATA[<div style="display:none">
+<?php echo $entry_address_2; ?><br />
+  <input type="text" name="address_2" value="<?php echo $address_2; ?>" class="large-field" />
+  </div>]]></add>
+		</operation>
+		<operation error="log" info="Hide City">
+			<search position="replace" offset="3"><![CDATA[<span class="required">*</span> <?php echo $entry_city; ?><br />]]></search>
+			<add><![CDATA[<div style="display:none">
+  <span class="required">*</span> <?php echo $entry_city; ?><br />
+  <input type="text" name="city" value="<?php echo $city; ?>" class="large-field" />
+	</div>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/checkout/register.tpl">
+		<operation error="log" info="Hide Fax">
+			<search position="replace" offset="3"><![CDATA[<?php echo $entry_fax; ?><br />]]></search>
+			<add><![CDATA[  <div style="display:none">
+  <?php echo $entry_fax; ?><br />
+  <input type="text" name="fax" value="<?php echo $fax; ?>" class="large-field" />
+  </div>]]></add>
+		</operation>
+		<operation error="log" info="Telephone not Required">
+			<search position="replace"><![CDATA[<span class="required">*</span> <?php echo $entry_telephone; ?><br />]]></search>
+			<add><![CDATA[<?php echo $entry_telephone; ?><br />]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="3"><![CDATA[<?php echo $entry_company; ?><br />]]></search>
+			<add><![CDATA[<div style="display:none">
+    <?php echo $entry_company; ?><br />
+  <input type="text" name="company" value="<?php echo $company; ?>" class="large-field" />
+	  </div>]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="3"><![CDATA[<?php echo $entry_address_2; ?><br />]]></search>
+			<add><![CDATA[<div style="display:none">
+<?php echo $entry_address_2; ?><br />
+  <input type="text" name="address_2" value="<?php echo $address_2; ?>" class="large-field" />
+  </div>]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="3"><![CDATA[<span class="required">*</span> <?php echo $entry_city; ?><br />]]></search>
+			<add><![CDATA[<div style="display:none">
+  <span class="required">*</span> <?php echo $entry_city; ?><br />
+  <input type="text" name="city" value="<?php echo $city; ?>" class="large-field" />
+	</div>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/checkout/guest_shipping.tpl">
+		<operation error="log" info="Hide Company">
+			<search position="replace" offset="-1"><![CDATA[<td><?php echo $entry_company; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_company; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Hide Address 2">
+			<search position="replace" offset="-1"><![CDATA[<td><?php echo $entry_address_2; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_address_2; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="-1"><![CDATA[<td><span class="required">*</span> <?php echo $entry_city; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><span class="required">*</span> <?php echo $entry_city; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Postcode not Required">
+			<search position="replace"><![CDATA[<td><span id="shipping-postcode-required" class="required">*</span> <?php echo $entry_postcode; ?></td>]]></search>
+			<add><![CDATA[<td><?php echo $entry_postcode; ?></td>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/checkout/payment_address.tpl">
+		<operation error="log" info="Hide Company">
+			<search position="replace" offset="-1"><![CDATA[<td><?php echo $entry_company; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_company; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Hide Address 2">
+			<search position="replace" offset="-1"><![CDATA[<td><?php echo $entry_address_2; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_address_2; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Hide City">
+			<search position="replace" offset="-1"><![CDATA[<td><span class="required">*</span> <?php echo $entry_city; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_city; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Displaying without City">
+			<search position="replace" offset="2"><![CDATA[<option value="<?php echo $address['address_id']; ?>" selected="selected"><?php echo $address['firstname']; ?> <?php echo $address['lastname']; ?>]]></search>
+			<add><![CDATA[<option value="<?php echo $address['address_id']; ?>" selected="selected"><?php echo $address['firstname']; ?> <?php echo $address['lastname']; ?>, <?php echo $address['address_1']; ?>, <?php echo $address['zone']; ?>, <?php echo $address['country']; ?></option>
+    <?php } else { ?>
+    <option value="<?php echo $address['address_id']; ?>"><?php echo $address['firstname']; ?> <?php echo $address['lastname']; ?>, <?php echo $address['address_1']; ?>, <?php echo $address['zone']; ?>, <?php echo $address['country']; ?></option>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/view/theme/*/template/checkout/shipping_address.tpl">
+		<operation error="log" info="Hide Company">
+			<search position="replace" offset="-1"><![CDATA[<td><?php echo $entry_company; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_company; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="Hide Address 2">
+			<search position="replace" offset="-1"><![CDATA[<td><?php echo $entry_address_2; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_address_2; ?></td>]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="-1"><![CDATA[<td><span class="required">*</span> <?php echo $entry_city; ?></td>]]></search>
+			<add><![CDATA[<tr style="display:none">
+  <td><?php echo $entry_city; ?></td>]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/account/register.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace"><![CDATA[if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {]]></search>
+			<add><![CDATA[if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == 'false') {]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace"><![CDATA[if ($this->request->post['country_id'] == '') {]]></search>
+			<add><![CDATA[if ($this->request->post['country_id'] == 'false') {]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['address_1']) < 3) || (utf8_strlen($this->request->post['address_1']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/account/edit.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/account/address.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace"><![CDATA[if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '') {]]></search>
+			<add><![CDATA[if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == 'false') {]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace"><![CDATA[if ($this->request->post['country_id'] == '') {]]></search>
+			<add><![CDATA[if ($this->request->post['country_id'] == 'false') {]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['address_1']) < 3) || (utf8_strlen($this->request->post['address_1']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/checkout/guest.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/checkout/register.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/checkout/guest_shipping.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/checkout/payment_address.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 32)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+	<file name="catalog/controller/checkout/shipping_address.php">
+		<operation error="log" info="">
+			<search position="replace" offset="2"><![CDATA[if ((utf8_strlen($this->request->post['city']) < 2) || (utf8_strlen($this->request->post['city']) > 128)) {]]></search>
+			<add><![CDATA[]]></add>
+		</operation>
+	</file>
+</modification>

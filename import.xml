@@ -1,0 +1,2201 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:c="urn:schemas-microsoft-com:office:component:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40"
+ xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <Colors>
+   <Color>
+    <Index>3</Index>
+    <RGB>#000000</RGB>
+   </Color>
+   <Color>
+    <Index>4</Index>
+    <RGB>#C0C0C0</RGB>
+   </Color>
+   <Color>
+    <Index>5</Index>
+    <RGB>#FF0000</RGB>
+   </Color>
+  </Colors>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9000</WindowHeight>
+  <WindowWidth>13860</WindowWidth>
+  <WindowTopX>240</WindowTopX>
+  <WindowTopY>75</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial Cyr" x:CharSet="204"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s21" ss:Name="Default">
+  </Style>
+  <Style ss:ID="s27" ss:Name="Excel Built-in Normal">
+   <Font ss:FontName="Calibri1" ss:Size="12" ss:Color="#000000"/>
+   <NumberFormat ss:Format="Fixed"/>
+  </Style>
+  <Style ss:ID="s26" ss:Name="Normal">
+   <Font ss:FontName="Calibri" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s31" ss:Parent="s26">
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s32" ss:Parent="s26">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s33" ss:Parent="s21">
+   <Borders/>
+  </Style>
+  <Style ss:ID="s34" ss:Parent="s21">
+   <Borders/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s35" ss:Parent="s21">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s36" ss:Parent="s26">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s37" ss:Parent="s26">
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s38" ss:Parent="s26">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s40" ss:Parent="s27">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s42" ss:Parent="s27">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri1" ss:Size="12" ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Category">
+  <Table ss:ExpandedColumnCount="10" ss:ExpandedRowCount="65536" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s21">
+   <Column ss:StyleID="s21" ss:Width="120.75"/>
+   <Column ss:StyleID="s21" ss:Width="91.5"/>
+   <Column ss:StyleID="s21" ss:Width="36"/>
+   <Column ss:StyleID="s21" ss:Width="60"/>
+   <Column ss:StyleID="s21" ss:Width="91.5"/>
+   <Column ss:StyleID="s21" ss:Width="252.75" ss:Span="1"/>
+   <Column ss:Index="8" ss:StyleID="s21" ss:Width="124.5"/>
+   <Column ss:StyleID="s21" ss:Width="78"/>
+   <Column ss:StyleID="s21" ss:Width="59.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:StyleID="s26"><Data ss:Type="String">CATEGORY_ID</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">PARENT-ID</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">TOP</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">COLUMN</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">NAME</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">META-DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">META-KEYWORD</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">IMAGE</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">KEYWORD</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="65.8125">
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Кинезио тейпы</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Кинезио тейпы RockTape – принципиально новый уровень качества в уже зарекомендовавшем себя продукте спортивной медицины. В отличии от других кинезио тейпов, RockTape созданы специально для интенсивных видов спорта и спортсменов, участвующих в соревнованиях на выносливость. Уникальная технология изготовления данных тейпов, позволяет спортсменам выдерживать тренировки любой сложности, помогает лучше справляться с усталостью, предотвращает появление новых травм и растяжений, значительно снижает боль и ускоряет процесс восстановления при наличии старых травм. То есть, RockTape способен поддержать спортсмена на протяжении всего соревнования, каким бы долгим и изнурительным оно не было, в любой среде и при любой погоде. RockTape предлагает кинезио тейпы классической серии (одноцветные тейпы стандартного размера 5см х 5м), кинезио тейпы серии Н2О (повышенной водостойкости стандартного размера 5см х 5м), дизайнерские кинезио тейпы (кинезио тейпы с узорами, рисунками,  логотипами стандартного размера 5см х 5м), кинезио тейпы нестандартного размера (одноцветные, дизайнерские, H2O размером 10cм x 5м, 5cм x32 м, 10cм x 32м, 2,5см х 32м).</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Самые качественные в мире кинезио тейпы фирмы RockTape (США) разного размера и разных цветов с доставкой по Украине по доступным ценам.</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Купить кинезио тейпы в Украине, кинезио тейпы RockTape, kinesio tape</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">/data/category/tapes.jpg</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">kesino-teipy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="100.6875">
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Одежда</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Что важно в одежде для тренировок? Удобство, легкость, практичность, натуральные и «дышащие» материалы. RockTape успешно сочетает в себе все вышеупомянутые характеристики, добавив к ним свой фирменный стиль. Легкая спортивная одежда для регулярных интенсивных тренировок (Crossfit, функциональный тренинг) подойдет как спортсменам, так и людям, любящих комфорт, стиль, безупречность. Одежду RockTape часто носят участники и организаторы спортивных мероприятий. RockTape предлагает стильные и комфортные шорты, топы, майки, футболки, как мужских, так и женских моделей.</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Легкая спортивная одежда RockTape для регулярных интенсивных тренировок (Crossfit, функциональный тренинг) подойдет как спортсменам, так и людям, любящих комфорт, стиль, безупречность.</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Одежда  RockTape, одежда для Crossfit, одежда для кроссфита, одежда для функциональных тренировок, одежда для  тяжелой атлетики</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">/data/category/apparel.jpg</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">odegda</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="92.4375">
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Экипировка</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">При выборе экипировки для интенсивных и изнурительных тренировок (Crossfit, функциональный тренинг, тяжелая атлетика и прочее) не должно возникать сомнений в качестве и эффективности снаряжения, поскольку правильно подобранная экипировка будет залогом вашей безопасности и крепкого здоровья. В данном случае RockTape подумал за Вас.  Уникальная технология, легкий и прочный материал обеспечивает надлежащую стабилизацию и поддержку суставов, комфортную работу мышц. RockTape предлагает широкий выбор экипировки премиум-качества, среди которой популярными в кругу спортсменов стали: защита предплечья и локтевого сустава - компрессионные терморегулирующие рукава; RockGuards - защита голени; G-Loves - специальные перчатки для интенсивных тренировок; KneeCaps – терморегулирующие наколенники (бандажи).</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">RockTape предлагает широкий выбор экипировки премиум-качества: защита предплечья и локтевого сустава; защита голени; специальные перчатки для тяжелой атлетики; терморегулирующие наколенники (бандажи).</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Экипировка RockTape, защита для Crossfit</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">/data/category/outfit.jpg</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">ekipirovka</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="181.3125">
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Другое</Data></Cell>
+    <Cell ss:StyleID="s32"><Data ss:Type="String">Процесс лечения и реабилитации поврежденных мышц или суставов – это долгий и трудоемкий процесс, при котором одними кинезио тейпами бывает не обойтись. RockTape позаботился о Вашем времени и, в первую очередь, о здоровье и разработал ряд продуктов, способных значительно ускорить процесс реабилитации, а главное – сделать его максимально эффективным и долговечным. Прекрасным тандемом с RockTape станет Rock Sauce и Rock Rub.   Если Вы - профессионал, использующий кинезио тейпы регулярно, ножницы RockTape - это Ваш выбор! Нарезка тонких полосок и точно закругленных краев больше не проблема, поскольку RockTape предлагает ножницы, изготовленные из высококачественной стали с ксилановым покрытием, обеспечивая простоту и точность в использовании.</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">RockTape позаботился о Вашем времени и, в первую очередь, о здоровье и разработал ряд продуктов, способных значительно ускорить процесс реабилитации, а главное – сделать его максимально эффективным и долговечным.</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Лечение мышц и суставов</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">/data/category/other.jpg</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">drugoe</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="168.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Мужская одежда</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">Мужская спортивная одежда RockTape отличается своей легкостью, практичностью, натуральными и «дышащими» материалами и как бонус ко всем вышеперечисленным преимуществам – имеет фирменный дизайн и стиль RockTape. Легкая спортивная одежда для регулярных интенсивных тренировок (Crossfit, функциональный тренинг) подойдет как спортсменам, так и людям, любящих комфорт, стиль, безупречность. Любой мужчина в одежде RockTape сможет почувствовать себя более уверенным и продемонстрировать свое превосходство.  </Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Мужская спортивная одежда RockTape отличается своей легкостью, практичностью, натуральными и «дышащими» материалами и как бонус ко всем вышеперечисленным преимуществам – имеет фирменный дизайн и стиль RockTape.</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Мужская одежда  RockTape, мужская одежда для Crossfit, купить мужскую одежду для кроссфита, мужская одежда для функциональных тренировок, мужская одежда для  тяжелой атлетики</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">/data/category/apparel_men.jpg</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="168.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Женская одежда</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">Женская спортивная одежда RockTape отличается своей легкостью, практичностью, натуральными и «дышащими» материалами и что немаловажно для всех девушек - имеет свой фирменный дизайн и стиль RockTape, что позволит им выгодно подчеркнуть свою спортивную фигуру и всегда в любой ситуации выглядеть превосходно. Больше не нужно по полчаса стоять в гардеробной и подбирать спортивный «look» на очередную тренировку – RockTape позаботился о Вас. В одежде RockTape любая девушка почувствует свое превосходство.   </Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Больше не нужно по полчаса стоять в гардеробной и подбирать спортивный «look» на очередную тренировку – RockTape позаботился о Вас. В одежде RockTape любая девушка почувствует свое превосходство.</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Женская одежда  RockTape, женская одежда для Crossfit, купить женскую одежду для кроссфита, женская одежда для функциональных тренировок, женская одежда для  тяжелой атлетики</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">/data/category/apparel_women.jpg</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="132.75">
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s33"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Аксессуары</Data></Cell>
+    <Cell ss:StyleID="s35"><Data ss:Type="String">Любые аксессуары помогают человеку самовыразиться и проявить свою индивидуальность. Аксессуары RockTape помимо всего прочего продемонстрируют Ваше чувство вкуса и стиля, сделают Ваш образ завершенным и безупречным.  Как и вся продукция RockTape, аксессуары этой фирмы обладают качеством наивысшего уровня и выдержат испытания любыми нагрузками и любой погодой </Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Любые аксессуары помогают человеку самовыразиться и проявить свою индивидуальность. Аксессуары RockTape помимо всего прочего продемонстрируют Ваше чувство вкуса и стиля, сделают Ваш образ завершенным и безупречным.</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">Аксессуары для Crossfit, купить бейсболки RockTape, купить аксессуары для кроссфита</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">/data/category/accessories.jpg</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+   <Row ss:Index="65536" ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell ss:Index="10" ss:StyleID="s26"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <x:WorksheetOptions/>
+ </Worksheet>
+ <Worksheet ss:Name="Product">
+  <Table ss:ExpandedColumnCount="16" ss:ExpandedRowCount="65536" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s21">
+   <Column ss:StyleID="s21" ss:Width="122.25" ss:Span="1"/>
+   <Column ss:Index="3" ss:StyleID="s21" ss:Width="66" ss:Span="1"/>
+   <Column ss:Index="5" ss:StyleID="s21" ss:Width="128.25"/>
+   <Column ss:StyleID="s21" ss:Width="116.25"/>
+   <Column ss:StyleID="s21" ss:Width="108.75"/>
+   <Column ss:StyleID="s21" ss:Width="66" ss:Span="1"/>
+   <Column ss:Index="10" ss:StyleID="s21" ss:Width="236.25"/>
+   <Column ss:StyleID="s21" ss:Width="434.25"/>
+   <Column ss:StyleID="s21" ss:Width="225"/>
+   <Column ss:StyleID="s21" ss:Width="138.75"/>
+   <Column ss:StyleID="s21" ss:Width="156.75"/>
+   <Column ss:StyleID="s21" ss:Width="222"/>
+   <Column ss:StyleID="s21" ss:Width="122.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s36"><Data ss:Type="String">PRODUCT-ID</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">CATEGORY-ID</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">MODEL</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">SKU</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">IMAGE</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">KEYWORD</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">MANUFACTURER</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">SHIPPING</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">PRICE</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">NAME</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">META-DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">META-KEYWORD</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">TAG</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">IMAGES</Data></Cell>
+    <Cell ss:StyleID="s37"><Data ss:Type="String">OPTIONS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="141.75">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/5x5_small_navy_blue.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">kinesio-teip-classic</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Kинезио тейп Classic (5см х 5м)</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы фирмы RockTape Classic разработаны специалистами в США (Калифорния) и произведены в Корее. Тейп состоит на 97% из хлопка и на 3% из нейлона, имеет стойкую гипоаллергенную клеевую основу и повышенную эластичность - 180-190%. Уникальная технология изготовления данных тейпов, позволяет спортсменам выдерживать тренировки любой сложности, помогает лучше справляться с усталостью, предотвращает появление новых травм и растяжений, значительно снижает боль и ускоряет процесс восстановления при наличии старых травм.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы фирмы RockTape Classic разработаны специалистами в США (Калифорния). Тейп состоит на 97% из хлопка и на 3% из нейлона, имеет стойкую гипоаллергенную клеевую основу и повышенную эластичность - 180-190%.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить кинезио тейпы в Украине, спортивные тейпы RockTape, kinesio tape,  kinesiology tape, RockTape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы, кинезио тейп, RockTape, kinesio tapes, kinesio tape kinesiology tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/5x5_small_navy_blue.jpg;/data/product/5x5_small_beige.jpg;/data/product/5x5_small_black.jpg;/data/product/5x5_small_blue.jpg;/data/product/5x5_small_green.jpg;/data/product/5x5_small_red.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">1-1;1-2;1-3;1-4;1-5;1-9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="126">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/Blue_H2O.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">kinesio-teip-H20</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Н2О (5см х 5м) </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Н2О был создан специально для водных видов спорта - его клеевая основа еще более стойкая и выдерживает многочасовые пребывания в воде, при этом тейп не теряет свои свойства и продолжает поддерживать спортсмена в течение нескольких дней и в любых условиях!</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Н2О был создан специально для водных видов спорта - его клеевая основа еще более стойкая и выдерживает многочасовые пребывания в воде, при этом тейп не теряет свои свойства и продолжает поддерживать спортсмена в течение нескольких дней и в любых условиях</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить водостойкие кинезио тейпы в Украине, кинезио тейпы для плавания, kinesio tape RockTape H2O</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы, кинезио тейп, RockTape, kinesio tapes, kinesio tape kinesiology tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/Blue_H2O.jpg;/data/product/Black_H2O.jpg;/data/product/Biege_H2O.jpg;/data/product/H2O_BlackLogo.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">1-1;1-2;1-3;2-13</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="204.75">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/5x5_small_Blue_Argyle.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">kinesio-teip-designer</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Designer (5см х 5м)</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Designer – это разновидность классического кинезио тейпа RockTape, сочетающий в себе качество наивысшего уровня и уникальный современный дизайн. Помимо высокоэффективного результата, кинезио тейп Designer поможет проявить свою индивидуальность, стиль и превосходство. </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Designer – это разновидность классического кинезио тейпа RockTape, сочетающий в себе качество наивысшего уровня и уникальный современный дизайн.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить дизайнерские кинезио тейпы, кинезио тейпы с рисунком</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы, кинезио тейп, RockTape, kinesio tapes, kinesio tape kinesiology tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/5x5_small_Blue_Argyle.jpg;/data/product/5x5_small_BIO_hazard.jpg;/data/product/5x5_small_black_Logo.jpg;/data/product/5x5_small_clinical.jpg;/data/product/5x5_small_cow.jpg;/data/product/5x5_small_New_camo.jpg;/data/product/5x5_small_Pink_Argyle.jpg;/data/product/5x5_small_Pink_Logo.jpg;/data/product/5x5_small_Red_Logo.jpg;/data/product/5x5_small_skull.jpg;/data/product/5x5_small_stars_and_bars.jpg;/data/product/5x5_small_Swiss_Cross.jpg;/data/product/5x5_small_UK_flag.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">2-13;2-15;2-17;2-24;2-25;2-26</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="110.25">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/5x32_Pink_BULK.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">kinesio-teip-bulk</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1440</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Bulk (5см x 32м)</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Bulk – это разновидность классического кинезио тейпа RockTape, имеющий длину более чем в 6 раз больше (32 метра в 1 рулоне), что будет выгодно и удобно для спортсменов регулярно использующих кинезио тейпы. Одного рулона кинезио тейпа Bulk хватит более чем на 120 аппликаций. </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Bulk – это разновидность классического кинезио тейпа RockTape, имеющий длину более чем в 6 раз больше (32 метра в 1 рулоне), что будет выгодно и удобно для спортсменов регулярно использующих кинезио тейпы.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить длинные кинезио тейпы, длинный кинезио тейп</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы, кинезио тейп, RockTape, kinesio tapes, kinesio tape kinesiology tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/5x32_Pink_BULK.jpg;/data/product/5x32_Beige_BULK.jpg;/data/product/5x32_Black_BULK.jpg;/data/product/5x32_Black_Logo_BULK.jpg;/data/product/5x32_Blue_BULK.jpg;/data/product/5x32_Clinical_BULK.jpg;/data/product/5x32_Garmin_Blue_Argyle.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">1-1;1-2;1-3;1-6;2-13;2-15;2-17</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="126">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/Big_Daddy_BLACK_LOGO_BULK.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">kinesio-teip-big-daddy</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">2880</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Big Daddy (10см x 32м)</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Big Daddy - это разновидность классического кинезио тейпа RockTape, имеющий нестандартную длину и ширину. Ширина кинезио тейпа в 10 см позволит затейпировать массивные участки мышц, например четырехглавую мышцу бедра, а длина в 32 см позволит долго использовать кинезио тейп (более чем 120 аппликаций).</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Big Daddy - это разновидность классического кинезио тейпа RockTape, имеющий нестандартную длину и ширину. Ширина кинезио тейпа в 10 см позволит затейпировать массивные участки мышц, а длина в 32 см позволит долго использовать кинезио тейп.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить широкий и длинный кинезио тейп</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы, кинезио тейп, RockTape, kinesio tapes, kinesio tape kinesiology tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/Big_Daddy_BLACK_LOGO_BULK.jpg;/data/product/Big_Daddy_beige_Box.jpg;/data/product/Big_Daddy_BLACK_BULK_Box.jpg;/data/product/Big_Daddy_BLUE_BULK_Box.jpg;/data/product/Big_Daddy_CLINICAL_BULK.jpg;/data/product/Big_Daddy_PINK_BULK.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">1-1;1-2;1-3;1-6;2-13;2-15;2-17</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="110.25">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/medium_Black.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">kinesio-teip-mini-big-daddy</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">480</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Mini Big Daddy (10см x 5м)</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Mini Big Daddy - это разновидность классического кинезио тейпа RockTape, имеющий нестандартную ширину. Ширина кинезио тейпа в 10 см позволит затейпировать массивные участки мышц, например четырехглавую мышцу бедра. </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Mini Big Daddy - это разновидность классического кинезио тейпа RockTape, имеющий нестандартную ширину. Ширина кинезио тейпа в 10 см позволит затейпировать массивные участки мышц.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить широкий кинезио тейп, широкие кинезио тейпы</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы, кинезио тейп, RockTape, kinesio tapes, kinesio tape kinesiology tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/medium_Black.jpg;/data/product/medium_Biege.jpg;/data/product/medium_Black_logo.jpg;/data/product/medium_Blue.jpg;/data/product/medium_Blue_Argyle.jpg;/data/product/medium_Clinical.jpg;/data/product/medium_Pink.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">1-1;1-2;1-3;1-6;2-13;2-15;2-17</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="110.25">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/FingerTape_Blue.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">kinesio-teip-digit-tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">237</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Digit Tape (2,5см х 32м)</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Digit Tape - это разновидность классического кинезио тейпа RockTape, имеющий нестандартную длину и ширину. Ширина кинезио тейпа в 2,5 см позволит затейпировать, например, тонкую мышцу, мышцы рук и ног. Длина в 32 см позволит долго использовать кинезио тейп (более чем 120 аппликаций). </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейп Digit Tape - это разновидность классического кинезио тейпа RockTape, имеющий нестандартную длину и ширину. Ширина кинезио тейпа в 2,5 см позволит затейпировать тонкую мышцу, мышцы рук и ног.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить узкий кинезио тейп, узкие кинезио тейпы</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Кинезио тейпы, кинезио тейп, RockTape, kinesio tapes, kinesio tape kinesiology tape</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/FingerTape_Blue.jpg;/data/product/FingerTape_Beige.jpg;/data/product/FIngerTape_Pink.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">1-3;1-3;1-6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="126">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/RockRub.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">krem-rock-rub-50</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">295</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Крем Rock Rub 50 г</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Rub – лучший абсолютно натуральный увлажнитель для ваших рук и мозолей. Просто нанесите Rock Rub на ночь и Вы проснетесь с более мягкими, более сильными руками, которые не подведут Вас на тяжелых и интенсивных тренировках. Rock Rub производится из лучших полностью натуральных ингредиентов: австралийский пчелиный воск, масло канолы, витамин Е, пачули, лаванда, иланг-иланг. Rock Rub прекрасно работает в любом месте - использовать его можно на всех частях тела. Баночки 50 г хватит примерно на 1 месяц.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Rub 50 г – абсолютно натуральный увлажнитель для ваших рук и мозолей. Rock Rub производится из лучших полностью натуральных ингредиентов. Баночки 50 г хватит примерно на 1 месяц.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить крем от мозолей, крем для рук от волдырей, Rock Rub 50 г</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Rub, крем</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/RockRub.jpg;/data/product/Rockrub_.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">1-1;1-2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="126">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/RockRub.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">krem-rock-rub-400</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">420</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Крем Rock Rub 400 г</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Rub – лучший абсолютно натуральный увлажнитель для ваших рук и мозолей. Просто нанесите Rock Rub на ночь и Вы проснетесь с более мягкими, более сильными руками, которые не подведут Вас на тяжелых и интенсивных тренировках. Rock Rub производится из лучших полностью натуральных ингредиентов: австралийский пчелиный воск, масло канолы, витамин Е, пачули, лаванда, иланг-иланг. Rock Rub прекрасно работает в любом месте - использовать его можно на всех частях тела. Баночки 400 г хватит на 7-8 месяцев.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Rub 400 г – еще больше абсолютно натурального увлажнителя для ваших рук и мозолей. Очень выгодное предложение.  Баночки 400 г хватит на 7-8 месяцев.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить крем от мозолей, крем для рук от волдырей, Rock Rub 400 г</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Rub, крем</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/RockRub.jpg;/data/product/Rockrub_.jpg</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="236.25">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s38"/>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/Rock_Sauce_.jpg</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">mas-rock-sause-120</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="Number">240</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Мазь Rock Sauce 120 мл</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Sauce + Rocktape = Полное восстановление! Что может быть лучше, чем кинезио тейпы Rocktape? Только Rocktape и Rock Sause!  Rock Sause является первым обезболивающим кремом, предназначенным для использования с Rocktape. При нанесении непосредственно на поверхность Rocktape, Rock Sause впитывается в Rocktape и обеспечивает охлаждение и тепло одновременно до 1 часа.  При использовании Rock Sause отдельно без кинезио тейпа, Вы обеспечиваете как охлаждение, так и тепло мышцам, что позволяет считать его идеальным средством «все-в-одном». Спортсмены будут любить его, потому что при его изготовлении используют nanosac технологию, что при проникновении в ленту и кожу доставляет длительное облегчение. Доктора будут любить при использовании во время АРТ, Graston Technique и ультразвука. Мы любим его, потому что он работает.  Не содержит животных субпродуктов.</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Rock Sause является первым обезболивающим кремом, предназначенным для использования с Rocktape и без него. При нанесении непосредственно на поверхность кожи, Rock Sause впитывается и обеспечивает охлаждение и тепло одновременно до 1 часа. </Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Купить мазь от растяжений Rock Sauce, мазь для суставов и мышц, лечение суставов и мышц</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">Мазь, Rock Sauce</Data></Cell>
+    <Cell ss:StyleID="s38"><Data ss:Type="String">/data/product/Rock_Sauce_.jpg;/data/product/Rock_Sauce.jpg;/data/product/Rock_Sauce__.jpg</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="171.5625">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">/data/product/gloves_2.jpg</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Купить перчатки для кроссфита, купить перчатки для Crossfit, купить перчатки RockTape G&#45;-Loves, купить перчатки для тренажерного зала, перчатки для турников</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">540</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">Перчатки G-LOVES</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Перчатки G-LOVES G-Loves - функциональные перчатки для интенсивных и изнуряющих видов спорта (Crossfit, тяжелая атлетика, велоспорт). G-Loves  - защита Ваших рук в самых суровых условиях. Руль велосипеда, турник, штанга - за что бы Вы ни взялись, перчатки G-Loves обеспечат максимальную защиту и поддержку.  Уверенный хват и больше  никаких  стертых рук, волдырей и мозолей.   Преимущества G-Loves: работает с сенсорными экранами; без швов на ладонях; силиконовая накладка “false-grip” поможет в выходах силой; защита большого пальца при захвате штанги; впитывают пот; дышащий материал по боковым поверхностям пальцев; удобные петли; рассчитаны на  работу с мелом. </Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">G-Loves  - защита Ваших рук в самых суровых условиях. Руль велосипеда, турник, штанга - за что бы Вы ни взялись, перчатки G-Loves обеспечат максимальную защиту и поддержку.</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Купить перчатки для кроссфита, купить перчатки для Crossfit, купить перчатки RockTape G&#45;-Loves, купить перчатки для тренажерного зала, перчатки для турников</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Перчатки для кроссфита, перчатки для Crossfit, перчатки RockTape G&#45;-Loves, перчатки для тяжелой атлетики</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">/data/product/gloves_2.jpg;/data/product/gloves_main.jpg;/data/product/gloves_1.jpg</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="129">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">/data/product/shin-skin-manifesto-main.jpg</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Купить защиту голени RockTape RockGuards, защита голени при становой тяге</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">640</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">Защита голени RockGuards</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Защита голени RockGuards станет надежной защитой при выполнении становой тяги, толчок штанги, рывок штанги, защитит Вас при лазании по канату и при выполнении других упражнений, способных повредить Ваши голени. Застежка на  молнии облегчит использование защиты; лайкра, входящая в состав материала, обеспечит более плотное прилегание - защита останется на месте  как при лазании, так и при беге. В каждой коробке -2 защиты голени. </Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Защита голени RockGuards станет надежной защитой при выполнении становой тяги, толчок штанги, рывок штанги, защитит Вас при лазании по канату и при выполнении других упражнений, способных повредить Ваши голени.</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Купить защиту голени RockTape RockGuards, защита голени при становой тяге</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Защита голени RockTape RockGuards, защита голени при становой тяге</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">/data/product/shin-skin-manifesto-main.jpg;/data/product/shin-skin-black_.jpg;/data/product/shin-skin-manifesto-main-.jpg;/data/product/shin-skin-black-main.jpg;/data/product/shin-skin-black.jpg;/data/product/shin_skins_woman.jpg;/data/product/shin_skins_box_jump.jpg;/data/product/shin-skin-manifesto.jpg</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="256.6875">
+    <Cell ss:StyleID="s36"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">/data/product/kneecaps_red_main.jpg</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Купить наколенники RockTape KneeCaps, бандажи для тяжелой атлетики, купить наколенники для приседаний, купить наколенники для Crossfit</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="Number">640</Data></Cell>
+    <Cell ss:StyleID="s42"><Data ss:Type="String">Наколенники&#160; KneeCaps</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">KneeCaps - компрессионные наколенники RockTape для тяжелой атлетики, CrossFit. Они согревают и стабилизируют коленный сустав при выполнении функциональных движений. Стабильность в коленях критична для тяжелой атлетики и функционального тренинга. KneeCaps / Наколенники RockTape созданы специально, чтобы обеспечить компрессионный и согревающий эффект, а также придать стабильность коленному суставу для выполнения функциональных движений таких как становая тяга, приседания со штангой, зашагивание/выпрыгивание на тумбу, берпи. В отличие от аналогов, наколенники RockTape более высокие и разработаны специально для компрессии VMO (косой медиальной широкой мышцы бедра)* в месте ее прикрепления над коленной чашечкой, чтобы обеспечить надлежащую стабилизацию колена и контроль. Помимо стабилизации, KneeCaps создают компрессионный и согревающий эффект, что улучшает кровоток. * VMO (vastus medialis oblique) – косая медиальная широкая мышца бедра - это мышца квадрицепса в форме капли над коленом. Она пересекает колено и поэтому крайне важна для его стабилизации.</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">KneeCaps - компрессионные наколенники RockTape для тяжелой атлетики, CrossFit. Они согревают и стабилизируют коленный сустав при выполнении функциональных движений.</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Купить наколенники RockTape KneeCaps, бандажи для тяжелой атлетики, купить наколенники для приседаний, купить наколенники для Crossfit</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">Наколенники RockTape KneeCaps, бандажи для тяжелой атлетики, наколенники для приседаний, наколенники для Crossfit</Data></Cell>
+    <Cell ss:StyleID="s40"><Data ss:Type="String">/data/product/kneecaps_red_main.jpg;/data/product/kneecaps_red_main_.jpg;/data/product/kneecap__manifesto.jpg;/data/product/kneecaps_red.jpg;/data/product/kneecaps_rich.jpg;/data/product/kneecaps_redact.jpg;/data/product/kneecaps_woman_rock.jpg;/data/product/kneecaps_man_rock.jpg;/data/product/knee_caps_manifesto.jpg</Data></Cell>
+    <Cell ss:StyleID="s27"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+   <Row ss:Index="65536" ss:AutoFitHeight="0" ss:Height="15.1875">
+    <Cell ss:Index="16" ss:StyleID="s37"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <Selected/>
+   <TopRowVisible>3</TopRowVisible>
+   <LeftColumnVisible>10</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>12</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <x:WorksheetOptions/>
+ </Worksheet>
+ <Worksheet ss:Name="Option">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="65536" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s21">
+   <Column ss:StyleID="s21" ss:Width="117.75"/>
+   <Column ss:StyleID="s21" ss:Width="138.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="String">OPTION-ID</Data></Cell>
+    <Cell><Data ss:Type="String">NAME</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Размер</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Цвет</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625" ss:Span="251"/>
+   <Row ss:Index="65536" ss:AutoFitHeight="0" ss:Height="14.0625"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <x:WorksheetOptions/>
+ </Worksheet>
+ <Worksheet ss:Name="Option-Value">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="65536" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s21">
+   <Column ss:StyleID="s21" ss:Width="154.5"/>
+   <Column ss:StyleID="s21" ss:Width="117.75"/>
+   <Column ss:StyleID="s21" ss:Width="167.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="String">OPTION-VALUE-ID</Data></Cell>
+    <Cell><Data ss:Type="String">OPTION-ID</Data></Cell>
+    <Cell><Data ss:Type="String">NAME</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">XS</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">S</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">M</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">L</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">XL</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">XXL</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">S/M</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">M/L</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">L/XL</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Бежевый</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Черный</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Голубой</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Зеленый</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Синий</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Розовый</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Оранжевый</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Фиолетовый</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Красный</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Белый</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s31"><Data ss:Type="String">Желтый</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Желтый biohazard</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Черный Logo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Черный череп</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Голубой узор</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Коричневый камуфляж</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Clinical</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Корова</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Зеленый камуфляж</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">29</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Черный HealthSource Logo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Les Mills</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Розовый Узор</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Розовый Logo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Красный Logo</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Звезды и полосы</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Swiss флаг</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625">
+    <Cell><Data ss:Type="Number">36</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">UK флаг</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.0625" ss:Span="217"/>
+   <Row ss:Index="65536" ss:AutoFitHeight="0" ss:Height="14.0625"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <PageMargins x:Bottom="0.984251969" x:Left="0.78740157499999996"
+     x:Right="0.78740157499999996" x:Top="0.984251969"/>
+   </PageSetup>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <x:WorksheetOptions/>
+ </Worksheet>
+</Workbook>

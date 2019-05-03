@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2018-07-22 14:58">
+    <shop>
+        <name>RockTape Ukraine</name>
+        <company>ФОП Лоба Світлана Едуардівна</company>
+        <url>https://rocktape.ua/</url>
+        <currencies>
+            <currency id="UAH" rate="1"/>
+        </currencies>
+        <categories>
+            <category id="1">Кинезио тейпы</category>
+            <category id="2">Спортивная экипировка</category>
+            <category id="3">Йога</category>
+        </categories>
+        <offers>
+            <offer id="RCT100-BG-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-classic</url>
+                <price>430</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Beige_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>0</stock_quantity>
+                <name>Кинезио тейп RockTape Classic (5см х 5м) - бежевый</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-BG-OS</param>
+            </offer>
+
+            <offer id="RCT100-BL-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-classic</url>
+                <price>430</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Blue_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Classic (5см х 5м) - голубой</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-BL-OS</param>
+            </offer>
+
+            <offer id="RCT100-REERED-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-classic</url>
+                <price>430</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Red_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Classic (5см х 5м) - красный</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-REERED-OS</param>
+            </offer>
+
+            <offer id="RCT100-BK-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-classic</url>
+                <price>430</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Black_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Classic (5см х 5м) - черный</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-BK-OS</param>
+            </offer>
+
+            <offer id="RCT100-BKLGH2O-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-H20</url>
+                <price>450</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/H2O_5x5_Black_Logo_std_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape H2O (5см х 5м) - черный Logo</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape H20 - экстра -водостойкие тейпы для водных видов спорта!</strong></p>
+<p>Данный кинезио тейп был создан специально для водных видов спорта - его клеевая основа еще более стойкая и выдерживает многочасовые пребывания в воде, при этом тейп не теряет свои свойства и продолжает поддерживать спортсмена в течение нескольких дней и в любых условиях!</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12, секрет супер эластичности и водостойкости</param>
+                <param name="Артикул">RCT100-BKLGH2O-OS</param>
+            </offer>
+
+            <offer id="RCT100-BLH2O-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-H20</url>
+                <price>450</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/H2O_5x5_Blue_std_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape H2O (5см х 5м) - голубой</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape H20 - экстра -водостойкие тейпы для водных видов спорта!</strong></p>
+<p>Данный кинезио тейп был создан специально для водных видов спорта - его клеевая основа еще более стойкая и выдерживает многочасовые пребывания в воде, при этом тейп не теряет свои свойства и продолжает поддерживать спортсмена в течение нескольких дней и в любых условиях!</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12, секрет супер эластичности и водостойкости</param>
+                <param name="Артикул">RCT100-BLH2O-OS</param>
+            </offer>
+
+            <offer id="RCT100-REDLG-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-designer</url>
+                <price>450</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Red_Logo_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Designer (5см х 5м) - красный Logo</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-REDLG-OS</param>
+            </offer>
+
+            <offer id="RCT100-SLLG-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-designer</url>
+                <price>450</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Black_Logo_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Designer (5см х 5м) - черный Logo</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-SLLG-OS</param>
+            </offer>
+
+            <offer id="RCT100-BIO-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-designer</url>
+                <price>450</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Biohazard_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Designer (5см х 5м) - радиация</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-BIO-OS</param>
+            </offer>
+
+            <offer id="RCT100-TAT-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-designer</url>
+                <price>450</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_tattoo_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Designer (5см х 5м) - тату</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-TAT-OS</param>
+            </offer>
+
+            <offer id="RCT100-PCAMOPK-OS" available="true">
+                <url>https://rocktape.ua/kinesio-tapes/kinesio-tape-designer</url>
+                <price>450</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>1</categoryId>
+                <picture>https://rocktape.ua/rozetka/5x5_small_Pink_camo_spot.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Кинезио тейп RockTape Designer (5см х 5м) - розовый камуфляж</name>
+                <description>
+                    <![CDATA[<p><strong>Кинезио тейп RockTape - самый прочный и лучший кинезио тейп в мире! </strong></p>
+<p>В отличие от других кинезио тейпов, RockTape был создан специально для спортсменов, участвующих в соревнованиях на выносливость (бег, плавание, велоспорт, CrossFit). Уникальные свойства RockTape позволяют спортсменам лучше справляться с усталостью, улучшая кровообращение. Все, что Вам нужно &mdash; это наложить тейп на те зоны/мышцы, где требуется небольшая поддержка, и вы сможете бежать, плыть, грести, крутить педали дольше и упорнее, чем ваши противники!</p>
+<p>Уникальность RockTape заключается, прежде всего, в тканевой основе тейпа, не уступающей по своей эластичности и характеристикам человеческой коже. RockTape может растягиваться до 190% (!) от своей изначальной длины, а специальная структура волокон ткани создает в ней постоянное натяжение, копируя свойства человеческой кожи. Поэтому при ношении тейп обеспечивает заметную поддержку, при этом не ограничивая и не сковывая движения.</p>]]>
+                </description>
+                <param name="Категория">Кинезио тейпы</param>
+                <param name="Тип">Тейпы (ленты)</param>
+                <param name="Ширина">5 см</param>
+                <param name="Длина">5 м</param>
+                <param name="Эластичность">180% - 190%</param>
+                <param name="Особенности">Водостойкий, гипоаллергенная клеевая основа</param>
+                <param name="Состав">97% хлопок, 3% нейлон 6/12</param>
+                <param name="Артикул">RCT100-PCAMOPK-OS</param>
+            </offer>
+
+            <offer id="1801-RC-5M" available="true">
+                <url>https://rocktape.ua/outfit/assassins</url>
+                <price>1550</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>2</categoryId>
+                <picture>https://rocktape.ua/rozetka/KneeSleeves_Red_Camo.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Наколенники Assassins Red Camo 5mm size M</name>
+                <description>
+                    <![CDATA[<p><strong>Наколенники Assassins от американской компании RockTape - абсолютно НОВОЕ поколение наколенников! </strong></p>
+<p>Более прочный неопрен, более прочные и широкие швы с двойными стежками, новый уникальный дизайн - это все о “настоящих убийцах”! Наколенники тестировали и разрабатывали в течение 3 лет, привлекали к разработке топовых спортсменов, учитывали отзывы клиентов, чтобы получить на выходе поистине идеальную защиту для коленей. У RockTape это получилось! Убедитесь в этом сами!</p>
+<p>Наколенники согревают и стабилизируют коленный сустав при выполнении функциональных движений, что позволяет атлету максимально сосредоточиться на выполнении упражнения/комплекса, не думая о дискомфорте или чрезмерной нагрузки на коленный сустав.</p>
+<p>Наколенники от RockTape более высокие и разработаны специально для компрессии косой медиальной широкой мышцы бедра в месте ее прикрепления над коленной чашечкой, чтобы обеспечить надлежащую стабилизацию колена и контроль. Помимо стабилизации, наколенники создают компрессионный и согревающий эффект, что улучшает кровоток.</p>]]>
+
+                </description>
+                <param name="Категория">Спортивная экипировка</param>
+                <param name="Тип">Бандажи (фиксаторы)</param>
+                <param name="Цвет">Красный камуфляж</param>
+                <param name="Размер">Medium</param>
+                <param name="Тощина">5 мм</param>
+                <param name="Производитель">Разработка: RockTape Inc. (США). Производство: Китай.</param>
+\               <param name="Артикул">1801-RC-5M</param>
+            </offer>
+
+             <offer id="RB-282" available="true">
+                <url>https://rocktape.ua/other/rockballs</url>
+                <price>580</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>3</categoryId>
+                <picture>https://rocktape.ua/rozetka/massage_balls.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Мячи массажные RockBalls</name>
+                <description>
+                    <![CDATA[<p><strong>Два - определенно лучше, чем один.</strong></p>
+<p>Массажные мячики RockBalls от RockTape - идеальные помощники в реабилитации, развитии подвижности и улучшении атлетических способностей. Благодаря массажным мячикам вы обеспечите себе сбалансированные функциональные нагрузки, расслабите мышцы и снимите стресс. </p>
+<p> Компактный размер мячиков позволит носить их всегда с собой в вашем тренировочном рюкзаке и максимально эффективно проработать все “застойные места”, оказать воздействие на триггерные точки. </p>]]>
+                </description>
+                <param name="Категория">Йога</param>
+                <param name="Тип">Массажный мячик</param>
+                <param name="Диаметр">8.9 см и 6.35см (с шипами и гладкий)</param>
+                <param name="Цвет">Красный</param>
+                <param name="Страна-производитель">Разработка: RockTape Inc. (США). Производство: Китай.</param>
+                <param name="Артикул">RB-282</param>
+            </offer>
+
+            <offer id="RT-RnRol-18" available="true">
+                <url>https://rocktape.ua/other/rocknroller-hd</url>
+                <price>820</price>
+                <currencyId>UAH</currencyId>
+                <categoryId>3</categoryId>
+                <picture>https://rocktape.ua/rozetka/rocknroller_hd.jpg</picture>
+                <vendor>RockTape</vendor>
+                <stock_quantity>30</stock_quantity>
+                <name>Массажный ролик RockNRoller HD</name>
+                <description>
+                    <![CDATA[<p><strong>Массажный ролик от RockTape - незаменимый помощник в реабилитации </strong></p>
+<p>Массажный ролик RocknRoller HD 45 - идеальное средство для глубокой проработки мышц и фасций. Массажный циллиндр от RockTape позволит облегчить крепатуру, укрепить мышечный корсет, восстановить микроциркуляцию в тканях, уменьшить интенсивность болевого синдрома. </p>
+<p>Массажный ролик RocknRoller HD позволит проработать все группы мышц: бедра, ягодицы, икры, спину, плечи, бицепс, трицепс. При грамотном использовании, массажный цилиндр может заменить полноценную восстановительную тренировку.</p>]]>
+                </description>
+                <param name="Категория">Йога</param>
+                <param name="Тип">Ролик</param>
+                <param name="Диаметр">15 см</param>
+                <param name="Длина">45 cм</param>
+                <param name="Вес">0,3 кг</param>
+                <param name="Цвет">черный</param>
+                <param name="Страна-производитель">Разработка: RockTape Inc. (США). Производство: Китай. </param>
+                <param name="Артикул">RT-RnRol-18</param>
+            </offer>
+        </offers>
+    </shop>
+</yml_catalog>

@@ -1,0 +1,6 @@
+.product-block .image .faceback{	
+	display: none !important;
+}
+.product-block .image:hover .faceback{
+	display: block !important;
+}
