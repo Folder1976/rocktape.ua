@@ -85,9 +85,11 @@
 <?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet">
 <?php } else { ?>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet">
 <?php } ?>
 
 
@@ -162,14 +164,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
                     	</div>
 						<a class="wishlist" href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a>
-						<a class="shoppingcart" href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
+						<!-- <a class="shoppingcart" href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a> -->
 						<a class="last checkout" href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a> 
 						<!-- <a class="last checkout" href="/garantiya">Гарантия</a><a class="last checkout" href="/garantiya">Гарантия</a> -->
 					</div>
+					<div class="pull-left">
+						<div class="social_custom">
+							<div class="box-content">
+								<div class="list-folow">
+									<!-- <a data-original-title="Google-plus" data-placement="bottom" data-toggle="tooltip" href="https://plus.google.com/110252421626037566488" title=""><i class="icon-google-plus">&nbsp;</i></a> -->
+									<a data-original-title="Facebook" data-placement="bottom" data-toggle="tooltip" href="https://www.facebook.com/rocktapeukraine/" title=""><i class="icon-facebook">&nbsp;</i></a>
+									<a data-original-title="Instagram" data-placement="bottom" data-toggle="tooltip" href="https://www.instagram.com/rocktape_ukraine/" title=""><i class="icon-instagram">&nbsp;</i></a>
+									<a data-original-title="YouTube" data-placement="bottom" data-toggle="tooltip" href="https://www.youtube.com/channel/UCIhWc7-bNR35LZamIcSIU8w" title=""><i class="icon-youtube">&nbsp;</i></a>
+									<!-- <a data-original-title="Vk" data-placement="bottom" data-toggle="tooltip" href="https://vk.com/rocktapeua" title=""><i class="icon-vk">&nbsp;</i></a> -->
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <div class="currency pull-left">
+                    <!-- <div class="currency pull-left">
                         <?php echo $currency; ?>
-                    </div>
+                    </div> -->
                     <div class="language pull-left">
                         <?php echo $language; ?>
                     </div>

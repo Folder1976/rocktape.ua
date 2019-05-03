@@ -1380,7 +1380,7 @@ body.layout-boxed-lg #page {
 
   margin-bottom: 20px;
 
-  background: #C72828;
+  background: #111111;
 
 }
 
@@ -1540,7 +1540,7 @@ body.layout-boxed-lg #page {
 
   font-size: 16px;
 
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
 
   color: #FFFFFF;
 
@@ -1670,7 +1670,7 @@ body.layout-boxed-lg #page {
 
   margin-bottom: 6px;
 
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
 
 }
 
@@ -1682,7 +1682,7 @@ body.layout-boxed-lg #page {
 
 .box .box-heading h4 >span {
 
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
 
   display: inline-block;
 
@@ -3866,7 +3866,7 @@ font-size: 22px !important;
 
   color: #000000;
 
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
 
   font-weight: bold;
 
@@ -5627,9 +5627,8 @@ width: 48%;
 }
 
 #pav-mainnav .dropdown .dropdown-menu {
-
   border-top: 3px solid #B32424;
-
+  background-color: #0a0a0a;
 }
 
 #pav-mainnav .navbar {
@@ -5664,17 +5663,9 @@ width: 48%;
 
 }
 
-#pav-mainnav .navbar ul.nav > li:first-child a {
-
-  border-left: 1px solid #D25353;
-
-}
-
 #pav-mainnav .navbar ul.nav > li > a {
 
-  border-right: 1px solid #D25353;
-
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
 
   text-transform: uppercase;
 
@@ -5682,7 +5673,8 @@ width: 48%;
 
   overflow: hidden;
 
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 16px;
 
   padding-top: 10px;
 
@@ -5727,37 +5719,31 @@ width: 48%;
 }
 
 #pav-mainnav .dropdown-menu {
-
   border-radius: 0px;
-
+  padding: 20px 0;
 }
 
 #pav-mainnav .dropdown-menu .pavo-widget .menu-title {
-
   color: #000000;
-
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
   font-weight: 700;
+}
 
+#pav-mainnav .dropdown-menu li {
+  padding: 0 20px;
 }
 
 #pav-mainnav .dropdown-menu li a {
-
-  background: url('../image/default/arrow-li.png') no-repeat 4px 6px;
-
-  padding: 3px 0 5px 24px;
-
+  color: #fff;
+  padding: 6px 20px;
   transition: all 0.5s ease-in-out 0s;
-
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 #pav-mainnav .dropdown-menu li a:hover {
-
-  color: #B32424;
-
-  background: url('../image/default/arrow-li.png') no-repeat 4px -31px;
-
+  opacity: .7;
 }
 
 #pav-mainnav .navbar-inverse .navbar-nav > .open > a {
