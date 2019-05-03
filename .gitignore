@@ -31,7 +31,10 @@ image/cache/
 system/cache/*
 system/logs/
 system/storage/
+vqmod/*.cache
+vqmod/vqcache/*
+
 
 ## other
 #
-#system/library/encryption.php
+system/library/encryption.php
