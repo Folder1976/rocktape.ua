@@ -1,0 +1,37 @@
+# IDE Files
+.idea/*
+
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+
+## Development
+.sass-cache/*
+.gulp/*
+node_modules/*
+last-commit/*
+web/*
+build/*
+
+## OS (Windows, Mac...)
+Desktop.ini
+Thumbs.db
+.DS_Store
+
+## OpenCart
+.htaccess
+/config.php
+admin/config.php
+image/cache/
+system/cache/*
+system/logs/
+system/storage/
+
+## other
+#
+#system/library/encryption.php
