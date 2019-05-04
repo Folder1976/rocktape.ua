@@ -24,6 +24,7 @@
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/animation.css' );
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font-awesome.min.css' );
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font.css' );
+	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/dev.css' );
 	$helper->addCss( 'catalog/view/javascript/jquery/colorbox/colorbox.css' );
 	$helper->addCssList( $styles );
 	$layoutMode = $helper->getParam( 'layout' );
@@ -85,11 +86,11 @@
 <?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins:300,400" rel="stylesheet">
 <?php } else { ?>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins:300,400" rel="stylesheet">
 <?php } ?>
 
 
@@ -362,6 +363,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 	</div>
 </section>
+
+
+<?php // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
+<!-- <section class="home-full-video">
+	<div class="home-full-video__wrap">
+		<video loop="loop" autoplay="" playsinline="" muted="" preload="none" src="/image/data/video/video-1.mp4" style="margin: 0px;" width="1280" height="720">
+			<source type="video/mp4" src="/image/data/video/video-1.mp4">
+			<source type="video/webm" src="/image/data/video/video-1.webm">
+		</video>
+	</div>
+
+	<div class="home-full-video__content">
+		<div class="home-full-video__content-inner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<h1 class="home-full-video__title">PAIN STOPS HERE</h1>
+					<p class="home-full-video__text">Делай снова то, что ты любишь. Двигайся больше и лучше с RockTape!</p>
+					<a href="/apparel" class="home-full-video__link btn-theme-primary">Купить продукцию</a>
+					<a href="//rocklab.rocktape.ua" class="home-full-video__link btn-theme-primary">Помощь специалиста</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section> -->
+<?php // } ?>
+
+
+
+
 
 </section>
 
