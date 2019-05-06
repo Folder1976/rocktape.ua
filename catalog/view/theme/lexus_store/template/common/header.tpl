@@ -375,7 +375,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<?php if ( false ) { // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
+<?php if ( true ) { // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
 <section class="home-full-video">
 	<div class="home-full-video__wrap">
 		<video loop="loop" autoplay="" playsinline="" muted="" preload="none" src="/image/data/video/video-1.mp4" style="margin: 0px;" width="1280" height="720">
@@ -461,7 +461,7 @@ $home_slider = array(
 	<?php } ?>
 </div>
 
-<?php } ?>
+
 
 
 
@@ -557,6 +557,8 @@ $home_slider_popular = array(
 		<?php } ?>
 	</div>
 </div>
+<?php } ?>
+
 
 
 <?php

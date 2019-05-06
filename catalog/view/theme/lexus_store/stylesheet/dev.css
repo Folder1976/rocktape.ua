@@ -4,7 +4,7 @@
 .home-full-video {
     position: relative;
     /*min-height: 514px;*/
-    min-height: 80vh;
+    min-height: 77vh;
     font-family: 'Oswald', sans-serif;
     background-image: url(/image/data/video/foto.png);
     -webkit-background-size: cover;
