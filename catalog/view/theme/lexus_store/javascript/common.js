@@ -272,4 +272,46 @@ $(window).ready( function(){
       return '<span></span>';
     }
   });
+
+  // home page slider popular
+  $('#home-slider-popular .h-slider-popular__list').slick({
+    dots: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    // autoplay: true,
+    autoplaySpeed: 3000,
+    adaptiveHeight: false,
+
+    arrows: true,
+    appendArrows: '#home-slider-popular .slider__arrows',
+    prevArrow: '#home-slider-popular .slider__arrow--prev',
+    nextArrow: '#home-slider-popular .slider__arrow--next',
+    
+    responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 4,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+  });
 });

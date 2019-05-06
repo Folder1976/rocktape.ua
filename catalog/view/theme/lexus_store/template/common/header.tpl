@@ -89,11 +89,11 @@
 <?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700|Poppins:300,400,500" rel="stylesheet">
 <?php } else { ?>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Poppins:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700|Poppins:300,400,500" rel="stylesheet">
 <?php } ?>
 
 
@@ -461,6 +461,98 @@ $home_slider = array(
 
 
 
+
+
+<?php
+$home_slider_popular = array(
+	array(
+		'title' => 'RockTape',
+		'text' => 'Лучший в мире кинезио тейп',
+		'image' => '/image/data/home-slider-popular/Medical-Tape-510x382.jpg',
+		'href' => '/kinesio-tapes',
+	),
+	array(
+		'title' => 'Экипировка',
+		'text' => 'Ваша защита в самых жестких воркаутах',
+		'image' => '/image/data/home-slider-popular/Retail-Assassins-510x382.jpg',
+		'href' => '/outfit',
+	),
+	array(
+		'title' => 'RockSouce',
+		'text' => 'Эффективное обезболивание в спортивной медицине',
+		'image' => '/image/data/home-slider-popular/Medical-Topicals-510x382.jpg',
+		'href' => '/rock-sause',
+	),
+	array(
+		'title' => 'RockFloss',
+		'text' => 'Твой помощник для улучшения мобильности',
+		'image' => '/image/data/home-slider-popular/Retail-Floss-510x382.png',
+		'href' => '/rockfloss',
+	),
+	array(
+		'title' => 'Помощь специалиста',
+		'text' => 'Найди RockDoc-а в своем городе',
+		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
+		'href' => '/help-specialist',
+	),
+
+
+
+	array(
+		'title' => 'Помощь специалиста',
+		'text' => 'Найди RockDoc-а в своем городе',
+		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
+		'href' => '/help-specialist',
+	),
+	array(
+		'title' => 'Помощь специалиста',
+		'text' => 'Найди RockDoc-а в своем городе',
+		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
+		'href' => '/help-specialist',
+	),
+	array(
+		'title' => 'Помощь специалиста',
+		'text' => 'Найди RockDoc-а в своем городе',
+		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
+		'href' => '/help-specialist',
+	),
+	array(
+		'title' => 'Помощь специалиста',
+		'text' => 'Найди RockDoc-а в своем городе',
+		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
+		'href' => '/help-specialist',
+	),
+);
+?>
+
+
+<div id="home-slider-popular" class="h-slider-popular">
+	<div class="slider__arrows">
+	  <div class="slider__arrow slider__arrow--prev">
+	    <span></span>
+	  </div>
+	  <div class="slider__arrow slider__arrow--next">
+	    <span></span>
+	  </div>
+	</div>
+
+	<div class="h-slider-popular__list">
+		<?php foreach ($home_slider_popular as $slide) { ?>
+		<div class="h-slider-popular__item">
+			<a href="<?php echo $slide['href']; ?>" class="h-slider-popular__link">
+				<div class="h-slider-popular__image">
+					<img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>">
+				</div>
+				<div class="h-slider-popular__meta">
+					<span class="h-slider-popular__icon">+</span>
+					<div class="h-slider-popular__title"><?php echo $slide['title']; ?></div>
+					<div class="h-slider-popular__text"><?php echo $slide['text']; ?></div>
+				</div>
+			</a>
+		</div>
+		<?php } ?>
+	</div>
+</div>
 
 
 <?php
