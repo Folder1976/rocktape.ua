@@ -135,10 +135,12 @@ $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></
 });
 //--></script>
 <?php } ?>
-<?php echo $google_analytics; ?>
+<?php // echo $google_analytics; ?>
 </head>
 <body id="offcanvas-container" class="offcanvas-container layout-<?php echo $layoutMode; ?> fs<?php echo $themeConfig['fontsize'];?> <?php echo $helper->getPageClass();?> <?php echo $helper->getParam('body_pattern','');?>">
 
+
+<?php if (false) { ?>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5QL4L2"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -148,6 +150,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5QL4L2');</script>
 <!-- End Google Tag Manager -->
+<?php } ?>
+
 
 <section id="page" class="offcanvas-pusher" role="main">
 <section id="header">
