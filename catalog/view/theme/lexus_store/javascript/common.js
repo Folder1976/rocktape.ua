@@ -252,3 +252,24 @@ function addToWishList(product_id) {
         }
     });
 }
+
+
+
+// slick-slider
+$(window).ready( function(){
+  // home page slider
+  $('#home-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    adaptiveHeight: false,
+    // fade: true,
+    cssEase: 'linear',
+    customPaging: function(slick,index) {
+      return '<span></span>';
+    }
+  });
+});

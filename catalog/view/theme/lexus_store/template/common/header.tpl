@@ -26,6 +26,9 @@
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font.css' );
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/dev.css' );
 	$helper->addCss( 'catalog/view/javascript/jquery/colorbox/colorbox.css' );
+
+	$helper->addCss( 'catalog/view/javascript/slick-slider/slick.css' );
+	$helper->addScript( 'catalog/view/javascript/slick-slider/slick.min.js' );
 	$helper->addCssList( $styles );
 	$layoutMode = $helper->getParam( 'layout' );
 
@@ -282,7 +285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 				</div>
 			</div>
-	</section>
+	  </section>
 <section id="pav-mainnav">
 	<div class="container">
 		<div class="mainnav-wrap">
@@ -362,11 +365,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 		</div>
 	</div>
-</section>
+</section>  <!-- /#pav-mainnav -->
+</section>  <!-- /#header -->
 
 
-<?php // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
-<!-- <section class="home-full-video">
+
+
+<?php if ( false ) { // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
+<section class="home-full-video">
 	<div class="home-full-video__wrap">
 		<video loop="loop" autoplay="" playsinline="" muted="" preload="none" src="/image/data/video/video-1.mp4" style="margin: 0px;" width="1280" height="720">
 			<source type="video/mp4" src="/image/data/video/video-1.mp4">
@@ -388,14 +394,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 		</div>
 	</div>
-</section> -->
-<?php // } ?>
-
-
-
-
-
 </section>
+
+
+
+
+<?php
+// home slider
+$home_slider = array(
+	array(
+		'title' => "The Official Knee Sleeves of CrossFit®",
+		'text' => "Competition-grade CrossFit® knee protection designed for the demands of the world’s most intense fitness movement. Slay your workout.",
+		'btn_text' => "Explore Assassins",
+		'btn_href' => "#",
+		'image' => "/image/data/home-slider/CF-Assassins.png",
+		'background' => '#111111',
+		'background_btn' => '#c8102e',
+	),
+	array(
+		'title' => "Kinesiology Tape Perfected.",
+		'text' => "We’ve perfected RockTape, and it’s called Edge. RockTape + RockSauce for powerful pain* relief to go.",
+		'btn_text' => "Explore RockTape Edge",
+		'btn_href' => "#",
+		'image' => "/image/data/home-slider/2xEdge-H2O-Black-PreCut-1.png",
+		'background' => '#c8102e',
+		'background_btn' => '#111111',
+	),
+	array(
+		'title' => "Pain? Meet Fire and Ice.",
+		'text' => "Muscle and joint pain* doesn’t stand a chance. Meet the new RockSauce family.",
+		'btn_text' => "Explore RockSauce",
+		'btn_href' => "#",
+		'image' => "/image/data/home-slider/rs-slide.png",
+		'background' => '#111111',
+		'background_btn' => '#c8102e',
+	),
+	array(
+		'title' => "Supercharge your stretch.",
+		'text' => "Meet RockFloss, the newest & most versatile muscle and joint recovery tool. Easy & infinitely reusable.",
+		'btn_text' => "Explore RockFloss",
+		'btn_href' => "#",
+		'image' => "/image/data/home-slider/RockFloss_Band.png",
+		'background' => '#c8102e',
+		'background_btn' => '#111111',
+	),
+);
+?>
+<div id="home-slider" class="h-slider">
+	<?php foreach ($home_slider as $slide) { ?>
+	<div class="h-slider__item" style="background: <?php echo $slide['background']; ?>">
+		<div class="h-slider__inner">
+			<div class="h-slider__left-col">
+		  	<img src="<?php echo $slide['image']; ?>" alt="<?php echo $slide['title']; ?>" class="h-slider__img">
+		  </div>
+		  <div class="h-slider__right-col">
+		  	<h2 class="h-slider__title"><?php echo $slide['title']; ?></h2>
+		  	<div class="h-slider__text"><?php echo $slide['text']; ?></div>
+		  	<a href="<?php echo $slide['btn_href']; ?>" class="h-slider__btn btn-theme-primary" style="background: <?php echo $slide['background_btn']; ?>"><?php echo $slide['btn_text']; ?></a>
+		  </div>
+		</div>
+	</div>
+	<?php } ?>
+</div>
+
+<?php } ?>
+
+
+
+
 
 <?php
 /**
