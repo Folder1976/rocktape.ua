@@ -561,6 +561,41 @@ $home_slider_popular = array(
 
 
 
+<section class="subscribe">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2 class="subscribe__title">Будь в курсе новостей</h2>
+				<div class="subscribe__text">Подпишитесь на нашу рассылку, чтобы оставаться в курсе последних новостей от RockTape, включая новые продукты, рекламные акции и события в вашем регионе.</div>
+			</div>
+			<div class="col-md-6">
+				<form action="" method="post">
+					<input class="form-control" type="text" name="name" value="" placeholder="Имя" required>
+					<input class="form-control" type="email" name="email" value="" placeholder="Email" required>
+					<input type="submit" value="Подписаться" class="button">
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php
 /**
  * Slideshow modules
