@@ -55,7 +55,16 @@
                 <?php if (isset($error_banner_image[$image_row][$language['language_id']])) { ?>
                 <span class="error"><?php echo $error_banner_image[$image_row][$language['language_id']]; ?></span>
                 <?php } ?>
-                <?php } ?></td>
+                <?php } ?>
+              <br>
+              
+              <br><span class="cust_f">Текст : </span><input class="cust_v" type="text" name="banner_image[<?php echo $image_row; ?>][text]" value="<?php echo $banner_image['text']; ?>" />
+              <br><span class="cust_f">Кнопка : </span><input class="cust_v" type="text" name="banner_image[<?php echo $image_row; ?>][btn_text]" value="<?php echo $banner_image['btn_text']; ?>" />
+              <br><span class="cust_f">Фон : </span><input class="cust_v" type="text" name="banner_image[<?php echo $image_row; ?>][background]" value="<?php echo $banner_image['background']; ?>" />
+              <br><span class="cust_f">Цвет кнопки : </span><input class="cust_v" type="text" name="banner_image[<?php echo $image_row; ?>][background_btn]" value="<?php echo $banner_image['background_btn']; ?>" />
+              
+              
+              </td>
               <td class="left"><input type="text" name="banner_image[<?php echo $image_row; ?>][link]" value="<?php echo $banner_image['link']; ?>" /></td>
               <td class="left"><div class="image"><img src="<?php echo $banner_image['thumb']; ?>" alt="" id="thumb<?php echo $image_row; ?>" />
                   <input type="hidden" name="banner_image[<?php echo $image_row; ?>][image]" value="<?php echo $banner_image['image']; ?>" id="image<?php echo $image_row; ?>"  />
@@ -77,6 +86,16 @@
     </div>
   </div>
 </div>
+<style>
+  .cust_f{
+    width: 90px;
+    display: -webkit-inline-box;
+  }
+  .cust_v{
+    width: calc(100% - 100px);
+  }
+  
+</style>
 <script type="text/javascript"><!--
 var image_row = <?php echo $image_row; ?>;
 
@@ -87,8 +106,16 @@ function addImage() {
 	<?php foreach ($languages as $language) { ?>
 	html += '<input type="text" name="banner_image[' + image_row + '][banner_image_description][<?php echo $language['language_id']; ?>][title]" value="" /> <img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /><br />';
     <?php } ?>
-	html += '</td>';	
-	html += '<td class="left"><input type="text" name="banner_image[' + image_row + '][link]" value="" /></td>';	
+ 
+  html += '<br><br><span class="cust_f">Текст : </span><input class="cust_v" type="text" name="banner_image[' + image_row + '][text]" value="" />';
+  html += '<br><span class="cust_f">Кнопка : </span><input class="cust_v" type="text" name="banner_image[' + image_row + '][btn_text]" value="" />';
+  html += '<br><span class="cust_f">Фон : </span><input class="cust_v" type="text" name="banner_image[' + image_row + '][background]" value="" />';
+  html += '<br><span class="cust_f">Цвет кнопки : </span><input class="cust_v" type="text" name="banner_image[' + image_row + '][background_btn]" value="" />';
+       
+ 	html += '</td>';	
+	html += '<td class="left"><input type="text" name="banner_image[' + image_row + '][link]" value="" />';
+  
+  html += '</td>';	
 	html += '<td class="left"><div class="image"><img src="<?php echo $no_image; ?>" alt="" id="thumb' + image_row + '" /><input type="hidden" name="banner_image[' + image_row + '][image]" value="" id="image' + image_row + '" /><br /><a onclick="image_upload(\'image' + image_row + '\', \'thumb' + image_row + '\');"><?php echo $text_browse; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$(\'#thumb' + image_row + '\').attr(\'src\', \'<?php echo $no_image; ?>\'); $(\'#image' + image_row + '\').attr(\'value\', \'\');"><?php echo $text_clear; ?></a></div></td>';
 	html += '<td class="left"><a onclick="$(\'#image-row' + image_row  + '\').remove();" class="button"><?php echo $button_remove; ?></a></td>';
 	html += '</tr>';

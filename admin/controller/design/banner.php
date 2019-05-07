@@ -342,6 +342,8 @@ class ControllerDesignBanner extends Controller {
 
 		$this->data['token'] = $this->session->data['token'];
 
+	
+		
 		if (isset($this->request->post['name'])) {
 			$this->data['name'] = $this->request->post['name'];
 		} elseif (!empty($banner_info)) {
@@ -383,9 +385,16 @@ class ControllerDesignBanner extends Controller {
 
 			$this->data['banner_images'][] = array(
 				'banner_image_description' => $banner_image['banner_image_description'],
+		
+				'text'                     => $banner_image['text'],
+				'btn_text'                     => $banner_image['btn_text'],
+				'background'                     => $banner_image['background'],
+				'background_btn'                     => $banner_image['background_btn'],
+		
 				'link'                     => $banner_image['link'],
 				'image'                    => $image,
-				'thumb'                    => $this->model_tool_image->resize($image, 100, 100)
+				'thumb'                    => $this->model_tool_image->resize($image, 100, 100),
+				
 			);	
 		} 
 

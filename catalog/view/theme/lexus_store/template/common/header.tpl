@@ -375,7 +375,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<?php if ( true ) { // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
+<?php if ( $_SERVER['REQUEST_URI'] == '/' ) { // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
 <section class="home-full-video">
 	<div class="home-full-video__wrap">
 		<video loop="loop" autoplay="" playsinline="" muted="" preload="none" src="/image/data/video/video-1.mp4" style="margin: 0px;" width="1280" height="720">
@@ -405,6 +405,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <?php
 // home slider
+/*
 $home_slider = array(
 	array(
 		'title' => "The Official Knee Sleeves of CrossFit®",
@@ -443,6 +444,9 @@ $home_slider = array(
 		'background_btn' => '#111111',
 	),
 );
+*/
+
+
 ?>
 <div id="home-slider" class="h-slider">
 	<?php foreach ($home_slider as $slide) { ?>

@@ -159,6 +159,28 @@ class ControllerCommonHeader extends Controller {
 			'module/cart'
 		);
 
+		
+				$this->load->model('design/banner');
+				
+		$this->data['home_slider'] = array();
+		
+		$results = $this->model_design_banner->getBanner(11);
+
+		foreach ($results as $result) {
+			//if (file_exists(DIR_IMAGE . $result['image'])) {
+				$this->data['home_slider'][] = array(
+					'title' => $result['title'],
+					'btn_href'  => $result['link'],
+					'image' => '/image/'.$result['image'],
+					'text'                  => $result['text'],
+					'btn_text'              => $result['btn_text'],
+					'background'            => $result['background'],
+					'background_btn'        => $result['background_btn'],
+		
+				);
+			//}
+		}
+		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/header.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/common/header.tpl';
 		} else {
@@ -169,3 +191,4 @@ class ControllerCommonHeader extends Controller {
 	} 	
 }
 ?>
+
