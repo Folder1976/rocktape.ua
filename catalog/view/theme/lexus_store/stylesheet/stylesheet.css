@@ -1482,7 +1482,7 @@ body.layout-boxed-lg #page {
   padding: 0;
   background: none;
   border-bottom: none;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
   font-size: 26px;
   font-weight: 400;
   text-transform: uppercase;
@@ -3513,9 +3513,7 @@ body.layout-boxed-lg #page {
 }
 
 .sidebar .pav-category .box-heading {
-
-  background-color: #494949;
-
+  background-color: #fff;
 }
 
 .sidebar .pav-category #pav-categorymenu {
@@ -3835,16 +3833,18 @@ ul.box-filter span {
 } 
 
 #content ul {
-
 	list-style-type: square !important;
-
+  color: #111;
+  text-align: left;
+}
+#content ul li,
+#content ul li a {
+  text-align: left;
 }
 
-.content-blog h1 {
-
+/*.content-blog h1 {
 font-size: 22px !important;
-
-}
+}*/
 
 #page #content h1 {
 
@@ -5737,7 +5737,7 @@ width: 48%;
   color: #fff;
   padding: 6px 20px;
   transition: all 0.5s ease-in-out 0s;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -7144,12 +7144,28 @@ body,
 
 }
 
+.pav-comment {
+  margin-top: 40px;
+}
+
+.pav-comment h4 {
+  font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: #111;
+}
+
+
 .pav-comment .btn {
-
 	display: block;
-
-	margin: auto;
-
+	margin-left: auto;
+  font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  text-transform: uppercase;
+  padding: 10px 40px;
 }
 
 .information a{

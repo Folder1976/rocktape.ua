@@ -8,15 +8,13 @@
 		</aside>	
 	<?php endif; ?> 
 	<section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">
-		<?php require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>
+		<?php // require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>
 		<div id="content">
 			<?php echo $content_top; ?>
-			<header class="pav-header">
-				<h1><?php echo $heading_title; ?></h1>
-				<a class="rss-wrapper" href="<?php echo $category_rss;?>"><span class="fa fa-feed"></span></a>	
-			</header>  
+
+
 			<section class="pav-category wrapper blog-wrapper">
-				<?php if( !empty($children) ) { ?>
+				<?php if(false) {//( !empty($children) ) { ?>
 				<div class="pav-children no-margin">
 					<h3><?php echo $this->language->get('text_children');?></h3>
 					<div class="children-wrap row">				

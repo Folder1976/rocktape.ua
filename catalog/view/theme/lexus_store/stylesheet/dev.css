@@ -5,7 +5,7 @@
     position: relative;
     /*min-height: 514px;*/
     min-height: 77vh;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     background-image: url(/image/data/video/foto.png);
     -webkit-background-size: cover;
     background-size: cover;
@@ -49,7 +49,7 @@
     font-size: 70px;
     line-height: 1.1em;
     text-shadow: 0em 0em 0.3em rgba(0,0,0,0.4);
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     margin-bottom: 10px;
     text-align: left;
 }
@@ -156,7 +156,7 @@
 }
 
 .h-slider__title {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     font-size: 46px;
     font-weight: 300;
     line-height: 1.1em;
@@ -174,7 +174,7 @@
 }
 
 .h-slider__btn {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
@@ -295,7 +295,7 @@
 }
 
 .h-slider-popular__title {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     font-size: 22px;
     font-weight: 500;
     color: #fff;
@@ -383,7 +383,7 @@
 
 .subscribe__title {
     color: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     font-size: 38px;
     font-weight: 400;
     line-height: 1.2em;
@@ -412,7 +412,7 @@
 }
 
 .subscribe .button {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     width: 100%;
@@ -434,7 +434,7 @@
 
 .footer-box__title {
     color: #c8102e;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
     font-size: 26px;
     font-weight: 400;
     text-transform: uppercase;

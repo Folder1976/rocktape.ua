@@ -8,7 +8,7 @@
 	
 <?php endif; ?> 
 <div class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">	
-	 <?php require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>  
+	 <?php //require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>  
 <div id="content" class="content-blog"><?php echo $content_top; ?>
   <h1><?php echo $heading_title; ?></h1>
   
@@ -37,7 +37,7 @@
 		</div>
 		<?php if( $blog['thumb_large'] ) { ?>
 			<div class="image">
-				<img src="<?php echo $blog['thumb_large'];?>" title="<?php echo $blog['title'];?>" alt="<?php echo $blog['title'];?>"/><hr>
+				<img src="<?php echo $blog['thumb_large'];?>" title="<?php echo $blog['title'];?>" alt="<?php echo $blog['title'];?>"/>
 			</div>
 			<?php } ?>
 		
@@ -184,16 +184,16 @@
 					<form action="<?php echo $comment_action;?>" method="post" id="comment-form">
 						<div class="message" style="display:none"></div>
 						<div class="form-group">
-							<label for="comment-user"><?php echo $this->language->get('entry_name');?></label>
-							<input class="form-control" type="text" name="comment[user]" value="" id="comment-user"/>
+							<label for="comment-comment" style="display:none"><?php echo $this->language->get('entry_comment');?></label>
+							<textarea class="form-control" name="comment[comment]"  id="comment-comment" placeholder="<?php echo $this->language->get('entry_comment');?>"></textarea>
 						</div>
 						<div class="form-group">
-							<label for="comment-email"><?php echo $this->language->get('entry_email');?></label>
-							<input class="form-control" type="text" name="comment[email]" value="" id="comment-email"/>
+							<label for="comment-user" style="display:none"><?php echo $this->language->get('entry_name');?></label>
+							<input class="form-control" type="text" name="comment[user]" value="" id="comment-user" placeholder="<?php echo $this->language->get('entry_name');?>" />
 						</div>
-						<div class="form-groupa">
-							<label for="comment-comment"><?php echo $this->language->get('entry_comment');?></label>
-							<textarea class="form-control" name="comment[comment]"  id="comment-comment"></textarea>
+						<div class="form-group">
+							<label for="comment-email" style="display:none"><?php echo $this->language->get('entry_email');?></label>
+							<input class="form-control" type="text" name="comment[email]" value="" id="comment-email" placeholder="<?php echo $this->language->get('entry_email');?>" />
 						</div>
 					<?php if( $config->get('enable_recaptcha') ) { ?>
 						<div class="recaptcha">
