@@ -82,7 +82,93 @@
 		</div>
 	</div>
 	<?php } elseif((isset($themeConfig['enable_footer_center'])&&$themeConfig['enable_footer_center'])) { ?>
+
+
+	<?php
+	$blog = array(
+		array(
+			'title' => 'Статья из блога 1',
+			'href' => '#'
+		),
+		array(
+			'title' => 'Статья из блога 2',
+			'href' => '#'
+		),
+		array(
+			'title' => 'Статья из блога 3',
+			'href' => '#'
+		),
+		array(
+			'title' => 'Статья из блога 4',
+			'href' => '#'
+		),
+		array(
+			'title' => 'Статья из блога 5',
+			'href' => '#'
+		),
+	);
+
+	$partners = array(
+		array(
+			'name' => 'runukraine',
+			'logo' => '/image/data/partners/runukraine.png'
+		),
+		array(
+			'name' => 'crossfitbanda',
+			'logo' => '/image/data/partners/crossfitbanda.svg'
+		),
+		array(
+			'name' => 'crossfitbanda',
+			'logo' => '/image/data/partners/crossfitbanda.svg'
+		),
+		array(
+			'name' => 'runukraine',
+			'logo' => '/image/data/partners/runukraine.png'
+		),
+	);
+	?>
+
+
+
 	<div class="footer-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-box">
+						<h4 class="footer-box__title">Наша миссия</h4>
+						<div class="footer-box__text">
+							Мы даем врачам, тренерам, спортсменам инструменты, которые помогают их пациентам и им самим быть сильными дольше с помощью лучших кинезиологических тейпов, передового обучения и защитной экипировки. Мы хотим, чтобы люди двигались больше и правильно.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="footer-box">
+						<h4 class="footer-box__title">Последнее из блога</h4>
+						<ul class="footer-box__list">
+							<?php foreach ($blog as $blog_link) { ?>
+								<li><a href="<?php echo $blog_link['href']; ?>"><?php echo $blog_link['title']; ?></a></li>
+							<?php } ?>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-12">
+					<div class="footer-box">
+						<h4 class="footer-box__title">Партнеры</h4>
+						<div class="footer-box__partners">
+							<?php foreach ($partners as $partner) { ?>
+							<div class="footer-box__partners-item">
+								<img src="<?php echo $partner['logo']; ?>" alt="<?php echo $partner['name']; ?>">
+							</div>
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="footer-bottom">
 		<div class="container">
 			<div class="row">
 		  		<?php if( isset($themeConfig['widget_contactus_data'][$LANGUAGE_ID]) && trim($themeConfig['widget_contactus_data'][$LANGUAGE_ID]) ) { ?>
@@ -146,6 +232,7 @@
 			 </div> 
 		</div>
 	</div>
+
 	<?php  } ?>	
 	<?php
 	/**
@@ -181,7 +268,7 @@
 			</div>
 			<?php if( isset($themeConfig['widget_paypal_data'][$LANGUAGE_ID]) ) {?>
 				<div class="paypal pull-right">
-					<?php echo html_entity_decode( $themeConfig['widget_paypal_data'][$LANGUAGE_ID], ENT_QUOTES, 'UTF-8' ); ?>
+					<?php //echo html_entity_decode( $themeConfig['widget_paypal_data'][$LANGUAGE_ID], ENT_QUOTES, 'UTF-8' ); ?>
 			</div>
 			 <?php } ?>
 		</div>

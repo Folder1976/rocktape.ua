@@ -1,11 +1,9 @@
 <div class="blog-item">
 	<div class="blog-header clearfix">
-			<?php if( $config->get('cat_show_title') ) { ?>
-		<div class="blog-header clearfix">
 		
-		<h3 class="blog-title">	<a href="<?php echo $blog['link'];?>" title="<?php echo $blog['title'];?>"><?php echo $blog['title'];?></a></h3>
-		</div>
-		<?php } ?>
+
+
+		<?php if (false) { ?>
 		<div class="blog-meta">
 			
 			<?php if( $config->get('cat_show_created') ) { ?>
@@ -30,19 +28,32 @@
 			<?php if( $config->get('cat_show_comment_counter') ) { ?>
 			<span class="comment_count"><i class="icon-comments">   <?php echo $this->language->get("text_comment_count");?></i> <?php echo $blog['comment_count'];?></span>
 			<?php } ?>
-		</div>	
+		</div>
+		<?php } ?>
+
+
 	</div>
+
+
+
 	<div class="blog-body">
 		<?php if( $blog['thumb'] && $config->get('cat_show_image') )  { ?>
 		<img src="<?php echo $blog['thumb'];?>" title="<?php echo $blog['title'];?>" alt="<?php echo $blog['title'];?>">
 		<?php } ?>
+
+		<?php if( $config->get('cat_show_title') ) { ?>
+			<div class="blog-header clearfix">
+				<h3 class="blog-title"><a href="<?php echo $blog['link'];?>" title="<?php echo $blog['title'];?>"><?php echo $blog['title'];?></a></h3>
+			</div>
+		<?php } ?>
+
 		<?php if( $config->get('cat_show_description') ) {?>
 			<div class="description">
 				<?php echo $blog['description'];?>
 			</div>
 			<?php } ?>
 		
-			<?php if( $config->get('cat_show_readmore') ) { ?>
+			<?php if (false) {//( $config->get('cat_show_readmore') ) { ?>
 			<div class="blog-readmore"><a href="<?php echo $blog['link'];?>" class="button"><?php echo $this->language->get('text_readmore');?></a></div>
 			<?php } ?>
 	</div>	
