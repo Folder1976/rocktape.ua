@@ -1169,15 +1169,9 @@ body.layout-boxed-lg #page {
 }
 
 #topbar {
-
-  border-bottom: 1px solid #DDDDDD;
-
-  color: #999999;
-
-  background: #f4f4f4;
-
+  color: #686868;
+  background: #111;
   font-size: 12px;
-
 }
 
 #topbar .links .account-access:hover .welcome {
@@ -1187,18 +1181,9 @@ body.layout-boxed-lg #page {
 }
 
 #topbar .wrapper>div {
-
   padding: 9px 10px;
-
-  border-left: 1px solid #DDDDDD;
-
 }
 
-#topbar .wrapper>div:first-child {
-
-  border: none;
-
-}
 
 #topbar .wrapper>div a {
 
@@ -1324,7 +1309,7 @@ body.layout-boxed-lg #page {
 
 #header {
 
-  background: #FFFFFF;
+  background: #111;
 
 }
 
@@ -5647,10 +5632,12 @@ width: 48%;
 
 }
 
-#pav-mainnav .navbar ul.nav  > li:hover > a {
+#pav-mainnav .navbar ul.nav a {
+  transition: all .3s;
+}
 
-  background-color: #B32424 \9;
-
+#pav-mainnav .navbar ul.nav a:hover {
+  opacity: .7;
 }
 
 #pav-mainnav .navbar ul.nav  > li:hover > a:before {
@@ -5685,8 +5672,6 @@ width: 48%;
 }
 
 #pav-mainnav .navbar ul.nav > li > a:before {
-
-  background-color: #B32424;
 
   height: 100%;
 

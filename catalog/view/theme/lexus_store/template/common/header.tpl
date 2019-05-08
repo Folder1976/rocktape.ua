@@ -189,19 +189,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 						</div>
 					</div>
+					<div class="pull-left"><a href="tel:+380734070755">+38 (073) 407-07-55</a></div>
+					<div class="pull-left"><a href="tel:+380972808201">+38 (097) 280-82-01</a></div>
 
-                    <!-- <div class="currency pull-left">
-                        <?php echo $currency; ?>
-                    </div> -->
-                    <div class="language pull-left">
-                        <?php echo $language; ?>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 hidden-sm hidden-xs pull-right">
-                    <?php echo $cart; ?>
-                </div>
+          <!-- <div class="currency pull-left">
+              <?php echo $currency; ?>
+          </div> -->
+          <div class="language pull-left">
+              <?php echo $language; ?>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs pull-right">
+            <?php echo $cart; ?>
+        </div>
 
-                <div class="show-mobile hidden-lg hidden-md pull-left">
+        <div class="show-mobile hidden-lg hidden-md pull-left">
 					<div class="quick-user pull-left hidden-sm">
 						<div class="quickaccess-toggle">
 							<i class="icon-user"></i>
@@ -265,111 +267,113 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<section id="header-main">
 			<div class="container">
 				<div class="row header-wrap">
-					<div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 inner">
+					<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 inner">
 					  <?php if ($logo) { ?>
 					  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 					  <?php } ?>
 
-                        <div id="search" class="hidden-md hidden-sm hidden-xs">
+                        <!-- <div id="search" class="hidden-md hidden-sm hidden-xs">
                             <input type="text" name="search" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" class="<?php echo $seo_search; ?>" />
                             <span class="button-search"></span>
-                        </div>
+                        </div> -->
 
 
 					</div>
 
-					<div class="header-right col-lg-6 col-md-8 col-sm-12 col-xs-12 header-hidden inner">
-						<?php
+					<div class="header-right col-lg-10 col-md-9 col-sm-8 col-xs-6 header-hidden inner">
+						<section id="pav-mainnav">
+							<div class="container">
+								<div class="mainnav-wrap">
+									<div class="row">
+										<div class="hidden-lg col-md-2 col-sm-9 col-xs-9 pull-right">
+						                        <div id="search-small">
+						                            <input type="text" name="search1" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
+						                            <span class="button-search"></span>
+						                        </div>
+										</div>
+										<div class="col-lg-12">
+										 	<div class="navbar navbar-inverse">
+										<nav class="pav-megamenu" role="navigation">
+												<?php
+												/**
+												 * Main Menu modules: as default if do not put megamenu, the theme will use categories menu for main menu
+												 */
+												$modules = $helper->getModulesByPosition( 'mainmenu' );
+												if( count($modules) && !empty($modules) ){
+
+												?>
+
+													<?php foreach ($modules as $module) { ?>
+														<?php echo $module; ?>
+													<?php } ?>
+
+												<?php } elseif ($categories) {  ?>
+
+
+													<div class="navbar-header">
+														<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+														<span class="sr-only">Toggle navigation</span>
+														<span class="icon-bar"></span>
+														<span class="icon-bar"></span>
+														<span class="icon-bar"></span>
+														</button>
+													</div>
+
+												    <div class="collapse navbar-collapse navbar-ex1-collapse">
+													    <ul class="nav navbar-nav">
+															<?php foreach ($categories as $category) { ?>
+															<?php if ($category['children']) { ?>
+															<li class="parent dropdown deeper "><a href="<?php echo $category['href'];?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?>
+															<b class="caret"></b>
+															</a>
+															<?php } else { ?>
+															<li ><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+															<?php } ?>
+															<?php if ($category['children']) { ?>
+															  <ul class="dropdown-menu">
+																<?php for ($i = 0; $i < count($category['children']);) { ?>
+
+																  <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
+																  <?php for (; $i < $j; $i++) { ?>
+																  <?php if (isset($category['children'][$i])) { ?>
+																  <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
+																  <?php } ?>
+																  <?php } ?>
+
+																<?php } ?>
+															  </ul>
+															  <?php } ?>
+															</li>
+															<?php } ?>
+															<li><a href="http://training.rocktape.ua/" target="_blank">Обучение</a></li>
+															<li><a href="<?php echo $shipping; ?>" title="<?php echo $text_shipping; ?>"><?php echo $text_shipping; ?></a></li>
+															<li><a href="<?php echo $contact; ?>" title="<?php echo $text_contact; ?>"><?php echo $text_contact; ?></a></li>
+															<li><a href="http://rocktape.ua/pavblog" title="<?php echo $text_blog; ?>"><?php echo $text_blog; ?></a></li>
+														</ul>
+													</div>
+												<?php } ?>
+										</nav>
+
+										  	</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>  <!-- /#pav-mainnav -->
+
+
+						<?php /*
 							$LANGUAGE_ID = $this->config->get( 'config_language_id' );
 					 		if( isset($themeConfig['widget_delivery_data'][$LANGUAGE_ID]) ) { ?>
-							<?php echo html_entity_decode( $themeConfig['widget_delivery_data'][$LANGUAGE_ID], ENT_QUOTES, 'UTF-8' ); ?>
-
-					 	<?php } ?>
-					</div>
+							<?php echo html_entity_decode( $themeConfig['widget_delivery_data'][$LANGUAGE_ID], ENT_QUOTES, 'UTF-8' ); */?>
+					 	<?php //} ?>
+  				</div>
 
 				</div>
 			</div>
 	  </section>
-<section id="pav-mainnav">
-	<div class="container">
-		<div class="mainnav-wrap">
-			<div class="row">
-				<div class="hidden-lg col-md-2 col-sm-9 col-xs-9 pull-right">
-                        <div id="search-small">
-                            <input type="text" name="search1" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
-                            <span class="button-search"></span>
-                        </div>
-				</div>
-				<div class="col-lg-11 col-md-10 col-sm-12 col-xs-12">
-				 	<div class="navbar navbar-inverse">
-				<nav class="pav-megamenu" role="navigation">
-						<?php
-						/**
-						 * Main Menu modules: as default if do not put megamenu, the theme will use categories menu for main menu
-						 */
-						$modules = $helper->getModulesByPosition( 'mainmenu' );
-						if( count($modules) && !empty($modules) ){
 
-						?>
-
-							<?php foreach ($modules as $module) { ?>
-								<?php echo $module; ?>
-							<?php } ?>
-
-						<?php } elseif ($categories) {  ?>
-
-
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								</button>
-							</div>
-
-						    <div class="collapse navbar-collapse navbar-ex1-collapse">
-							    <ul class="nav navbar-nav">
-									<?php foreach ($categories as $category) { ?>
-									<?php if ($category['children']) { ?>
-									<li class="parent dropdown deeper "><a href="<?php echo $category['href'];?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $category['name']; ?>
-									<b class="caret"></b>
-									</a>
-									<?php } else { ?>
-									<li ><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
-									<?php } ?>
-									<?php if ($category['children']) { ?>
-									  <ul class="dropdown-menu">
-										<?php for ($i = 0; $i < count($category['children']);) { ?>
-
-										  <?php $j = $i + ceil(count($category['children']) / $category['column']); ?>
-										  <?php for (; $i < $j; $i++) { ?>
-										  <?php if (isset($category['children'][$i])) { ?>
-										  <li><a href="<?php echo $category['children'][$i]['href']; ?>"><?php echo $category['children'][$i]['name']; ?></a></li>
-										  <?php } ?>
-										  <?php } ?>
-
-										<?php } ?>
-									  </ul>
-									  <?php } ?>
-									</li>
-									<?php } ?>
-									<li><a href="http://training.rocktape.ua/" target="_blank">Обучение</a></li>
-									<li><a href="<?php echo $shipping; ?>" title="<?php echo $text_shipping; ?>"><?php echo $text_shipping; ?></a></li>
-									<li><a href="<?php echo $contact; ?>" title="<?php echo $text_contact; ?>"><?php echo $text_contact; ?></a></li>
-									<li><a href="http://rocktape.ua/pavblog" title="<?php echo $text_blog; ?>"><?php echo $text_blog; ?></a></li>
-								</ul>
-							</div>
-						<?php } ?>
-				</nav>
-
-				  	</div>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</section>  <!-- /#pav-mainnav -->
 </section>  <!-- /#header -->
 
 

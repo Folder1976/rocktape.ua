@@ -56,6 +56,7 @@
 .home-full-video__text {
     font-size: 28px;
     text-align: left;
+    color: #fff;
 }
 .home-full-video__link {
     display: inline-block;
@@ -501,3 +502,16 @@
 
 
 
+/*
+ * pav-megamenu
+ */
+.pav-megamenu .nav.navbar-nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: 100%;
+}
