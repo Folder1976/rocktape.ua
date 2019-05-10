@@ -25,7 +25,8 @@
 		<?php echo $column_left; ?>
 	</aside>
 <?php endif; ?>
-<section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">
+<!-- <section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12"> -->
+<section class="col-sm-12 col-xs-12">
 <?php require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/breadcrumb.tpl" );  ?>
 
 <div id="content"><?php echo $content_top; ?>
@@ -128,10 +129,11 @@
 	$small = floor(12/$MAX_ITEM_ROW_SMALL);
 	$mini = floor(12/$MAX_ITEM_ROW_MINI);
 	foreach ($products as $i => $product) { ?>
-	<?php if( $i++%$cols == 0 ) { ?>
+	<?php if(false){//( $i++%$cols == 0 ) { ?>
 		  <div class="row">
 	<?php } ?>
-    <div class="col-xs-6 col-lg-<?php echo $span;?> col-sm-<?php echo $small;?> col-xs-<?php echo $mini;?>">
+    <!-- <div class="col-xs-6 col-lg-<?php echo $span;?> col-sm-<?php echo $small;?> col-xs-<?php echo $mini;?>"> -->
+    <div class="col-xs-6 col-lg-3 col-md-4">
     	<div class="product-block">
 	      <?php if ($product['thumb']) { ?>
 	      <div class="image"><?php if( $product['special'] ) {   ?>
@@ -272,7 +274,7 @@ $(document).ready(function() {
 
 <?php if( $SPAN[2] ): ?>
 	<aside class="col-lg-<?php echo $SPAN[2];?> col-md-<?php echo $SPAN[2];?> col-sm-12 col-xs-12">
-		<?php echo $column_right; ?>
+		<?php //echo $column_right; ?>
 	</aside>
 <?php endif; ?>
 
