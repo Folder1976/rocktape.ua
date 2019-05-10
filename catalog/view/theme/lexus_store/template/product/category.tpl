@@ -33,13 +33,13 @@
   <h1 class="heading_title"><span><?php echo $heading_title; ?></span></h1>
 
   <?php if ($thumb || $description) { ?>
-
-  <div class="category-info clearfix">
-    <?php if ($thumb) { ?>
-    <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div><hr>
+    <?php if (false) { //if ($thumb) { ?>
+    <div class="category-info clearfix">
+      <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div><hr>
+    </div>
     <?php } ?>
-  </div>
   <?php } ?>
+
   <?php if ($categories) { ?>
   <div class="category-list clearfix">
   <h2 class="heading_title"><span><?php echo $text_refine; ?></span></h2>
@@ -70,41 +70,56 @@
   </div>
   <?php } ?>
 
+
+
+
+
+
   <?php if ($products) { ?>
-  <div class="product-filter clearfix">
-    <div class="display">
-		<span><?php echo $text_display; ?></span>
-		<span><?php echo $text_list; ?></span>
-		<a onclick="display('grid');"><?php echo $text_grid; ?></a>
-	</div>
-	<div class="limit"><span><?php echo $text_limit; ?></span>
-		<label>
-	      <select class="form-control" onchange="location = this.value;">
-	        <?php foreach ($limits as $limits) { ?>
-	        <?php if ($limits['value'] == $limit) { ?>
-	        <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
-	        <?php } else { ?>
-	        <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
-	        <?php } ?>
-	        <?php } ?>
-	      </select>
-  		</label>
+
+    <div class="product-filter clearfix">
+      <?php if (false) { ?>
+      <div class="display">
+    		<span><?php echo $text_display; ?></span>
+    		<span><?php echo $text_list; ?></span>
+    		<a onclick="display('grid');"><?php echo $text_grid; ?></a>
+    	</div>
+      <?php } ?>
+
+    	<div class="limit custom-select-wrapper"><span><?php echo $text_limit; ?></span>
+    		<label class="custom-select-inner">
+  	      <select class="form-control custom-select" onchange="location = this.value;">
+  	        <?php foreach ($limits as $limits) { ?>
+  	        <?php if ($limits['value'] == $limit) { ?>
+  	        <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
+  	        <?php } else { ?>
+  	        <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
+  	        <?php } ?>
+  	        <?php } ?>
+  	      </select>
+      	</label>
+      </div>
+
+      <div class="product-compare "><a href="<?php echo $compare; ?>" id="compare-total" class="btn"><?php echo $text_compare; ?></a></div>
+
+      <div class="sort custom-select-wrapper"><span><?php echo $text_sort; ?></span>
+        <label class="custom-select-inner">
+  	      <select class="form-control custom-select" onchange="location = this.value;">
+  	        <?php foreach ($sorts as $sorts) { ?>
+  	        <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
+  	        <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+  	        <?php } else { ?>
+  	        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+  	        <?php } ?>
+  	        <?php } ?>
+  	      </select>
+      	</label>
+      </div>
+
     </div>
- 	 <div class="sort"><span><?php echo $text_sort; ?></span>
- 	 	<label>
-	      <select class="form-control" onchange="location = this.value;">
-	        <?php foreach ($sorts as $sorts) { ?>
-	        <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
-	        <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
-	        <?php } else { ?>
-	        <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
-	        <?php } ?>
-	        <?php } ?>
-	      </select>
-    	 </label>
-    </div>
-    <div class="product-compare "><a href="<?php echo $compare; ?>" id="compare-total" class="btn"><?php echo $text_compare; ?></a></div>
-  </div>
+
+
+
 
 <div class="product-list"> <div class="products-block">
     <?php

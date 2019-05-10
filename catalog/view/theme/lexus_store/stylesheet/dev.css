@@ -515,3 +515,55 @@
     margin-left: auto;
     width: 100%;
 }
+
+
+/*
+ * Custom <select>
+ */
+.custom-select {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+    padding: 1.125rem .875rem 1rem;
+    background: transparent;
+    cursor: pointer;
+}
+.custom-select::-ms-expand { 
+    display: none; /* hide the default arrow in ie10 and ie11 */
+}
+.custom-select-wrapper {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.custom-select-wrapper span {
+  padding-bottom: 5px;
+}
+
+.custom-select-inner {
+    position: relative;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    padding: 0;
+    color: #353434;
+    background: #fff;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+.custom-select-inner:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: .9375rem;
+    margin-top: -1px;
+    border-top: 4px solid #e1e1e1;
+    border-top-color: rgb(225, 225, 225);
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
