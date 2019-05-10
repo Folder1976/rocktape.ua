@@ -567,3 +567,112 @@
     border-right: 4px solid transparent;
     border-left: 4px solid transparent;
 }
+
+
+/*
+ * Cart and checkout
+ */
+
+.cart-prod-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 90px;
+    grid-column-gap: 30px;
+    margin-bottom: 40px;
+}
+.cart-prod-list__item {}
+
+.cart-prod-item__image-wrap {
+    position: relative;
+    width: 80px;
+    float: left;
+}
+
+.cart-prod-item__remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    display: block;
+    width: 36px;
+    height: 36px;
+    z-index: 1;
+    opacity: .8;
+    cursor: pointer;
+}
+.cart-prod-item__remove:hover {
+    opacity: 1;
+}
+.cart-prod-item__remove:before,
+.cart-prod-item__remove:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #000;
+}
+.cart-prod-item__remove:before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -o-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.cart-prod-item__remove:after {
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    -o-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.cart-prod-item__name {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.25em;
+    color: #353434;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.cart-prod-item__name {
+    font-size: 14px;
+}
+
+.cart-prod-item__total,
+.cart-prod-item__price {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.cart-prod-item__quantity {
+    margin-left: 100px;
+}
+.cart-prod-item__quantity-input {
+    max-width: 100px;
+    display: inline-block;
+}
+.cart-prod-item__upd-btn {
+    display: none;
+    border: none;
+}
+
+.cart-prod-item__quantity.is-changed .cart-prod-item__upd-btn {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+

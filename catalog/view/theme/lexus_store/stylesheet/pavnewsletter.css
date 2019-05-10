@@ -3,39 +3,48 @@
     display: none;
 }
 .newsletter_block .title_block, .newsletter_block h4 {
-    padding: 15px 15px 0px 0px;
-    text-shadow: 0 1px 0 #FFFFFF;
-    font-size: 16px;
-    font-family: "Montserrat",Helvetica,Arial,sans-serif;
-    text-align: left;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
     text-transform: uppercase;
-    color: black;
+    padding: 40px 0 20px;
+    color: #000;
+    text-align: center;
 }
 
 .newsletter_block p{
 	padding:0px;
+    text-align: center;
 }
 .newsletter_block input.inputNew {
-    border-color: 1px solid #CCCCCC;
-    color: #999999;
-    font-size: 13px;
+    border: 1px solid #e1e1e1;
+    color: #353434;
+    font-size: 12px;
     height: 34px;
-    padding: 0 5px;
+    padding: 0 10px;
     position: relative;
     top: 0px;
     width: 265px;
     background: #fff;
+    border-radius: 3px;
+    margin-right: 15px;
+    line-height: 52px;
+    height: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .newsletter_block input.button_mini {
     border: 0 none;
     cursor: pointer;
-    height: 34px;
+    height: 52px;
     left: -4px;
     position: relative;
     width: 95px;
     color: White;
     font-size: 14px;
     text-align: center;
+    border-radius: 3px;
 }
 .close .fa {
     font-size: 13px;

@@ -196,7 +196,7 @@
 		</div>
 	    </div>
 		</div>
-	 <?php if( $i%$cols == 0 || $i==count($products) ) { ?>
+	 <?php if (false) { //( $i%$cols == 0 || $i==count($products) ) { ?>
 	 </div>
 	 <?php } ?>
 

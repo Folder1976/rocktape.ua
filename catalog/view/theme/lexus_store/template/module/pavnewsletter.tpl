@@ -3,7 +3,7 @@
 	<?php if( trim($description) ) { ?>
 	<div class="description col-lg-6 col-md-5 col-sm-12 col-xs-12 pavblock"><?php echo html_entity_decode($description);?></div>
 	<?php } ?>
-	<div class="block_content col-lg-6 col-md-7 col-sm-12 col-xs-12 pavblock">
+	<div class="block_content col-lg-12 pavblock">
 			<form id="formNewLestter" method="post" action="<?php echo $action; ?>">
 			<p>
 				<input type="text" class="inputNew" <?php if(!isset($customer_email)): ?> onblur="javascript:if(this.value=='')this.value='<?php echo $this->language->get("default_input_text");?>';" onfocus="javascript:if(this.value=='<?php echo $this->language->get("default_input_text");?>')this.value='';"<?php endif; ?> value="<?php echo isset($customer_email)?$customer_email:$this->language->get("default_input_text");?>" size="18" name="email">

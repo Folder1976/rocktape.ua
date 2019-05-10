@@ -1352,11 +1352,9 @@ body.layout-boxed-lg #page {
 }
 
 #pav-mass-bottom {
-
-  background: #F4F4F4;
-
+  background: #FFF;
   padding-bottom: 10px;
-
+  border-top: 1px solid #e1e1e1;
 }
 
 #pav-mass-bottom .social_custom {
@@ -5425,6 +5423,17 @@ font-size: 22px !important;
   text-align: right;
 
 }
+
+.page-checkout-cart h1,
+.page-checkout-checkout h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 40px 0 40px;
+  color: #000;
+}
+
 
 .checkout-content .left {
 
