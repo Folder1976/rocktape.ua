@@ -13,13 +13,13 @@
 			<div class="checkout-heading">&nbsp;</div>
 			
 			<div class="checkout-content" style="display: block">
-				<form id="checkout_form" onsubmit="return false;">
+				<form id="checkout_form" class="checkout_form" onsubmit="return false;">
 					<div class="left">
 						<table class="form">
 							<tr>
 								<td><span class="required">*</span> <?php echo $entry_firstname; ?></td>
 								<td><input type="text" name="firstname" value="<?php echo $firstname?>"
-										   class="large-field"/></td>
+										   class="large-field" /></td>
 							</tr>
 							<tr>
 								<td><span class="required">*</span> <?php echo $entry_lastname; ?></td>
@@ -73,8 +73,9 @@
 							
 							<tr>
 								<td><?php echo $column_comment; ?>:</td>
-								<td><textarea rows="3" style="width: 300px"
-											  name="comment"><?php echo $comment?></textarea></td>
+								<td><?php if (false){ ?><textarea rows="3" style="width: 300px"
+											  name="comment"><?php echo $comment?></textarea><?php } ?><input type="text" name="comment" value="<?php echo $comment?>"
+										   class="large-field"/></td>
 							</tr>
 						</table>
 					</div>
@@ -85,7 +86,7 @@
 							<table class="form">
 								<?php foreach($shipping_methods as $shipping_method) { ?>
 								<tr>
-									<td colspan="3"><b><?php echo $shipping_method['title']; ?></b></td>
+									<td colspan="3"><?php echo $shipping_method['title']; ?></td>
 								</tr>
 								<?php if(!$shipping_method['error']) { ?>
 									<?php foreach($shipping_method['quote'] as $quote) { ?>
@@ -122,7 +123,7 @@
 								<p><?php echo $text_shipping_method; ?></p>
 							<table class="form">
 								<tr>
-									<td colspan="3"><b><?php echo $shipping_method['title']; ?></b></td>
+									<td colspan="3"><?php echo $shipping_method['title']; ?></td>
 								<?php foreach($shipping_method['quote'] as $quote) { ?>
 									<td><label><?php echo $quote['title']; ?></label></td>
 									<td style="text-align: right;"><label><?php echo $quote['text']; ?></label></td>

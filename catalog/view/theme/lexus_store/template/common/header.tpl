@@ -593,7 +593,67 @@ $home_slider_popular = array(
 
 
 
+<?php if ( $_SERVER['REQUEST_URI'] == '/rock-tape-producer' ) { ?>
+<?php
+$cat_slider = array(
+  array(
+    'img' => '/image/data/cat-home/2019-04-Med-Tape-Launch---Shop-Hero-v1.jpg',
+    'title' => 'New look. Same great tape.',
+    'text' => 'Our new tape line exclusively for medical professionals is here.',
+    'btn-text' => 'Shop Medical Tape',
+    'btn-href' => '#'
+  ),
+  array(
+    'img' => '/image/data/cat-home/flex.jpg',
+    'title' => 'One Band. Unlimited possibilities.',
+    'text' => 'NEW from RockTape, meet RockBand Flex. Rehabilitation, mobility and strength training in a single, elegant band.',
+    'btn-text' => 'Explore Flex',
+    'btn-href' => '#'
+  ),
+  array(
+    'img' => '/image/data/cat-home/2018-04_buy_2_get_1_rockfloss_medical_sale_-_shop_hero_v1__29522.jpg',
+    'title' => "Supercharge your stretch with RockFloss.",
+    'text' => 'Unglue sticky and stiff muscles, reduce joint pain, and improve flexibility. Available in 2" and 4" sizes.',
+    'btn-text' => 'Shop RockFloss',
+    'btn-href' => '#'
+  ),
+  array(
+    'img' => '/image/data/cat-home/tape-big.jpg',
+    'title' => "The world's best kinesiology tape.",
+    'text' => 'Soothe pain and improve performance with RockTape.',
+    'btn-text' => 'Shop RockTape',
+    'btn-href' => '#'
+  ),
+  array(
+    'img' => '/image/data/cat-home/cf-assasin.jpg',
+    'title' => 'The Official Knee Sleeve of CrossFit®',
+    'text' => 'Competition proven knee protection designed for The Fittest on Earth™ - get yours, as worn by the athletes of the 2018 Reebok CrossFit® Games!',
+    'btn-text' => 'Explore Assassins Knee Sleeves',
+    'btn-href' => '#'
+  ),
+);
+?>
 
+
+
+
+<div class="cat-home-slider js-cat-home-slider">
+
+  <?php foreach ($cat_slider as $slide) { ?>
+  <div class="cat-home-slider__item cat-home-slide">
+    <img src="<?php echo $slide['img']; ?>" alt="<?php echo $slide['title']; ?>" class="cat-home-slide__image">
+    <div class="cat-home-slide__content">
+      <div class="cat-home-slide__arrow cat-home-slide__arrow--prev"><span></span></div>
+      <div class="cat-home-slide__title"><?php echo $slide['title']; ?></div>
+      <div class="cat-home-slide__text"><?php echo $slide['text']; ?></div>
+      <a href="<?php echo $slide['btn-href']; ?>" class="btn cat-home-slide__btn"><?php echo $slide['btn-text']; ?></a>
+      <div class="cat-home-slide__arrow cat-home-slide__arrow--next"><span></span></div>
+    </div>
+  </div>
+  <?php } ?>
+
+</div>
+<?php } ?>
 
 
 

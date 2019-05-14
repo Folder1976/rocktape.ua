@@ -314,4 +314,36 @@ $(window).ready( function(){
         }
       ]
   });
+
+  // cat-home slider
+  $('.js-cat-home-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false, // true,
+    autoplaySpeed: 3000,
+    adaptiveHeight: false,
+    // fade: true,
+    cssEase: 'linear',
+    customPaging: function(slick,index) {
+      return '<span></span>';
+    },
+    responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            dots: false,
+          }
+        }
+      ]
+  });
+
+  $('.js-cat-home-slider').on('click', '.cat-home-slide__arrow--prev', function(){
+    $('.js-cat-home-slider').slick('slickPrev');
+  })
+  $('.js-cat-home-slider').on('click', '.cat-home-slide__arrow--next', function(){
+    $('.js-cat-home-slider').slick('slickNext');
+  })
+
 });

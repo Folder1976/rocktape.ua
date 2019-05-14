@@ -189,8 +189,8 @@
         <table id="total">
           <?php foreach ($totals as $total) { ?>
           <tr>
-          <td class="right"><b><?php echo $total['title']; ?>:</b></td>
-          <td class="right pull-right"><?php echo $total['text']; ?></td>
+          <td class="left"><?php echo $total['title']; ?></td>
+          <td class="right"><?php echo $total['text']; ?></td>
           </tr>
           <?php } ?>
         </table>
@@ -300,9 +300,11 @@
       </div>
       <?php } ?>
 
+      <br><br>
+
       <div class="buttons clearfix">
-        <div id="button_cart_checkout" class="pull-right right"><a href="<?php echo $checkout; ?>" class="button"><?php echo $button_checkout; ?></a></div>
-        <div class="center pull-left"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_shopping; ?></a></div>
+        <div id="button_cart_checkout" class="pull-right right"><a href="<?php echo $checkout; ?>" class="button bbtn"><?php echo $button_checkout; ?></a></div>
+        <div class="center pull-left"><a href="<?php echo $continue; ?>" class="button bbtn bbtn--transparent"><?php echo $button_shopping; ?></a></div>
       </div>
 
     </div>

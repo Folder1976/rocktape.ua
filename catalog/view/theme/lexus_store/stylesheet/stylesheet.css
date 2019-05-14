@@ -17,6 +17,7 @@ body {
   padding: 0px;
 
   overflow-x: hidden;
+  font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
 
 }
 
@@ -484,11 +485,9 @@ a.button {
 
   background: #FFFFFF;
 
-  border: 1px solid #CCC;
-
   overflow: auto;
 
-  padding: 6px;
+  padding: 6px 0;
 
   margin-top: 10px;
 
@@ -5389,40 +5388,37 @@ font-size: 22px !important;
 }
 
 .cart-total {
-
-  border-top: 1px solid #ddd;
-
   overflow: auto;
-
-  padding-top: 8px;
-
-  margin-top: 10px;
-
   margin-bottom: 15px;
-
 }
 
 .cart-total td {
-
-  padding: 3px;
-
-  text-align: right;
-
+  font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1.5em 0;
+  line-height: 1.6875rem;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 .cart-total table {
+  width: 100%;
+}
 
-  float: right;
+.cart-total table .left {
+  color: #5d5d5d;
+}
 
+.cart-total table .right {
+  text-align: right;
+  color: #000;
+  font-size: 18px;
 }
 
 .cart-info thead .price,
-
-.cart-info thead .total {
-
-  text-align: right;
-
-}
+.cart-info thead .total {}
 
 .page-checkout-cart h1,
 .page-checkout-checkout h1 {
@@ -5432,6 +5428,8 @@ font-size: 22px !important;
   text-transform: uppercase;
   padding: 40px 0 40px;
   color: #000;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 50px;
 }
 
 
