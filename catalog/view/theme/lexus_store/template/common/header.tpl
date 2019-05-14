@@ -1,4 +1,5 @@
 <?php
+	$version = '001';
 
 	$themeConfig = (array)$this->config->get( 'themecontrol' );
 	$themeName =  $this->config->get('config_template');
@@ -6,29 +7,29 @@
 	$helper = ThemeControlHelper::getInstance( $this->registry, $themeName );
 	$helper->setDirection( $direction );
 	/* Add scripts files */
-	$helper->addScript( 'catalog/view/javascript/jquery/jquery-1.7.1.min.js' );
-	$helper->addScript( 'catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js' );
-	$helper->addScript( 'catalog/view/javascript/jquery/ui/external/jquery.cookie.js' );
-	$helper->addScript( 'catalog/view/javascript/common.js' );
-	$helper->addScript( 'catalog/view/theme/'.$themeName.'/javascript/common.js' );
-	$helper->addScript( 'catalog/view/javascript/jquery/bootstrap/bootstrap.min.js' );
-	$helper->addScript('catalog/view/javascript/jquery/colorbox/jquery.colorbox-min.js');
+	$helper->addScript( 'catalog/view/javascript/jquery/jquery-1.7.1.min.js?'.$version );
+	$helper->addScript( 'catalog/view/javascript/jquery/ui/jquery-ui-1.8.16.custom.min.js?'.$version );
+	$helper->addScript( 'catalog/view/javascript/jquery/ui/external/jquery.cookie.js?'.$version );
+	$helper->addScript( 'catalog/view/javascript/common.js?'.$version );
+	$helper->addScript( 'catalog/view/theme/'.$themeName.'/javascript/common.js?'.$version );
+	$helper->addScript( 'catalog/view/javascript/jquery/bootstrap/bootstrap.min.js?'.$version );
+	$helper->addScript('catalog/view/javascript/jquery/colorbox/jquery.colorbox-min.js?'.$version);
 	$helper->addScriptList( $scripts );
 
-	$helper->addCss( 'catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css' );
+	$helper->addCss( 'catalog/view/javascript/jquery/ui/themes/ui-lightness/jquery-ui-1.8.16.custom.css?'.$version );
 	if( isset($themeConfig['customize_theme'])
-		&& file_exists(DIR_TEMPLATE.$themeName.'/stylesheet/customize/'.$themeConfig['customize_theme'].'.css') ) {
-		$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/customize/'.$themeConfig['customize_theme'].'.css'  );
+		&& file_exists(DIR_TEMPLATE.$themeName.'/stylesheet/customize/'.$themeConfig['customize_theme'].'.css?'.$version) ) {
+		$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/customize/'.$themeConfig['customize_theme'].'.css?'.$version  );
 	}
 
-	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/animation.css' );
-	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font-awesome.min.css' );
-	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font.css' );
-	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/dev.css' );
-	$helper->addCss( 'catalog/view/javascript/jquery/colorbox/colorbox.css' );
+	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/animation.css?'.$version );
+	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font-awesome.min.css?'.$version );
+	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font.css?'.$version );
+	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/dev.css?'.$version );
+	$helper->addCss( 'catalog/view/javascript/jquery/colorbox/colorbox.css?'.$version );
 
-	$helper->addCss( 'catalog/view/javascript/slick-slider/slick.css' );
-	$helper->addScript( 'catalog/view/javascript/slick-slider/slick.min.js' );
+	$helper->addCss( 'catalog/view/javascript/slick-slider/slick.css?'.$version );
+	$helper->addScript( 'catalog/view/javascript/slick-slider/slick.min.js?'.$version );
 	$helper->addCssList( $styles );
 	$layoutMode = $helper->getParam( 'layout' );
 
@@ -87,12 +88,8 @@
 <?php } else { ?>
 
 <?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700|Poppins:300,400,500" rel="stylesheet">
 <?php } else { ?>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Poppins:300,400,500" rel="stylesheet">
 <?php } ?>
 
