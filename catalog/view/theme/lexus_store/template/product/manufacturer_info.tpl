@@ -36,8 +36,9 @@
 
 
 
-
-		<h1 class="heading_title"><span><?php echo $heading_title; ?></span></h1>
+  <?php if (false) { ?>
+	<h1 class="heading_title"><span><?php echo $heading_title; ?></span></h1>
+  <?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter clearfix">
     <div class="display" style="display: none;">
