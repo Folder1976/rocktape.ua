@@ -266,6 +266,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="row header-wrap">
 					<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 inner">
 					  <?php if ($logo) { ?>
+					  <?php $logo = '/image/data/RockTape-Logo-R-W-RGB.svg'; ?>
 					  <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 					  <?php } ?>
 

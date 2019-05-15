@@ -266,7 +266,15 @@
 					<?php echo $powered; ?>
 				<?php } ?>
 			</div>
-			<?php if( isset($themeConfig['widget_paypal_data'][$LANGUAGE_ID]) ) {?>
+			<div class="pull-right">
+				<div class="list-folow footer-soc">
+					<a data-original-title="Facebook" data-placement="top" data-toggle="tooltip" href="https://www.facebook.com/rocktapeukraine/" title=""><i class="icon-facebook">&nbsp;</i></a>
+					<a data-original-title="Instagram" data-placement="top" data-toggle="tooltip" href="https://www.instagram.com/rocktape_ukraine/" title=""><i class="icon-instagram">&nbsp;</i></a>
+					<a data-original-title="YouTube" data-placement="top" data-toggle="tooltip" href="https://www.youtube.com/channel/UCIhWc7-bNR35LZamIcSIU8w" title=""><i class="icon-youtube">&nbsp;</i></a>
+				</div>
+			</div>
+
+			<?php if (false) { // ( isset($themeConfig['widget_paypal_data'][$LANGUAGE_ID]) ) {?>
 				<div class="paypal pull-right">
 					<?php //echo html_entity_decode( $themeConfig['widget_paypal_data'][$LANGUAGE_ID], ENT_QUOTES, 'UTF-8' ); ?>
 			</div>

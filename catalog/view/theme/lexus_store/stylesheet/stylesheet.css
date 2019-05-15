@@ -332,17 +332,10 @@ table.radio tr.highlight:hover td {
 }
 
 .pagination {
-
-  border-top: 1px solid #E7E7E7;
-
   padding: 12px 8px;
-
   display: inline-block;
-
   width: 100%;
-
   margin-bottom: 10px;
-
 }
 
 .category-description{
@@ -358,51 +351,34 @@ table.radio tr.highlight:hover td {
 }
 
 .pagination .links a,
-
 .pagination .links b {
-
   border: 1px solid #E7E7E7;
-
+  display: inline-block;
+  font-weight: 300;
+  color: #5d5d5d;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  padding: 6px 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 35px;
 }
 
 .pagination .links a {
-
-  display: inline-block;
-
-  border-left-width: 1px;
-
-  padding: 6px 12px;
-
-  text-decoration: none;
-
-  color: #A3A3A3;
-
 }
 
 .pagination .links a:hover {
-
-  background-color: #C72828;
-
-  color: #fff;
-
+  border-color: #cbcbcb;
 }
 
 .pagination .links b {
-
   display: inline-block;
-
   border-left-width: 1px;
-
-  padding: 6px 12px;
-
   font-weight: normal;
-
   text-decoration: none;
-
-  color: #fff;
-
-  background-color: #C72828;
-
+  border-color: #5d5d5d;
+  font-weight: normal;
 }
 
 .pagination .results {
@@ -1553,7 +1529,7 @@ body.layout-boxed-lg #page {
   background: none;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.8em;
 
 }
@@ -3933,6 +3909,9 @@ font-size: 22px !important;
 
 .product-filter {
   padding: 40px 0;
+  background: #fbfbfb;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .product-filter > div {
@@ -7596,9 +7575,24 @@ opacity: 0;
      padding: 0 15px;
 
 }
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.description ul {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+

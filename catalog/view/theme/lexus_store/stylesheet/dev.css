@@ -448,7 +448,7 @@
     text-align: left;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.8em;
 }
 
@@ -472,6 +472,7 @@
 
 .footer-box__list a {
     color: #fff;
+    font-weight: 500;
 }
 
 .footer-box__partners {
@@ -492,6 +493,20 @@
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
+}
+.copyright {
+    line-height: 30px;
+}
+.footer-soc {
+    font-size: 25px;
+    line-height: 30px;
+}
+.footer-soc i {
+    color: #686868;
+    margin-left: 15px;
+}
+.footer-soc i:hover {
+    opacity: .7;
 }
 
 @media (max-width: 991px) {
