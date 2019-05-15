@@ -736,6 +736,18 @@
     background-color: transparent;
     color: #000;
 }
+.bbtn--transparent-white {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    letter-spacing: 2px
+}
+.bbtn--transparent-white:hover,
+.bbtn--transparent-white:active,
+.bbtn--transparent-white:focus {
+    color: #000;
+    border-color: #000;
+}
 
 
 /*
@@ -904,6 +916,21 @@
     .cat-home-slider .slick-dots {
         display: none;
     }
+}
+
+/*
+ * notification
+ */
+.notification__btn-group {
+    margin-top: 10px
+}
+.notification__btn-group .bbtn {
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.notification__btn-group .bbtn:last-child {
+    margin-right: 0;
 }
 
 

@@ -157,7 +157,11 @@ function addToCart(product_id, quantity) {
             }
 			
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+				$('#notification').html('<div class="success" style="display: none;">'
+				 + json['success']
+				 + '<div class="notification__btn-group"><a href="/shopping-cart" class="button bbtn bbtn--transparent bbtn--transparent-white">Корзина</a>'
+				 + '<a href="/simplecheckout" class="button bbtn bbtn--transparent bbtn--transparent-white">Оформить</a></div>'
+				 + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
 				
 				$('.success').fadeIn('slow');
 				

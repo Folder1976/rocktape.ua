@@ -796,83 +796,37 @@ ul.list > li a.active + ul {
 }
 
 .success,
-
 .warning,
-
 .attention,
-
 .information {
-
   padding: 10px 10px 10px 33px;
-
   margin-bottom: 15px;
-
   color: #555555;
-
-  -webkit-border-radius: 5px;
-
-  -moz-border-radius: 5px;
-
-  -ms-border-radius: 5px;
-
-  -o-border-radius: 5px;
-
-  border-radius: 5px;
-
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
 }
 
 .success .close,
-
 .warning .close,
-
 .attention .close,
-
 .information .close {
-
   float: right;
-
   padding-top: 6px;
-
   padding-left: 4px;
-
   cursor: pointer;
-
 }
 
 .attention {
-
   background: #FFF5CC url('../image/attention.png') 10px center no-repeat;
-
   border: 1px solid #F2DD8C;
-
-  -webkit-border-radius: 5px;
-
-  -moz-border-radius: 5px;
-
-  -ms-border-radius: 5px;
-
-  -o-border-radius: 5px;
-
-  border-radius: 5px;
-
 }
 
 .warning {
-
   background: #FFD1D1 url('../image/warning.png') 10px center no-repeat;
-
   border: 1px solid #F8ACAC;
-
-  -webkit-border-radius: 5px;
-
-  -moz-border-radius: 5px;
-
-  -ms-border-radius: 5px;
-
-  -o-border-radius: 5px;
-
-  border-radius: 5px;
-
 }
 
 .help {
@@ -890,39 +844,25 @@ ul.list > li a.active + ul {
 }
 
 .error {
-
   display: block;
-
   color: #FF0000;
-
 }
 
 .welcome {
-
   margin-top: 0px;
-
   font-size: 13px;
-
   font-weight: normal;
-
 }
 
 .success {
-
-  background: #EAF7D9 url('../image/success.png') 10px center no-repeat;
-
-  border: 1px solid #BBDF8D;
-
-  -webkit-border-radius: 5px;
-
-  -moz-border-radius: 5px;
-
-  -ms-border-radius: 5px;
-
-  -o-border-radius: 5px;
-
-  border-radius: 5px;
-
+  background: #c8102e;
+  border: 1px solid #c8102e;
+  color: #fff;
+  font-weight: 300;
+  border-radius: 0;
+}
+.success a {
+  color: #fff;
 }
 
 h1,
