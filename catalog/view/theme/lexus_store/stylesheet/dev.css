@@ -937,7 +937,20 @@
 
 
 
-
+/*
+ * other
+ */
+.icon-cart-wrap {
+    padding: 16px;
+    font-size: 12px;
+    background: #C72828;
+    margin-right: 4px;
+}
+.icon-cart {
+    fill: #fff;
+    width: 13px;
+    height: 16px;
+}
 
 
 
