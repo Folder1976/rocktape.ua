@@ -71,13 +71,13 @@
 					
 					<!-- Twitter Button -->
 					<div class="itemTwitterButton">
-						<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"><?php echo $this->language->get('text_twitter_share'); ?></a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal"><?php echo $this->language->get('text_twitter_share'); ?></a><script src="//platform.twitter.com/widgets.js"></script>
 					</div>
 		
 					<!-- Facebook Button -->
 					<div class="itemFacebookButton">
 						<div id="fb-root"></div>
-						<script type="text/javascript">
+						<script>
 							(function(d, s, id) {
 							  var js, fjs = d.getElementsByTagName(s)[0];
 							  if (d.getElementById(id)) {return;}
@@ -91,7 +91,7 @@
 					<!-- Google +1 Button -->
 					<div class="itemGooglePlusOneButton">	
 						<g:plusone annotation="inline" width="120"></g:plusone>
-						<script type="text/javascript">
+						<script>
 						  (function() {
 							window.___gcfg = {lang: 'en'}; // Define button default language here
 							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
@@ -131,7 +131,7 @@
 			<?php if( $config->get('blog_show_comment_form') ) { ?>
 				<?php if( $config->get('comment_engine') == 'diquis' ) { ?>
 			    <div id="disqus_thread"></div>
-					<script type="text/javascript">
+					<script>
 						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 						var disqus_shortname = '<?php echo $config->get('diquis_account');?>'; // required: replace example with your forum shortname
 
@@ -212,7 +212,7 @@
 							</button>
 						</div>
 					</form>
-					<script type="text/javascript">
+					<script>
 						$( "#comment-form .message" ).hide();
 						$("#comment-form").submit( function(){
 							$.ajax( {type: "POST",url:$("#comment-form").attr("action"),data:$("#comment-form").serialize(), dataType: "json",}).done( function( data ){

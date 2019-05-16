@@ -11,20 +11,17 @@
 <section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">
 <div id="content"><?php echo $content_top; ?>
   
-  <h1><?php echo $heading_title; ?></h1>
+  <h1 class="heading_title"><?php echo $heading_title; ?></h1>
 
             <?php //start contact map ?>
             <div class="contact-location">
                 <div id="contact-map"></div>
             </div>
             <?php // Jquery googlemap api v3?>
-            <style> 
-            .gm-style img {max-width: none;}
-            </style>
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=ru"></script>
-            <script type="text/javascript" src="catalog/view/javascript/gmap/gmap3.min.js"></script>
-            <script type="text/javascript" src="catalog/view/javascript/gmap/gmap3.infobox.js"></script>
-            <script type="text/javascript">
+            <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=ru"></script>
+            <script src="catalog/view/javascript/gmap/gmap3.min.js"></script>
+            <script src="catalog/view/javascript/gmap/gmap3.infobox.js"></script>
+            <script>
                 var mapDiv, map, infobox;
                 var lat = <?php echo isset($themeConfig['location_latitude'])?$themeConfig['location_latitude']:'40.705423'; ?>;
                 var lon = <?php echo isset($themeConfig['location_longitude'])?$themeConfig['location_longitude']:'-74.008616'; ?>;
@@ -130,12 +127,13 @@
     <?php } ?>
     <br />
 
-    <span class="navbar-form">
-        <span class="form-group">    <?php if ($site_key) { ?>
-	<div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
-<?php } ?></span>
-   
-</span>
+    <div class="navbar-form">
+        <div class="form-group">
+            <?php if ($site_key) { ?>
+	           <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
+            <?php } ?>
+        </div>
+    </div>
     <div class="buttons">
       <div class="center"><input type="submit" value="<?php echo $button_submit; ?>" class="button" /></div>
     </div>

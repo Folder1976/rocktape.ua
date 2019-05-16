@@ -88,25 +88,27 @@
 <?php } else { ?>
 
 <?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700|Poppins:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 <?php } else { ?>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Poppins:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 <?php } ?>
 
 
 <?php } ?>
 
 <?php foreach( $helper->getScriptFiles() as $script )  { ?>
-<script type="text/javascript" src="<?php echo $script; ?>"></script>
+<script src="<?php echo $script; ?>"></script>
 <?php } ?>
 <?php if( isset($themeConfig['enable_paneltool']) && $themeConfig['enable_paneltool'] ){  ?>
 <link  href="catalog/view/theme/<?php echo $themeName;?>/stylesheet/paneltool.css" rel="stylesheet"/>
-<script type="text/javascript" src="catalog/view/javascript/jquery/colorpicker/js/colorpicker.js"></script>
+<script src="catalog/view/javascript/jquery/colorpicker/js/colorpicker.js"></script>
 <link  href="catalog/view/javascript/jquery/colorpicker/css/colorpicker.css" rel="stylesheet" />
 <?php } ?>
 
 <?php if( isset($themeConfig['custom_javascript'])  && !empty($themeConfig['custom_javascript']) ){ ?>
-	<script type="text/javascript"><!--
+	<script><!--
 		$(document).ready(function() {
 			<?php echo html_entity_decode(trim( $themeConfig['custom_javascript']) ); ?>
 		});
@@ -124,7 +126,7 @@
 <![endif]-->
 
 <?php if ( isset($stores) && $stores ) { ?>
-<script type="text/javascript"><!--
+<script><!--
 $(document).ready(function() {
 <?php foreach ($stores as $store) { ?>
 $('body').prepend('<iframe src="<?php echo $store; ?>" style="display: none;"></iframe>');
@@ -151,7 +153,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <div style="display: none">
-	<div class="icon-sprite"><svg xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+	<div class="icon-sprite"><svg xmlns="http://www.w3.org/2000/svg">
 
 	<symbol id="icon-cart" viewBox="0 0 13 16">
 	  <title>bag icon</title>
@@ -308,7 +310,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										</div>
 										<div class="col-lg-12">
 										 	<div class="navbar navbar-inverse">
-										<nav class="pav-megamenu" role="navigation">
+										<nav class="pav-megamenu">
 												<?php
 												/**
 												 * Main Menu modules: as default if do not put megamenu, the theme will use categories menu for main menu
@@ -602,7 +604,7 @@ $home_slider_popular = array(
 				<div class="subscribe__text">Подпишитесь на нашу рассылку, чтобы оставаться в курсе последних новостей от RockTape, включая новые продукты, рекламные акции и события в вашем регионе.</div>
 			</div>
 			<div class="col-md-6">
-				<form action="" method="post">
+				<form action="/" method="post">
 					<input class="form-control" type="text" name="name" value="" placeholder="Имя" required>
 					<input class="form-control" type="email" name="email" value="" placeholder="Email" required>
 					<input type="submit" value="Подписаться" class="button">

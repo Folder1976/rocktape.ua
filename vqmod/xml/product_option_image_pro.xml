@@ -908,7 +908,7 @@
       ]]></search>
       <add><![CDATA[
 			<!-- << Product Option Image PRO module -->
-				<script type="text/javascript"><!--
+				<script><!--
 					$('div.product-action').css('top', '-70px');
 					$('a.pav-colorbox').css('top', 'auto');
 					$('a.pav-colorbox').css('bottom', '-40px');
@@ -926,7 +926,7 @@
       ]]></search>
       <add><![CDATA[
 			<!-- << Product Option Image PRO module -->
-				<script type="text/javascript"><!--
+				<script><!--
 					var poip_journal2_quickview = true;
 				--></script>
 			<!-- >> Product Option Image PRO module -->
@@ -948,7 +948,7 @@
       <!-- Product Option Image PRO module << -->
       <?php  if ($poip_installed) {  ?>
         
-      <script type="text/javascript"><!--
+      <script><!--
       var console=console||{"log":function(){},"debug":function(){}};
       var poip_options_settings = <?php echo json_encode($poip_product_settings); ?>;
       var poip_settings = <?php echo json_encode($poip_settings); ?>;
@@ -3159,7 +3159,7 @@
       <add><![CDATA[
 			<!-- Product Option Image PRO module << -->
       <?php  if (isset($poip_installed) && $poip_installed) {  ?>
-      <script type="text/javascript"><!--
+      <script><!--
       
       function show_thumb(elem) {
 				
@@ -3192,11 +3192,11 @@
     </operation>
 		
 		<operation >
-      <search position="after" error="skip"><![CDATA[</head>]]></search>
+      <search position="before" error="skip"><![CDATA[</head>]]></search>
       <add><![CDATA[
       <!-- << Product Option Image PRO module -->
       <?php  if (isset($poip_installed) && $poip_installed) {  ?>
-      <script type="text/javascript"><!--
+      <script><!--
       
 			var poip_ava_store = $('style:contains("AVA STORE")').length;
 			

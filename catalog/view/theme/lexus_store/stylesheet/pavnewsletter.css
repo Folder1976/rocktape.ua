@@ -13,9 +13,9 @@
     text-align: center;
 }
 
-.newsletter_block p{
-	padding:0px;
-    text-align: center;
+.newsletter_block form{
+	text-align: center;
+    margin-bottom: 10px;
 }
 .newsletter_block input.inputNew {
     border: 1px solid #e1e1e1;

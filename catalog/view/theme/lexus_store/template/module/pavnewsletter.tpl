@@ -5,16 +5,14 @@
 	<?php } ?>
 	<div class="block_content col-lg-12 pavblock">
 			<form id="formNewLestter" method="post" action="<?php echo $action; ?>">
-			<p>
 				<input type="text" class="inputNew" <?php if(!isset($customer_email)): ?> onblur="javascript:if(this.value=='')this.value='<?php echo $this->language->get("default_input_text");?>';" onfocus="javascript:if(this.value=='<?php echo $this->language->get("default_input_text");?>')this.value='';"<?php endif; ?> value="<?php echo isset($customer_email)?$customer_email:$this->language->get("default_input_text");?>" size="18" name="email">
 				<input type="submit" name="submitNewsletter" class="button_mini" value="<?php echo $this->language->get("button_ok");?>">
 				<input type="hidden" value="1" name="action">
 				<div class="valid"></div>
-			</p>
 		</form>
 	</div>
 </div>
-<script type="text/javascript">
+<script>
  
 	$('#formNewLestter').on('submit', function() {
 		var sbt =  '<img src=\"catalog/view/theme/default/image/close.png\" alt=\"\" class=\"close\">';

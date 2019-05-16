@@ -3731,7 +3731,8 @@ font-size: 22px !important;
   color: #000;
 }
 
-.page-category .heading_title {
+.page-category .heading_title,
+.page-information-contact .heading_title {
   text-align: center;
   font-size: 36px;
   font-weight: 400;
@@ -7530,7 +7531,10 @@ opacity: 0;
 
 
 
-.description ul {
+.description ul,
+.description ol,
+.information ul,
+.information ol {
   font-family: 'Poppins', sans-serif;
 }
 

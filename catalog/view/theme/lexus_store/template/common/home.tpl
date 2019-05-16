@@ -19,7 +19,9 @@ require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/co
 <section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">         
 	<div id="content">
 	<?php echo $content_top; ?>
-	<h1 style="display: none;"><?php echo $heading_title; ?></h1>
+	<?php if (false){ ?>
+		<h1 style="display: none;"><?php echo $heading_title; ?></h1>
+	<?php } ?>
 	<?php echo $content_bottom; ?>
 	</div>
 </section>
