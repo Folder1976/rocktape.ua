@@ -392,6 +392,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>  <!-- /#header -->
 
 
+<section id="sys-notification">
+	<div class="container">
+
+		<?php if ( isset($error) && $error ) { ?>
+    		<div class="warning"><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /><?php echo $error ?></div>
+    	<?php } ?>
+
+		<div id="notification"></div>
+	</div>
+</section>
+
 
 
 <?php if ( $_SERVER['REQUEST_URI'] == '/' ) { // if (   [ ГЛАВНАЯ СТРАНИЦА ]   ) { ?>
@@ -741,16 +752,7 @@ $class = $helper->calculateSpans( $ospans, $cols );
 	</div>
 </section>
 <?php } ?>
-<section id="sys-notification">
-	<div class="container">
 
-		<?php if ( isset($error) && $error ) { ?>
-    		<div class="warning"><?php echo $error ?><img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>
-    	<?php } ?>
-
-		<div id="notification"></div>
-	</div>
-</section>
 
 
 

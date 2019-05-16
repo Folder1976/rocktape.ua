@@ -149,7 +149,7 @@ function addToCart(product_id, quantity) {
 			}
 
             if (json['error_stock']) {
-                $('#notification').html('<div class="warning" style="display: none;">' + json['error_stock'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+                $('#notification').html('<div class="warning" style="display: none;"><img src="catalog/view/theme/default/image/close.png" alt="" class="close" />' + json['error_stock'] + '</div>');
 
                 $('.warning').fadeIn('slow');
 
@@ -158,10 +158,11 @@ function addToCart(product_id, quantity) {
 			
 			if (json['success']) {
 				$('#notification').html('<div class="success" style="display: none;">'
+				 + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" />'
 				 + json['success']
 				 + '<div class="notification__btn-group"><a href="/shopping-cart" class="button bbtn bbtn--transparent bbtn--transparent-white">Корзина</a>'
 				 + '<a href="/simplecheckout" class="button bbtn bbtn--transparent bbtn--transparent-white">Оформить</a></div>'
-				 + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+				 + '</div>');
 				
 				$('.success').fadeIn('slow');
 				
@@ -182,7 +183,7 @@ function addToWishList(product_id) {
 			$('.success, .warning, .attention, .information').remove();
 						
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+				$('#notification').html('<div class="success" style="display: none;"><img src="catalog/view/theme/default/image/close.png" alt="" class="close" />' + json['success'] + '</div>');
 				
 				$('.success').fadeIn('slow');
 				
@@ -204,7 +205,7 @@ function addToCompare(product_id) {
 			$('.success, .warning, .attention, .information').remove();
 						
 			if (json['success']) {
-				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+				$('#notification').html('<div class="success" style="display: none;"><img src="catalog/view/theme/default/image/close.png" alt="" class="close" />' + json['success'] + '</div>');
 				
 				$('.success').fadeIn('slow');
 				
