@@ -173,7 +173,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <section id="header">
 		<section id="topbar">
 			<div class="container"><div class="container-inner">
-				<div class="col-lg-8 col-md-8 hidden-sm hidden-xs pull-left wrapper">
+				<div class="col-sm-8 pull-left wrapper">
 					<div class="links pull-left ">
 						<!-- <li><a class="first" href="<?php echo $home; ?>"><?php echo $text_home; ?></a></li> -->
                         <div class="account-access pull-left">
@@ -192,7 +192,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<a class="last checkout" href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a> 
 						<!-- <a class="last checkout" href="/garantiya">Гарантия</a><a class="last checkout" href="/garantiya">Гарантия</a> -->
 					</div>
-					<div class="pull-left">
+					<div class="pull-left hidden-xs">
 						<div class="social_custom">
 							<div class="box-content">
 								<div class="list-folow">
@@ -205,8 +205,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 						</div>
 					</div>
-					<div class="pull-left"><a href="tel:+380734070755">+38 (073) 407-07-55</a></div>
-					<div class="pull-left"><a href="tel:+380972808201">+38 (097) 280-82-01</a></div>
+					<div class="pull-left hidden-xs"><a href="tel:+380734070755">+38 (073) 407-07-55</a></div>
+					<div class="pull-left hidden-xs"><a href="tel:+380972808201">+38 (097) 280-82-01</a></div>
 
           <!-- <div class="currency pull-left">
               <?php echo $currency; ?>
@@ -215,10 +215,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <?php echo $language; ?>
           </div>
         </div>
-        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs pull-right">
+        <div class="col-sm-4 pull-right">
             <?php echo $cart; ?>
         </div>
 
+				<?php if(false){ ?>
         <div class="show-mobile hidden-lg hidden-md pull-left">
 					<div class="quick-user pull-left hidden-sm">
 						<div class="quickaccess-toggle">
@@ -276,6 +277,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<?php } ?>
 					</div>
 				</div>
+				<?php } ?>
 
 
 			</div></div>
@@ -302,12 +304,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							<div class="container">
 								<div class="mainnav-wrap">
 									<div class="row">
-										<div class="hidden-lg col-md-2 col-sm-9 col-xs-9 pull-right">
-						                        <div id="search-small">
-						                            <input type="text" name="search1" placeholder="<?php echo $text_search; ?>" value="<?php echo $search; ?>" />
-						                            <span class="button-search"></span>
-						                        </div>
-										</div>
+
 										<div class="col-lg-12">
 										 	<div class="navbar navbar-inverse">
 										<nav class="pav-megamenu">

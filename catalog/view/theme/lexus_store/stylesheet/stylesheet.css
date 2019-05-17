@@ -1187,15 +1187,12 @@ body.layout-boxed-lg #page {
 }
 
 #header {
-
-  background: #111;
-
+  /*background: #111;*/
+  position: relative;
 }
 
 #header-main {
-
-  background: none;
-
+  background: #111;
 }
 
 #header-main .header-wrap > div {
@@ -6667,18 +6664,6 @@ body,
 
   }
 
-  #logo {
-
-    display: block !important;
-
-    margin-left: 35%;
-
-    margin-top: 35px;
-
-    text-align: left;
-
-  }
-
   .newsletter_block #formNewLestter input.inputNew {
 
     width: 180px !important;
@@ -6692,27 +6677,25 @@ body,
   }
 
   .navbar-inverse .navbar-toggle {
-
     display: block;
-
     float: none;
-
     width: 45px;
-
     height: 35px;
-
-    background-color: #997747;
-
-    border-color: #997747;
-
     margin-left: 10px;
-
+    border-color: transparent;
   }
 
   .navbar-collapse.collapse {
-
     display: none !important;
+  }
 
+  .navbar-collapse.collapse {
+    position: absolute;
+
+  }
+
+  .navbar-collapse.collapse.is-open {
+    display: block !important;
   }
 
   .navbar-nav > li {
@@ -6722,10 +6705,10 @@ body,
   }
 
   .navbar-inverse .navbar-toggle:hover,
-
   .navbar-inverse .navbar-toggle:focus {
 
-    background-color: #9a8362;
+    background-color: #c8102e;
+    border-color: #c8102e;
 
   }
 
@@ -6739,16 +6722,8 @@ body,
 
 @media only screen and (max-width: 749px) {
 
-  #logo {
-
-    display: block !important;
-
-    margin-left: 35%;
-
-    margin-top: 35px;
-
-    text-align: left;
-
+  #logo img {
+    max-height: 77px;
   }
 
   #header #cart,
@@ -6914,16 +6889,6 @@ body,
   #pav-mainnav {
 
     background: transparent;
-
-  }
-
-  .navbar-header,
-
-  .megamenu {
-
-    width: 100%;
-
-    background: #c72828;
 
   }
 

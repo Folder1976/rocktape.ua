@@ -34,25 +34,36 @@
           
             var effect = 3;
 
-            var $offcmenu = $('<nav id="menu-offcanvas" class="offcanvas-menu offcanvas-effect-'+effect+' hidden-lg "><div class="menu-offcanvas-inner"></div></nav>');
+            var $offcmenu = $('<nav id="mob-menu" class="mob-menu"><div class="menu-offcanvas-inner"></div></nav>');
             $(".menu-offcanvas-inner", $offcmenu ).append( $mcontent.clone() );
 
-            $("body").append( $offcmenu ); 
+            // $("body").append( $offcmenu ); 
+            $("#header").append( $offcmenu ); 
             $(".navbar-nav", $offcmenu  ).removeClass("navbar-nav").removeClass("nav").addClass("menu-offcanvas-content");
-			$(".menu-offcanvas-inner").append("<div class='button-close-menu'><i class='icon-remove-sign'></i></div>");
+			      // $(".menu-offcanvas-inner").append("<div class='button-close-menu'><i class='icon-remove-sign'></i></div>");
 			
-			var $btn = $("#pav-mainnav .navbar-toggle, .menu-offcanvas-inner .button-close-menu");
+			      var $btn = $("#pav-mainnav .navbar-toggle, .menu-offcanvas-inner .button-close-menu");
 		 
-             var eventtype = mobilecheck() ? 'touchstart' : 'click';  
-                $($btn).bind( eventtype, function(e){  
-                $("#offcanvas-container").toggleClass(  "offcanvas-menu-open" ).addClass( "offcanvas-effect-"+effect );
+            var eventtype = mobilecheck() ? 'touchstart' : 'click';  
+                $($btn).bind( eventtype, function(e){
+                  $('#mob-menu').toggleClass('is-open');
+
+
+                  $("#page").bind( eventtype , function (){
+                    $('#mob-menu').toggleClass('is-open');
+                    $("#page").unbind( eventtype );
+                  });
+
+
+
+                // $("#offcanvas-container").toggleClass(  "offcanvas-menu-open" ).addClass( "offcanvas-effect-"+effect );
                
                  
-                $("#page").bind( eventtype , function (){
-                    $("#offcanvas-container").toggleClass(  "offcanvas-menu-open" );
-                    $("#page").unbind( eventtype );
-                } ); 
-                e.stopPropagation();       
+                // $("#page").bind( eventtype , function (){
+                //     $("#offcanvas-container").toggleClass(  "offcanvas-menu-open" );
+                //     $("#page").unbind( eventtype );
+                // } ); 
+                // e.stopPropagation();
                return false;
             } );
         } );    
