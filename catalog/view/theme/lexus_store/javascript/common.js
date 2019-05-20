@@ -37,10 +37,8 @@
             var $offcmenu = $('<nav id="mob-menu" class="mob-menu"><div class="menu-offcanvas-inner"></div></nav>');
             $(".menu-offcanvas-inner", $offcmenu ).append( $mcontent.clone() );
 
-            // $("body").append( $offcmenu ); 
             $("#header").append( $offcmenu ); 
             $(".navbar-nav", $offcmenu  ).removeClass("navbar-nav").removeClass("nav").addClass("menu-offcanvas-content");
-			      // $(".menu-offcanvas-inner").append("<div class='button-close-menu'><i class='icon-remove-sign'></i></div>");
 			
 			      var $btn = $("#pav-mainnav .navbar-toggle, .menu-offcanvas-inner .button-close-menu");
 		 
@@ -49,21 +47,13 @@
                   $('#mob-menu').toggleClass('is-open');
 
 
-                  $("#page").bind( eventtype , function (){
-                    $('#mob-menu').toggleClass('is-open');
-                    $("#page").unbind( eventtype );
+                  $("#page").bind( eventtype , function (e){
+                    if ( $(e.target).closest('#mob-menu').length == 0 ) {
+                      $('#mob-menu').toggleClass('is-open');
+                      $("#page").unbind( eventtype );
+                    }
                   });
 
-
-
-                // $("#offcanvas-container").toggleClass(  "offcanvas-menu-open" ).addClass( "offcanvas-effect-"+effect );
-               
-                 
-                // $("#page").bind( eventtype , function (){
-                //     $("#offcanvas-container").toggleClass(  "offcanvas-menu-open" );
-                //     $("#page").unbind( eventtype );
-                // } ); 
-                // e.stopPropagation();
                return false;
             } );
         } );    

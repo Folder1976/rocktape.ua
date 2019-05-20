@@ -133,7 +133,7 @@
 		  <div class="row">
 	<?php } ?>
     <!-- <div class="col-xs-6 col-lg-<?php echo $span;?> col-sm-<?php echo $small;?> col-xs-<?php echo $mini;?>"> -->
-    <div class="col-xs-6 col-lg-3 col-md-4">
+    <div class="col-xs-12 col-lg-4 col-sm-4 col-xs-12">
     	<div class="product-block">
 	      <?php if ($product['thumb']) { ?>
 	      <div class="image"><?php if( $product['special'] ) {   ?>
