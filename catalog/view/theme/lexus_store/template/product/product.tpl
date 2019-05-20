@@ -70,12 +70,16 @@
         <div><img src="catalog/view/theme/<?php echo $this->config->get('config_template');?>/image/stars-<?php echo $rating; ?>.png" alt="<?php echo $reviews; ?>" />&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $reviews; ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a onclick="$('a[href=\'#tab-review\']').trigger('click');"><?php echo $text_write; ?></a></div>
       </div>
       <?php } ?>
-
+	    <div class="share clearfix"><!-- AddThis Button BEGIN -->
+          <div class="addthis_default_style"><a class="addthis_button_compact"><?php echo $text_share; ?></a> <a class="addthis_button_email"></a><a class="addthis_button_print"></a> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a></div>
+          <script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js"></script>
+          <!-- AddThis Button END -->
+        </div>
 
 
       <div class="description">
         <?php if ($manufacturer) { ?>
-        <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
+        <!--span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br / -->
         <?php } ?>
         <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
         <?php if ($reward) { ?>

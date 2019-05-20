@@ -430,53 +430,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </section>
 
 
-
-
-<?php
-// home slider
-/*
-$home_slider = array(
-	array(
-		'title' => "The Official Knee Sleeves of CrossFit®",
-		'text' => "Competition-grade CrossFit® knee protection designed for the demands of the world’s most intense fitness movement. Slay your workout.",
-		'btn_text' => "Explore Assassins",
-		'btn_href' => "#",
-		'image' => "/image/data/home-slider/CF-Assassins.png",
-		'background' => '#111111',
-		'background_btn' => '#c8102e',
-	),
-	array(
-		'title' => "Kinesiology Tape Perfected.",
-		'text' => "We’ve perfected RockTape, and it’s called Edge. RockTape + RockSauce for powerful pain* relief to go.",
-		'btn_text' => "Explore RockTape Edge",
-		'btn_href' => "#",
-		'image' => "/image/data/home-slider/2xEdge-H2O-Black-PreCut-1.png",
-		'background' => '#c8102e',
-		'background_btn' => '#111111',
-	),
-	array(
-		'title' => "Pain? Meet Fire and Ice.",
-		'text' => "Muscle and joint pain* doesn’t stand a chance. Meet the new RockSauce family.",
-		'btn_text' => "Explore RockSauce",
-		'btn_href' => "#",
-		'image' => "/image/data/home-slider/rs-slide.png",
-		'background' => '#111111',
-		'background_btn' => '#c8102e',
-	),
-	array(
-		'title' => "Supercharge your stretch.",
-		'text' => "Meet RockFloss, the newest & most versatile muscle and joint recovery tool. Easy & infinitely reusable.",
-		'btn_text' => "Explore RockFloss",
-		'btn_href' => "#",
-		'image' => "/image/data/home-slider/RockFloss_Band.png",
-		'background' => '#c8102e',
-		'background_btn' => '#111111',
-	),
-);
-*/
-
-
-?>
 <div id="home-slider" class="h-slider">
 	<?php foreach ($home_slider as $slide) { ?>
 	<div class="h-slider__item" style="background: <?php echo $slide['background']; ?>">
@@ -501,67 +454,19 @@ $home_slider = array(
 
 
 <?php
-$home_slider_popular = array(
-	array(
-		'title' => 'RockTape',
-		'text' => 'Лучший в мире кинезио тейп',
-		'image' => '/image/data/home-slider-popular/Medical-Tape-510x382.jpg',
-		'href' => '/kinesio-tapes',
-	),
-	array(
-		'title' => 'Экипировка',
-		'text' => 'Ваша защита в самых жестких воркаутах',
-		'image' => '/image/data/home-slider-popular/Retail-Assassins-510x382.jpg',
-		'href' => '/outfit',
-	),
-	array(
-		'title' => 'RockSouce',
-		'text' => 'Эффективное обезболивание в спортивной медицине',
-		'image' => '/image/data/home-slider-popular/Medical-Topicals-510x382.jpg',
-		'href' => '/rock-sause',
-	),
-	array(
-		'title' => 'RockFloss',
-		'text' => 'Твой помощник для улучшения мобильности',
-		'image' => '/image/data/home-slider-popular/Retail-Floss-510x382.png',
-		'href' => '/rockfloss',
-	),
-	array(
-		'title' => 'Помощь специалиста',
-		'text' => 'Найди RockDoc-а в своем городе',
-		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
-		'href' => '/help-specialist',
-	),
+$home_slider_popular = array();
 
+foreach ($home_slider1 as $slide) {
+	$home_slider_popular[] = array(
+								'title' => $slide['title'],
+								'text' => $slide['text'],
+								'image' => $slide['image'],
+								'href' => $slide['btn_href'],
+							);
+	
+}
 
-
-	array(
-		'title' => 'Помощь специалиста',
-		'text' => 'Найди RockDoc-а в своем городе',
-		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
-		'href' => '/help-specialist',
-	),
-	array(
-		'title' => 'Помощь специалиста',
-		'text' => 'Найди RockDoc-а в своем городе',
-		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
-		'href' => '/help-specialist',
-	),
-	array(
-		'title' => 'Помощь специалиста',
-		'text' => 'Найди RockDoc-а в своем городе',
-		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
-		'href' => '/help-specialist',
-	),
-	array(
-		'title' => 'Помощь специалиста',
-		'text' => 'Найди RockDoc-а в своем городе',
-		'image' => '/image/data/home-slider-popular/Retail-Find-Doc-1-510x382.jpg',
-		'href' => '/help-specialist',
-	),
-);
 ?>
-
 
 <div id="home-slider-popular" class="h-slider-popular">
 	<div class="slider__arrows">
@@ -620,43 +525,18 @@ $home_slider_popular = array(
 
 <?php if ( $_SERVER['REQUEST_URI'] == '/rock-tape-producer' ) { ?>
 <?php
-$cat_slider = array(
-  array(
-    'img' => '/image/data/cat-home/2019-04-Med-Tape-Launch---Shop-Hero-v1.jpg',
-    'title' => 'New look. Same great tape.',
-    'text' => 'Our new tape line exclusively for medical professionals is here.',
-    'btn-text' => 'Shop Medical Tape',
-    'btn-href' => '#'
-  ),
-  array(
-    'img' => '/image/data/cat-home/flex.jpg',
-    'title' => 'One Band. Unlimited possibilities.',
-    'text' => 'NEW from RockTape, meet RockBand Flex. Rehabilitation, mobility and strength training in a single, elegant band.',
-    'btn-text' => 'Explore Flex',
-    'btn-href' => '#'
-  ),
-  array(
-    'img' => '/image/data/cat-home/2018-04_buy_2_get_1_rockfloss_medical_sale_-_shop_hero_v1__29522.jpg',
-    'title' => "Supercharge your stretch with RockFloss.",
-    'text' => 'Unglue sticky and stiff muscles, reduce joint pain, and improve flexibility. Available in 2" and 4" sizes.',
-    'btn-text' => 'Shop RockFloss',
-    'btn-href' => '#'
-  ),
-  array(
-    'img' => '/image/data/cat-home/tape-big.jpg',
-    'title' => "The world's best kinesiology tape.",
-    'text' => 'Soothe pain and improve performance with RockTape.',
-    'btn-text' => 'Shop RockTape',
-    'btn-href' => '#'
-  ),
-  array(
-    'img' => '/image/data/cat-home/cf-assasin.jpg',
-    'title' => 'The Official Knee Sleeve of CrossFit®',
-    'text' => 'Competition proven knee protection designed for The Fittest on Earth™ - get yours, as worn by the athletes of the 2018 Reebok CrossFit® Games!',
-    'btn-text' => 'Explore Assassins Knee Sleeves',
-    'btn-href' => '#'
-  ),
-);
+$cat_slider = array();
+
+foreach ($home_slider2 as $slide) {
+	$cat_slider[] = array(
+								'title' => $slide['title'],
+								'text' => $slide['text'],
+								'img' => $slide['image'],
+								'btn-text' => $slide['btn_text'],
+								'btn-href' => $slide['btn_href'],
+							);
+	
+}
 ?>
 
 
@@ -768,3 +648,4 @@ $class = $helper->calculateSpans( $ospans, $cols );
 	<section id="columns"><div class="container">
 	<?php } ?>
 	<div class="row">
+

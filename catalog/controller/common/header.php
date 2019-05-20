@@ -160,25 +160,54 @@ class ControllerCommonHeader extends Controller {
 		);
 
 		
-				$this->load->model('design/banner');
-				
+		$this->load->model('design/banner');
+		
+		// =================================================================		
 		$this->data['home_slider'] = array();
-		
 		$results = $this->model_design_banner->getBanner(11);
-
 		foreach ($results as $result) {
-			//if (file_exists(DIR_IMAGE . $result['image'])) {
-				$this->data['home_slider'][] = array(
-					'title' => $result['title'],
-					'btn_href'  => $result['link'],
-					'image' => '/image/'.$result['image'],
-					'text'                  => $result['text'],
-					'btn_text'              => $result['btn_text'],
-					'background'            => $result['background'],
-					'background_btn'        => $result['background_btn'],
+			$this->data['home_slider'][] = array(
+				'title' => $result['title'],
+				'btn_href'  => $result['link'],
+				'image' => '/image/'.$result['image'],
+				'text'                  => $result['text'],
+				'btn_text'              => $result['btn_text'],
+				'background'            => $result['background'],
+				'background_btn'        => $result['background_btn'],
+	
+			);
+		}
 		
-				);
-			//}
+		// =================================================================		
+		$this->data['home_slider1'] = array();
+		$results = $this->model_design_banner->getBanner(12);
+		foreach ($results as $result) {
+			$this->data['home_slider1'][] = array(
+				'title' => $result['title'],
+				'btn_href'  => $result['link'],
+				'image' => '/image/'.$result['image'],
+				'text'                  => $result['text'],
+				'btn_text'              => $result['btn_text'],
+				'background'            => $result['background'],
+				'background_btn'        => $result['background_btn'],
+	
+			);
+		}
+		
+		// =================================================================		
+		$this->data['home_slider2'] = array();
+		$results = $this->model_design_banner->getBanner(13);
+		foreach ($results as $result) {
+			$this->data['home_slider2'][] = array(
+				'title' => $result['title'],
+				'btn_href'  => $result['link'],
+				'image' => '/image/'.$result['image'],
+				'text'                  => $result['text'],
+				'btn_text'              => $result['btn_text'],
+				'background'            => $result['background'],
+				'background_btn'        => $result['background_btn'],
+	
+			);
 		}
 		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/header.tpl')) {
