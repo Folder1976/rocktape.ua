@@ -77,6 +77,9 @@
 
 
 @media (max-width: 991px) {
+    .home-full-video {
+        background-position: 50% 0;
+    }
     .home-full-video__wrap { display: none; }
     .home-full-video__content {
         background-color: rgba(0,0,0,.6);
@@ -398,6 +401,7 @@
     font-weight: 500;
     line-height: 1.8em;
     padding-right: 20px;
+    margin-bottom: 40px;
 }
 
 .subscribe .form-control {
