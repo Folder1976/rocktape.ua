@@ -506,7 +506,8 @@ foreach ($home_slider1 as $slide) {
 				<div class="subscribe__text">Подпишитесь на нашу рассылку, чтобы оставаться в курсе последних новостей от RockTape, включая новые продукты, рекламные акции и события в вашем регионе.</div>
 			</div>
 			<div class="col-md-6">
-				<form action="/" method="post">
+				<form action="javascript:;" method="post" class="form_podpiska">
+					<input type="hidden" name="subj" value="Подписаться на новости">
 					<input class="form-control" type="text" name="name" value="" placeholder="Имя" required>
 					<input class="form-control" type="email" name="email" value="" placeholder="Email" required>
 					<input type="submit" value="Подписаться" class="button">
@@ -649,3 +650,38 @@ $class = $helper->calculateSpans( $ospans, $cols );
 	<?php } ?>
 	<div class="row">
 
+		
+<script>
+	
+	$('.form_podpiska').on('submit', function() {
+   
+		var form = $(this);
+   
+		$.ajax({
+		  url: '/index.php?route=account/universalform/podpiska',
+		  type: 'post',
+		  data: $(this).serialize(),
+		  dataType: 'json',
+		  beforeSend: function() {
+		  },
+		  complete: function() {
+		  },
+		  success: function(json) {
+		  
+			if(json['success']){
+				
+				$(form).children('input[type="email"], input[type="text"]').val('');
+				
+				alert(json['success']);
+			}
+		  	//console.log(json);		   
+
+		  },
+			  error: function(xhr, ajaxOptions, thrownError) {
+				  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+			  }
+		});
+	});
+	
+</script>
+		
