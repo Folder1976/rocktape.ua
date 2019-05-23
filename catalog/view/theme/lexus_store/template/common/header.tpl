@@ -420,7 +420,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<div class="col-md-10 col-md-offset-1">
 					<h1 class="home-full-video__title">PAIN STOPS HERE</h1>
 					<p class="home-full-video__text">Делай снова то, что ты любишь. Двигайся больше и лучше с RockTape!</p>
-					<a href="/apparel" class="home-full-video__link btn-theme-primary">Купить продукцию</a>
+					<a href="/rock-tape-producer" class="home-full-video__link btn-theme-primary">Купить продукцию</a>
 					<a href="//rocklab.rocktape.ua" class="home-full-video__link btn-theme-primary">Помощь специалиста</a>
 				</div>
 			</div>
