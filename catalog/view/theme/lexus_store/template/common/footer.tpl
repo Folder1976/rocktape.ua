@@ -154,6 +154,10 @@
 				<div class="col-md-4 col-sm-12">
 					<div class="footer-box">
 						<h4 class="footer-box__title">Партнеры</h4>
+
+						<img src="/image/data/partners/partners.png" alt="partners" class="partners__img">
+						
+						<?php if(false){ ?>
 						<div class="footer-box__partners">
 							<?php foreach ($partners as $partner) { ?>
 							<div class="footer-box__partners-item">
@@ -161,6 +165,9 @@
 							</div>
 							<?php } ?>
 						</div>
+						<?php } ?>
+
+
 					</div>
 				</div>
 			</div>

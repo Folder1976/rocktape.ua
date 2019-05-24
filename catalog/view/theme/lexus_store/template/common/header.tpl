@@ -506,10 +506,11 @@ foreach ($home_slider1 as $slide) {
 				<div class="subscribe__text">Подпишитесь на нашу рассылку, чтобы оставаться в курсе последних новостей от RockTape, включая новые продукты, рекламные акции и события в вашем регионе.</div>
 			</div>
 			<div class="col-md-6">
-				<form action="/" method="post">
+				<form action="javascript:;" method="post" class="form_podpiska">
+					<input type="hidden" name="subj" value="Подписаться на новости">
 					<input class="form-control" type="text" name="name" value="" placeholder="Имя" required>
 					<input class="form-control" type="email" name="email" value="" placeholder="Email" required>
-					<input type="submit" value="Подписаться" class="button">
+					<input type="submit" value="Подписаться" class="button send_mail">
 				</form>
 			</div>
 		</div>
@@ -541,7 +542,7 @@ foreach ($home_slider2 as $slide) {
 
 
 
-
+<?php if ( isset($cat_slider) && count($cat_slider)>0 ) { ?>
 <div class="cat-home-slider js-cat-home-slider">
 
   <?php foreach ($cat_slider as $slide) { ?>
@@ -558,6 +559,8 @@ foreach ($home_slider2 as $slide) {
   <?php } ?>
 
 </div>
+<?php } ?>
+
 <?php } ?>
 
 
@@ -648,4 +651,43 @@ $class = $helper->calculateSpans( $ospans, $cols );
 	<section id="columns"><div class="container">
 	<?php } ?>
 	<div class="row">
+		
+		
+<script>
+	
+	$('.form_podpiska').on('submit', function() {
+   
+		var form = $(this);
+   
+		$.ajax({
+		  url: '/index.php?route=account/universalform/podpiska',
+		  type: 'post',
+		  data: $(this).serialize(),
+		  dataType: 'json',
+		  beforeSend: function() {
+		  },
+		  complete: function() {
+		  },
+		  success: function(json) {
+		  
+			if(json['success']){
+				
+				$(form).children('input[type="email"], input[type="text"]').val('');
+				
+				// alert(json['success']);
+				$('.success, .warning, .attention, .information').remove();
+				$('#notification').html('<div class="success" style="display: none;">' + json['success'] + '<img src="catalog/view/theme/default/image/close.png" alt="" class="close" /></div>');
+				$('.success').fadeIn('slow');
+				$('html, body').animate({ scrollTop: 0 }, 'slow');
+			}
+		  	//console.log(json);		   
 
+		  },
+			  error: function(xhr, ajaxOptions, thrownError) {
+				  alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+			  }
+		});
+	});
+	
+</script>
+		

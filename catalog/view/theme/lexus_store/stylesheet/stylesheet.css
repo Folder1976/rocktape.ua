@@ -1466,7 +1466,7 @@ body.layout-boxed-lg #page {
   background: none;
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 100;
   line-height: 1.8em;
 
 }
@@ -2188,11 +2188,7 @@ body.layout-boxed-lg #page {
 #header #cart h4,
 
 #header #cart span {
-
-  line-height: 35px;
-
   color: #FFFFFF;
-
 }
 
 #header #cart .content {
@@ -2230,13 +2226,8 @@ body.layout-boxed-lg #page {
 }
 
 #header #cart .heading #cart-total {
-
-  padding: 16px;
-
   font-size: 12px;
-
   background: #C72828;
-
 }
 
 #header #cart .heading h4 {
