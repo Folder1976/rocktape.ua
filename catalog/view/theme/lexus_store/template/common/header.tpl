@@ -90,9 +90,11 @@
 <?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
 <?php } else { ?>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
 <?php } ?>
 
 

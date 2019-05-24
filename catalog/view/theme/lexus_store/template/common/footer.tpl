@@ -25,15 +25,41 @@
 	if( count($modules) ) { 
 		$class = $helper->calculateSpans( $ospans, $cols );
 ?>
-<section id="pav-mass-bottom">
-	<div class="container">
-			<?php $j=1;foreach ($modules as $i =>  $module) {   ?>
-				<?php if( $i++%$cols == 0 || count($modules)==1 ){  $j=1;?><div class="row"><?php } ?>	
-				<div class="<?php echo $class[$j];?>  col-sm-6"><?php echo $module; ?></div>
-				<?php if( $i%$cols == 0 || $i==count($modules) ){ ?></div><?php } ?>	
-			<?php  $j++; } ?>
+
+
+	<?php if ( $_SERVER['REQUEST_URI'] != '/' ) { ?>
+	<section class="subscribe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2 class="subscribe__title">Будь в курсе новостей</h2>
+					<div class="subscribe__text">Подпишитесь на нашу рассылку, чтобы оставаться в курсе последних новостей от RockTape, включая новые продукты, рекламные акции и события в вашем регионе.</div>
+				</div>
+				<div class="col-md-6">
+					<form action="javascript:;" method="post" class="form_podpiska">
+						<input type="hidden" name="subj" value="Подписаться на новости">
+						<input class="form-control" type="text" name="name" value="" placeholder="Имя" required>
+						<input class="form-control" type="email" name="email" value="" placeholder="Email" required>
+						<input type="submit" value="Подписаться" class="button send_mail">
+					</form>
+				</div>
+			</div>
 		</div>
-</section>
+	</section>
+	<?php } ?>
+
+
+	<?php if(false){ ?>
+	<section id="pav-mass-bottom">
+		<div class="container">
+				<?php $j=1;foreach ($modules as $i =>  $module) {   ?>
+					<?php if( $i++%$cols == 0 || count($modules)==1 ){  $j=1;?><div class="row"><?php } ?>	
+					<div class="<?php echo $class[$j];?>  col-sm-6"><?php echo $module; ?></div>
+					<?php if( $i%$cols == 0 || $i==count($modules) ){ ?></div><?php } ?>	
+				<?php  $j++; } ?>
+			</div>
+	</section>
+	<?php } ?>
 <?php } ?>
 <section id="footer">
 	<?php
