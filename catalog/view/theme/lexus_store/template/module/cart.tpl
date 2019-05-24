@@ -1,8 +1,6 @@
 <div id="cart" class="pull-right">
     <div class="media-body heading">
-        <span class="icon-cart pull-left"></span>
-        <!-- <h4 class="pull-left"><?php echo $heading_title; ?></h4> -->
-        <a><span id="cart-total"><?php echo $text_items; ?></span><span class="icon-cart-wrap"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></span></a>
+        <a class="header-cart-total-btn"><span id="cart-total"><?php echo $text_items; ?></span><span class="icon-cart-wrap"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></span></a>
     </div>
     <div class="content">
         <?php if ($products || $vouchers) { ?>
