@@ -1097,6 +1097,10 @@
     width: 13px;
     height: 16px;
 }
+.blog-content li,
+.blog-bottom li {
+    font-family: 'Poppins', sans-serif;
+}
 
 
 

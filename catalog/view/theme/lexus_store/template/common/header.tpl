@@ -656,7 +656,7 @@ $class = $helper->calculateSpans( $ospans, $cols );
 		
 		
 <script>
-	
+$(document).ready( function(){
 	$('.form_podpiska').on('submit', function() {
    
 		var form = $(this);
@@ -690,6 +690,7 @@ $class = $helper->calculateSpans( $ospans, $cols );
 			  }
 		});
 	});
+});
 	
 </script>
 		
