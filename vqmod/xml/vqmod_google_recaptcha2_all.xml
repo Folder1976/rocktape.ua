@@ -130,9 +130,10 @@
     </file>
     <file name="catalog/view/theme/*/template/product/product.tpl">
         <operation error="log">
-            <search position="replace" offset="4"><![CDATA[<?php echo $entry_captcha; ?>]]></search>
+            <search position="remote" offset="4"><![CDATA[<?php echo $entry_captcha; ?>]]></search>
             <add><![CDATA[<?php if ($site_key) { ?>
               <div class="g-recaptcha" data-sitekey="<?php echo $site_key; ?>"></div>
+            <div><a id="button-review" class="button">Продолжить</a></div>
             <?php } ?><br>]]></add>
         </operation>
 
