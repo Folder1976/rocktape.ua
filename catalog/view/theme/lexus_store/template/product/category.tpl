@@ -167,6 +167,7 @@
 	      </div>
 	      <?php } ?>
 		<div class="product-meta">
+      <a class="product-meta__link" href="<?php echo $product['href']; ?>"></a>
 	        <h3 class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3>
 	        <div class="description">
 				<?php echo utf8_substr( strip_tags($product['description']),0,100);?>...

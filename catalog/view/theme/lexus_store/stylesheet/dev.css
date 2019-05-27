@@ -81,6 +81,9 @@
 @media (max-width: 991px) {
     .home-full-video {
         background-position: 50% 0;
+        max-height: none;
+        min-height: 100vh;
+        height: auto;
     }
     .home-full-video__wrap { display: none; }
     .home-full-video__content {
@@ -1102,5 +1105,48 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.blog-readmore .button {
+    background-color: #C72828;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 35px;
+    padding: 1px 30px;
+    border-radius: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    transition: all .3s;
+}
+.blog-readmore .button:hover {
+    box-shadow: 0 0 0 0px;
+    background-color: #000;
+    border-color: #000;
+}
 
+.product-meta__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
 
+.form-review {
+    max-width: 600px;
+}
+.form-review .form-control {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 3px;
+    color: #666;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    border: 1px solid #e1e1e1;
+}

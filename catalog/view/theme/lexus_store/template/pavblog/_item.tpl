@@ -38,7 +38,7 @@
 
 	<div class="blog-body">
 		<?php if( $blog['thumb'] && $config->get('cat_show_image') )  { ?>
-		<img src="<?php echo $blog['thumb'];?>" title="<?php echo $blog['title'];?>" alt="<?php echo $blog['title'];?>">
+			<a href="<?php echo $blog['link'];?>" title="<?php echo $blog['title'];?>"><img src="<?php echo $blog['thumb'];?>" title="<?php echo $blog['title'];?>" alt="<?php echo $blog['title'];?>"></a>
 		<?php } ?>
 
 		<?php if( $config->get('cat_show_title') ) { ?>
@@ -53,7 +53,7 @@
 			</div>
 			<?php } ?>
 		
-			<?php if (false) {//( $config->get('cat_show_readmore') ) { ?>
+			<?php if ( $config->get('cat_show_readmore') ) { ?>
 			<div class="blog-readmore"><a href="<?php echo $blog['link'];?>" class="button"><?php echo $this->language->get('text_readmore');?></a></div>
 			<?php } ?>
 	</div>	

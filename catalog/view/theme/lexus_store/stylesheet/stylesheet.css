@@ -561,7 +561,6 @@ a.button {
   padding: 16px 0;
   margin-bottom: 20px;
   z-index: 2;
-  font-family: 'Roboto', sans-serif;
 }
 
 .tab-content ul,ol {
@@ -589,16 +588,14 @@ a.button {
 .tab-content a.button {
   color: #fff;
   text-decoration: none;
+  border-radius: 3px;
 }
 
 .tab-content a:hover {
-
 	text-decoration: none;
-
-	/*border-bottom: 1px;
-
-	border-bottom-style: dashed;*/
-
+  background-color: #000;
+  border-color: #000;
+  box-shadow: 0 0 0 0px;
 }
 
 .carousel-controls {
@@ -2683,6 +2680,7 @@ body.layout-boxed-lg #page {
   background-color: rgba(255,255,255,.9);
   height: 95px;
   overflow: hidden;
+  text-align: center;
 }
 
 .product-block:hover .product-meta {
@@ -2933,12 +2931,15 @@ body.layout-boxed-lg #page {
 
 .product-block .price {
   padding: 0px 10px;
-  display: block;
+  display: inline-block;
+  margin: 0 auto;
   color: #5d5d5d;
   font-size: 18px;
   font-weight: 300;
   text-align: center;
   font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+  position: relative;
+  z-index: 2;
 }
 
 .product-block .price .price-tax {
