@@ -1157,3 +1157,6 @@
 #review-title {
     font-family: 'Poppins', sans-serif;
 }
+.tab-content ol {
+    color: #111;
+}
