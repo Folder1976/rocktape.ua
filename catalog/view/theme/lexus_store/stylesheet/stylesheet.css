@@ -2738,11 +2738,11 @@ body.layout-boxed-lg #page {
 .product-block .cart {
   display: block;
   text-align: center;
-  margin-top: 20px;
-  padding-top: 20px;
   position: relative;
   opacity: 0;
   transition: all .3s;
+  z-index: 10;
+  top: 40px;
 }
 
 .product-block .cart input {
@@ -2779,7 +2779,7 @@ body.layout-boxed-lg #page {
   height: 1px;
   display: block;
   background: #e1e1e1;
-  top: 0;
+  top: -20px;
   left: 50%;
   transform: translate(-50%, 0);
 }

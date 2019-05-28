@@ -178,7 +178,7 @@
 			<?php } ?>
 
 	         <?php if ($product['price']) { ?>
-			 <div class="price">
+			 <div class="price"><a class="product-meta__link" href="<?php echo $product['href']; ?>"></a>
 				  <?php if (!$product['special']) { ?>
 				  <?php echo $product['price']; ?>
 				  <?php } else { ?>

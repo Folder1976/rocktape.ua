@@ -177,6 +177,7 @@
 						</ul>
 					</div>
 				</div>
+				<div class="clearfix visible-sm visible-xs"></div>
 				<div class="col-md-4 col-sm-12">
 					<div class="footer-box">
 						<h4 class="footer-box__title">Партнеры</h4>

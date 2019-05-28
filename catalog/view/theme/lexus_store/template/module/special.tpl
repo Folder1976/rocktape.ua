@@ -40,14 +40,14 @@
           <?php } } ?>       
       </div>
       <?php } ?>
-          <div class="product-meta">
+          <div class="product-meta"><a class="product-meta__link" href="<?php echo $product['href']; ?>"></a>
         <h3 class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h3>
          <?php if ($product['rating']) { ?>
       <div class="rating"><img src="catalog/view/theme/<?php echo $this->config->get('config_template');?>/image/stars-<?php echo $product['rating']; ?>.png" alt="<?php echo $product['reviews']; ?>" /></div>
       <?php } ?> 
 
         <?php if ($product['price']) { ?>
-          <div class="price">
+          <div class="price"><a class="product-meta__link" href="<?php echo $product['href']; ?>"></a>
           <?php if (!$product['special']) { ?>
           <?php echo $product['price']; ?>
           <?php } else { ?>

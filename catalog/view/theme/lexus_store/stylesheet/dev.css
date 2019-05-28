@@ -524,7 +524,7 @@
     }
     .footer-box .partners__img {
         display: block;
-        margin: 0 auto;
+        /*margin: 0 auto;*/
     }
 }
 
@@ -1149,4 +1149,11 @@
     font-weight: 400;
     margin-bottom: 40px;
     border: 1px solid #e1e1e1;
+}
+
+.tab-content {
+    font-family: 'Poppins', sans-serif;
+}
+#review-title {
+    font-family: 'Poppins', sans-serif;
 }

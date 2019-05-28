@@ -1,5 +1,5 @@
 <?php
-	$version = '001';
+	$version = '002';
 
 	$themeConfig = (array)$this->config->get( 'themecontrol' );
 	$themeName =  $this->config->get('config_template');
