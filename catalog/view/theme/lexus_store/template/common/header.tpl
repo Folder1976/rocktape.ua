@@ -88,10 +88,10 @@
 <?php } else { ?>
 
 <?php if (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['HTTPS'] == '1'))) { ?>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 <?php } else { ?>
-	<link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet">
 <?php } ?>
 
@@ -468,7 +468,7 @@ foreach ($home_slider1 as $slide) {
 
 ?>
 
-<div id="home-slider-popular" class="h-slider-popular">
+<div id="home-slider-popular" class="h-slider-popular" style="margin-bottom: 20px;">
 	<div class="slider__arrows">
 	  <div class="slider__arrow slider__arrow--prev">
 	    <span></span>
@@ -496,6 +496,17 @@ foreach ($home_slider1 as $slide) {
 	</div>
 </div>
 
+<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	<div class="container">
+<?php if( count($content_top_modules) ) : ?>
+<div class="row">
+<?php foreach ($content_top_modules as $module) { ?>
+<?php echo $module; ?>
+<?php } ?>
+</div>
+<?php endif; ?>
+	</div>
+</section>
 
 
 <section class="subscribe">
@@ -541,8 +552,6 @@ foreach ($home_slider2 as $slide) {
 ?>
 
 
-
-
 <div class="cat-home-slider js-cat-home-slider">
 
   <?php foreach ($cat_slider as $slide) { ?>
@@ -567,15 +576,12 @@ foreach ($home_slider2 as $slide) {
 
 
 
-
-
-
 <?php
 /**
  * Slideshow modules
  */
 $modules = $helper->getModulesByPosition( 'slideshow' );
-if( $modules ){
+if( false AND $modules ){
 ?>
 <section id="pav-slideshow" class="pav-slideshow">
 	<div class="container">
@@ -618,7 +624,7 @@ $class = $helper->calculateSpans( $ospans, $cols );
 $modules = $helper->getModulesByPosition( 'promotion' );
 $ospans = array();
 
-if( count($modules) ){
+if(false AND count($modules) ){
 $cols = isset($config['block_promotion'])&& $config['block_promotion']?(int)$config['block_promotion']:count($modules);
 $class = $helper->calculateSpans( $ospans, $cols );
 ?>

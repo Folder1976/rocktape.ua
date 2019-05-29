@@ -148,7 +148,6 @@ padding-top: 40px;
     display: block;
     float: left;
     font-size: 90%;
-    font-style: italic;
     font-weight: bold;
     padding: 0 10px 5px;
 }
@@ -172,7 +171,6 @@ padding-top: 40px;
 .pav-comment .buttons-wrap{padding-left: 10px;}
 .pav-blog .blog-tags a{
    margin: 0 2px;
-   font-style: italic;
 }
 .comment-item {
     padding-bottom:10px;
@@ -289,3 +287,9 @@ padding-top: 40px;
     }
 }
 
+.blog-bottom a {
+    color: #111;
+}
+.blog-bottom a:hover {
+    color: #B32424;
+}

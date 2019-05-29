@@ -324,11 +324,7 @@ table.radio tr td:first-child input {
 }
 
 table.radio tr.highlight:hover td {
-
-  background: #F1FFDD;
-
   cursor: pointer;
-
 }
 
 .pagination {
@@ -7480,6 +7476,10 @@ opacity: 0;
 .description ol,
 .information ul,
 .information ol {
+  font-family: 'Poppins', sans-serif;
+}
+
+#comment-form {
   font-family: 'Poppins', sans-serif;
 }
 
