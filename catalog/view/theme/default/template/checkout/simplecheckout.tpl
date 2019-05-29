@@ -212,7 +212,7 @@ include $simple_header;
                             </span>
                         <?php } ?>
                         <?php if ($steps_count > 1) { ?>
-                            <a class="button btn-primary button_oc btn" data-onclick="nextStep" id="simplecheckout_button_next"><span><?php echo $button_next; ?></span></a>
+                            <a class="button btn-primary button_oc btn bbtn" data-onclick="nextStep" id="simplecheckout_button_next"><span><?php echo $button_next; ?></span></a>
                         <?php } ?>
                         <a class="button btn-primary button_oc btn bbtn" <?php echo $block_order ? 'disabled' : '' ?> data-onclick="createOrder" id="simplecheckout_button_confirm"><span><?php echo $button_order; ?></span></a>
                     </div>

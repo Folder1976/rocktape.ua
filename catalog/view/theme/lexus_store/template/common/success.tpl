@@ -17,7 +17,7 @@
             <p style="color: red;">Внимание! В стоимость заказа не включены расходы на услуги Новой почты за доставку товара и денежный перевод.</p>
         <?php endif; ?>
         <div class="buttons">
-            <div class="right"><a href="<?php echo $continue; ?>" class="button"><?php echo $button_continue; ?></a></div>
+            <div class="right"><a href="<?php echo $continue; ?>" class="button bbtn"><?php echo $button_continue; ?></a></div>
         </div>
         <?php echo $content_bottom; ?>
     </div>

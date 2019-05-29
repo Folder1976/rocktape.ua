@@ -172,6 +172,7 @@
 }
 .simplecheckout-methods-table td.title label {
     display: block !important;
+    font-weight: 400;
 }
 .simplecheckout-methods-table td.quote {
     width: 15%;
