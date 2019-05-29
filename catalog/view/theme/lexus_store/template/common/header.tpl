@@ -644,13 +644,13 @@ $class = $helper->calculateSpans( $ospans, $cols );
 
 	<?php if( isset($themeConfig['enable_offsidebars']) && $themeConfig['enable_offsidebars'] ) { ?>
 	<section id="columns" class=""><div class="container">
-	<div class="row visible-xs"><div class="container">
+	<!--div class="row visible-xs"><div class="container">
 		<div class="offcanvas-sidebars-buttons">
-			<!-- <button type="button" data-for="column-left" class="pull-left btn btn-danger"><i class="glyphicon glyphicon-indent-left"></i> <?php echo $this->language->get('text_sidebar_left'); ?></button> -->
+			 <button type="button" data-for="column-left" class="pull-left btn btn-danger"><i class="glyphicon glyphicon-indent-left"></i> <?php echo $this->language->get('text_sidebar_left'); ?></button> 
 
-			<!-- <button type="button" data-for="column-right" class="pull-right btn btn-danger"><?php echo $this->language->get('text_sidebar_right'); ?> <i class="glyphicon glyphicon-indent-right"></i></button> -->
+			 <button type="button" data-for="column-right" class="pull-right btn btn-danger"><?php echo $this->language->get('text_sidebar_right'); ?> <i class="glyphicon glyphicon-indent-right"></i></button> 
 		</div>
-	</div></div>
+	</div></div-->
 	<?php }else { ?>
 	<section id="columns"><div class="container">
 	<?php } ?>

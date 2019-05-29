@@ -111,28 +111,6 @@
 
 
 	<?php
-	$blog = array(
-		array(
-			'title' => 'Статья из блога 1',
-			'href' => '#'
-		),
-		array(
-			'title' => 'Статья из блога 2',
-			'href' => '#'
-		),
-		array(
-			'title' => 'Статья из блога 3',
-			'href' => '#'
-		),
-		array(
-			'title' => 'Статья из блога 4',
-			'href' => '#'
-		),
-		array(
-			'title' => 'Статья из блога 5',
-			'href' => '#'
-		),
-	);
 
 	$partners = array(
 		array(
@@ -171,7 +149,7 @@
 					<div class="footer-box">
 						<h4 class="footer-box__title">Последнее из блога</h4>
 						<ul class="footer-box__list">
-							<?php foreach ($blog as $blog_link) { ?>
+							<?php foreach ($blogs as $blog_link) { ?>
 								<li><a href="<?php echo $blog_link['href']; ?>"><?php echo $blog_link['title']; ?></a></li>
 							<?php } ?>
 						</ul>

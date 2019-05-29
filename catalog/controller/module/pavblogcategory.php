@@ -2,11 +2,11 @@
 class Controllermodulepavblogcategory extends Controller {
 	protected function index($setting) {
 		static $module = 0;
-		
-        if(isset($this->request->get['id']) AND (int)$this->request->get['id'] == 1){
+	
+		if(isset($this->request->get['id']) AND (int)$this->request->get['id'] == 1){
 			$this->document->setTitle('Двигайте больше и лучше с RockTape: посление новости и полезные статьи');
 		}
-		
+	
 		$this->load->model('pavblog/category');
 		$this->load->model('tool/image');
 		$this->language->load('module/pavblog');

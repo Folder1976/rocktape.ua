@@ -60,6 +60,8 @@ class ControllerCommonContentBottom extends Controller {
 
 		$sort_order = array(); 
 
+
+		
 		foreach ($module_data as $key => $value) {
 			$sort_order[$key] = $value['sort_order'];
 		}

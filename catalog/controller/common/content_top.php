@@ -42,6 +42,9 @@ class ControllerCommonContentTop extends Controller {
 
 		$extensions = $this->model_setting_extension->getExtensions('module');		
 
+		//echo "<pre>";print_r(var_dump($extensions));echo "</pre>";
+		//die();
+		
 		foreach ($extensions as $extension) {
 			$modules = $this->config->get($extension['code'] . '_module');
 
@@ -76,6 +79,8 @@ class ControllerCommonContentTop extends Controller {
 			}
 		}
 
+
+		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/common/content_top.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/common/content_top.tpl';
 		} else {

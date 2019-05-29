@@ -88,15 +88,15 @@
 			if (isset($this->request->get['sort'])) {
 				$sort = $this->request->get['sort'];
 			} else {
-				$sort = 'p.sort_order';
+				$sort = 'b.created';
 			}
 
 			if (isset($this->request->get['order'])) {
 				$order = $this->request->get['order'];
 			} else {
-				$order = 'ASC';
+				$order = 'desc';
 			}
-			
+	
 			if (isset($this->request->get['page'])) {
 				$page = $this->request->get['page'];
 			} else { 
@@ -154,7 +154,6 @@
 				'start'              => ($page - 1) * $limit,
 				'limit'              => $limit
 			);
-
 			$blogs = $this->getModel('blog')->getListBlogs(  $data );
 		
 			$users = $this->getModel()->getUsers();

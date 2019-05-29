@@ -16,15 +16,15 @@ require( DIR_TEMPLATE.$this->config->get('config_template')."/template/common/co
 	</aside>
 <?php endif; ?>
 		
-<section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">         
+<!--section class="col-lg-<?php echo $SPAN[1];?> col-md-<?php echo $SPAN[1];?> col-sm-12 col-xs-12">         
 	<div id="content">
-	<?php echo $content_top; ?>
+	<?php //echo $content_top; ?>
 	<?php if (false){ ?>
 		<h1 style="display: none;"><?php echo $heading_title; ?></h1>
 	<?php } ?>
-	<?php echo $content_bottom; ?>
+	<?php //echo $content_bottom; ?>
 	</div>
-</section>
+</section-->
 	
 <?php if( $SPAN[2] ): ?>
 	<aside class="col-lg-<?php echo $SPAN[2];?> col-md-<?php echo $SPAN[2];?> col-sm-12 col-xs-12">	

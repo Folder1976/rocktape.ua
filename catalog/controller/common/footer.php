@@ -53,6 +53,29 @@ class ControllerCommonFooter extends Controller {
 
 		$this->data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
 
+		$this->load->model('pavblog/blog');
+		
+		$data = array(
+			'sort'               => 'created',
+			'order'              => 'DESC',
+			'start'              => 0,
+			'limit'              => 5
+		);
+
+		$blogs = $this->model_pavblog_blog->getListBlogs( $data );
+		
+		$this->data['blogs'] = array();
+		foreach($blogs as $blog){
+			
+			$title = $blog['title'];
+			$title = $this->trim_word($title, 45);
+			
+			$this->data['blogs'][] = array(
+										   'title' => $title,
+										   'href' => $this->url->link('pavblog/blog=' . $blog['blog_id'])
+										   );
+		}
+		
 		// Whos Online
 		if ($this->config->get('config_customer_online')) {
 			$this->load->model('tool/online');
@@ -86,5 +109,20 @@ class ControllerCommonFooter extends Controller {
 
 		$this->render();
 	}
+	
+	public function trim_word($str, $length, $suffix = '...'){
+		$len = mb_strlen($str);
+	
+		if ($len < $length) return $str;
+	
+		$pattern = sprintf('/^(.{%d,}?)\b.*$/', $length);
+		$str = preg_replace($pattern, '$1', $str);
+		$str = trim($str);
+		$str .= $suffix;
+	
+		return $str;
+	}
+	
+	
 }
 ?>

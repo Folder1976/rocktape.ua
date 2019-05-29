@@ -2,6 +2,17 @@
 	$d = array(
 		'demo_widget_delivery_data' => '
 			<div class="box-services">
+				<div class="media-body"><i class="iconbox icon-return pull-left">&nbsp;</i>
+				<h4>RETURN</h4>
+				<small>6 days for free return</small></div>
+				</div>
+
+				<div class="box-services">
+				<div class="media-body"><i class="iconbox icon-shipping pull-left">&nbsp;</i>
+
+				<h4>24HR SHIPPING</h4>
+				<small>Free for UK Customers</small></div>
+				</div>
 
 				<div class="box-services">
 				<div class="media-body"><i class="iconbox icon-phone-call pull-left">&nbsp;</i>
