@@ -132,7 +132,7 @@
 <?php } ?>
 <?php if (isset($modules['coupon']) || (isset($modules['reward']) && $points > 0) || isset($modules['voucher'])) { ?>
     <div class="simplecheckout-cart-total simplecheckout-cart-buttons">
-        <span class="inputs buttons"><a id="simplecheckout_button_cart" data-onclick="reloadAll" class="button btn-primary button_oc btn"><span><?php echo $button_update; ?></span></a></span>
+        <span class="inputs buttons"><a id="simplecheckout_button_cart" data-onclick="reloadAll" class="button btn-primary button_oc btn bbtn"><span><?php echo $button_update; ?></span></a></span>
     </div>
 <?php } ?>
 <input type="hidden" name="remove" value="" id="simplecheckout_remove">
