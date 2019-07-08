@@ -51,7 +51,13 @@ class ControllerCommonSeoPro extends Controller {
 				foreach ($parts as $part) {
 					$url = explode('=', $queries[$part], 2);
 
-					if ($url[0] == 'category_id') {
+					if ($url[0] == 'blog_id') {
+						if (!isset($this->request->get['blogpath'])) {
+							$this->request->get['blogpath'] = $url[1];
+						} else {
+							$this->request->get['blogpath'] .= '_' . $url[1];
+						}
+					} elseif ($url[0] == 'category_id') {
 						if (!isset($this->request->get['path'])) {
 							$this->request->get['path'] = $url[1];
 						} else {
@@ -71,6 +77,8 @@ class ControllerCommonSeoPro extends Controller {
 					$path = $this->getPathByProduct($this->request->get['product_id']);
 					if ($path) $this->request->get['path'] = $path;
 				}
+			} elseif (isset($this->request->get['blogpath'])) {
+				$this->request->get['route'] = 'product/blog';
 			} elseif (isset($this->request->get['path'])) {
 				$this->request->get['route'] = 'product/category';
 			} elseif (isset($this->request->get['manufacturer_id'])) {
@@ -137,6 +145,14 @@ class ControllerCommonSeoPro extends Controller {
 					if (!$data['path']) return $link;
 				}
 				break;
+		case 'product/blog':
+				if (isset($data['blogpath'])) {
+					$category = explode('_', $data['blogpath']);
+					$category = end($category);
+					$data['blogpath'] = $this->getPathByBlogs($category);
+					if (!$data['blogpath']) return $link;
+				}
+				break;
 
 
             // MOD FOR PAV BLOGS
@@ -184,6 +200,15 @@ class ControllerCommonSeoPro extends Controller {
 					$categories = explode('_', $value);
 					foreach ($categories as $category) {
 						$queries[] = 'category_id=' . $category;
+					}
+					unset($data[$key]);
+					break;
+
+
+	 		case 'blogpath':
+					$categories = explode('_', $value);
+					foreach ($categories as $category) {
+						$queries[] = 'blog_id=' . $category;
 					}
 					unset($data[$key]);
 					break;
@@ -346,6 +371,38 @@ class ControllerCommonSeoPro extends Controller {
 		return $path[$product_id];
 	}
 
+	private function getPathByBlogs($blog_id) {
+		$blog_id = (int)$blog_id;
+		if ($blog_id < 1) return false;
+
+		static $path = null;
+		if (!is_array($path)) {
+			$path = $this->cache->get('blog.seopath');
+			if (!is_array($path)) $path = array();
+		}
+
+		if (!isset($path[$blog_id])) {
+			$max_level = 1;
+
+			$sql = "SELECT CONCAT_WS('_'";
+			for ($i = $max_level-1; $i >= 0; --$i) {
+				$sql .= ",t$i.blog_id";
+			}
+			$sql .= ") AS path FROM " . DB_PREFIX . "blog t0";
+			for ($i = 1; $i < $max_level; ++$i) {
+				$sql .= " LEFT JOIN " . DB_PREFIX . "blog t$i ON (t$i.blog_id = t" . ($i-1) . ".parent_id)";
+			}
+			$sql .= " WHERE t0.blog_id = '" . $blog_id . "'";
+
+			$query = $this->db->query($sql);
+
+			$path[$blog_id] = $query->num_rows ? $query->row['path'] : false;
+
+			$this->cache->set('blog.seopath', $path);
+		}
+
+		return $path[$blog_id];
+	}
 	private function getPathByCategory($category_id) {
 		$category_id = (int)$category_id;
 		if ($category_id < 1) return false;
