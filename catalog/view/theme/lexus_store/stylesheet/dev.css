@@ -1212,3 +1212,49 @@ input.button.bbtn:hover,
 .parent.dropdown.deeper .dropdown-backdrop {
     display: none;
 }
+
+
+
+/* New Blog /start/ */
+.page-product-blog h2 {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+    color: #C72828;
+    margin-bottom: 20px;
+}
+.page-product-blog h4 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+}
+
+.page-product-blog .col--black {
+    background-color: #111111;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+}
+.page-product-blog .col--black p {
+    color: #fff;
+}
+
+.page-product-blog .col--red {
+    background-color: #C72828;
+    border-radius: 10px;
+    color: #fff;
+    padding: 27px 10px;
+}
+.page-product-blog .col--red p,
+.page-product-blog .col--red h4 {
+    color: #fff;
+}
+
+
+
+
+.page-product-blog {}
+.page-product-blog {}
+
+/* #C72828; */
+/* New Blog /end/ */

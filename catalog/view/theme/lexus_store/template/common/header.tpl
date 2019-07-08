@@ -333,8 +333,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														</ul>
 													</li>
 													<!--li><a href="https://rocktape.ua/other">Другое</a></li-->
-													
-													<?php if($_SERVER['REMOTE_ADDR'] == '194.126.224.53') { ?>
+													<?php if($_SERVER['REMOTE_ADDR'] == '194.126.224.53' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') { ?>
 														<?php foreach($blogs as $blog){ ?>
 															<li class="parent dropdown deeper "><a href="<?php echo $blog['href']; ?>" target="_blank" class="dropdown-toggle" data-toggle="dropdown"><?php echo $blog['name']; ?><b class="caret"></b></a>
 																<ul class="dropdown-menu">
