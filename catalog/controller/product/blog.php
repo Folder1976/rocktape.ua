@@ -314,7 +314,9 @@ class ControllerProductBlog extends Controller {
 
 			$this->data['continue'] = $this->url->link('common/home');
 
-			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/blog.tpl')) {
+			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/blog'.$blog_id.'.tpl')) {
+				$this->template = $this->config->get('config_template') . '/template/product/blog'.$blog_id.'.tpl';
+			}elseif (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/blog.tpl')) {
 				$this->template = $this->config->get('config_template') . '/template/product/blog.tpl';
 			} else {
 				$this->template = 'default/template/product/blog.tpl';
