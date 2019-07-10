@@ -1373,6 +1373,36 @@ input.button.bbtn:hover,
 
 
 
+.ppb-reg-seminar {}
+.ppb-form .form-control {
+    width: 100%;
+    padding: 14px 16px;
+    border-width: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #999;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+}
+.ppb-form .form-control:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+.ppb-individual-training {}
+.ppb-individual-training h4 {
+    font-size: 30px;
+    line-height: 1.6em;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+}
 
 
 

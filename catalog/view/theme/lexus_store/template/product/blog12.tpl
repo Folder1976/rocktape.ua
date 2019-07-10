@@ -358,10 +358,39 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 <section class="page-product-blog__section ppb-schedule">
     <div class="container">
         <div class="row">
-            <h2 class="text-center">РАСПИСАНИЕ</h2>
-            <h4 class="text-center">Ближайшие семинары RockTape FMT в 2019 году.</h4>
+            <div class="col-md-12">
+                <h2 class="text-center">РАСПИСАНИЕ</h2>
+                <h4 class="text-center">Ближайшие семинары RockTape FMT в 2019 году.</h4>
 
-            table...
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <tr>
+                            <th>Название семинара</th>
+                            <th>Город</th>
+                            <th>Дата</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td><a href="#">FMT Basic</a></td>
+                            <td>Киев</td>
+                            <td>2019.08.08</td>
+                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">FMT Basic</a></td>
+                            <td>Киев</td>
+                            <td>2019.09.08</td>
+                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">FMT Basic</a></td>
+                            <td>Киев</td>
+                            <td>2019.10.08</td>
+                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -369,10 +398,42 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 
 
 
-<section class="page-product-blog__section ppb-schedule">
+<section class="page-product-blog__section ppb-reg-seminar">
     <div class="container">
         <div class="row">
-            <h2 class="text-center">Форма регистрации</h2>
+            <div class="col-md-12">
+                <h2 class="text-center">Форма регистрации</h2>
+
+                <form action="" class="form ppb-form">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <input type="text" name="seminar_name" class="form-control" placeholder="Имя" required>
+                            <input type="text" name="seminar_surname" class="form-control" placeholder="Фамилия">
+                            <input type="text" name="seminar_phone" class="form-control" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="email" name="seminar_email" class="form-control" placeholder="Email">
+                            <select name="seminar_seminar" class="form-control" required>
+                                <option value="0">Семинар</option>
+                                <option value="1">FMT Basic</option>
+                                <option value="2">FMT Performance</option>
+                                <option value="3">FMT Screen + Movability</option>
+                                <option value="4">FMT Blades</option>
+                                <option value="5">FMT Blades Advanced</option>
+                                <option value="6">FMT RockPods</option>
+                                <option value="7">FMT RockFloss</option>
+                                <option value="8">RockTape Logopedix</option>
+                                <option value="9">RockTape Beauty</option>
+                            </select>
+                            <input type="submit" class="ppb-button pull-right" value="Зарегистрироваться">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -380,10 +441,43 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 
 
 
-<section class="page-product-blog__section ppb-schedule">
+<section class="page-product-blog__section ppb-individual-training">
     <div class="container">
         <div class="row">
-            <h2 class="text-center">Индивидуальное обучениее.</h2>
+            <div class="col-md-12">
+                <h2 class="text-center">Индивидуальное обучениее.</h2>
+                <h4 class="text-center">Хотите обучиться индивидуально — сообщите нам!</h4>
+
+                <form action="" class="form ppb-form">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <input type="text" name="individual_name" class="form-control" placeholder="Имя" required>
+                            <input type="text" name="individual_surname" class="form-control" placeholder="Фамилия">
+                            <input type="text" name="individual_phone" class="form-control" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <input type="email" name="individual_email" class="form-control" placeholder="Email">
+                            <select name="individual_seminar" class="form-control" required>
+                                <option value="0">Семинар</option>
+                                <option value="1">FMT Basic</option>
+                                <option value="2">FMT Performance</option>
+                                <option value="3">FMT Screen + Movability</option>
+                                <option value="4">FMT Blades</option>
+                                <option value="5">FMT Blades Advanced</option>
+                                <option value="6">FMT RockPods</option>
+                                <option value="7">FMT RockFloss</option>
+                                <option value="8">RockTape Logopedix</option>
+                                <option value="9">RockTape Beauty</option>
+                            </select>
+                            <input type="submit" class="ppb-button pull-right" value="Зарегистрироваться">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
