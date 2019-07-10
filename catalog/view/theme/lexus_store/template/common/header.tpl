@@ -1,5 +1,5 @@
 <?php
-	$version = '002';
+	$version = '003';
 
 	$themeConfig = (array)$this->config->get( 'themecontrol' );
 	$themeName =  $this->config->get('config_template');
@@ -335,7 +335,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 														</ul>
 													</li>
 													<!--li><a href="https://rocktape.ua/other">Другое</a></li-->
-													<?php if($_SERVER['REMOTE_ADDR'] == '194.126.224.53' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') { ?>
+													<?php //if($_SERVER['REMOTE_ADDR'] == '194.126.224.53' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') { ?>
 														<?php foreach($blogs as $blog){ ?>
 															<li class="parent dropdown deeper "><a href="<?php echo $blog['href']; ?>" target="_blank" class="dropdown-toggle" data-toggle="dropdown"><?php echo $blog['name']; ?><b class="caret"></b></a>
 																<ul class="dropdown-menu">
@@ -345,8 +345,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 																</ul>
 															</li>
 														<?php } ?>
-													<?php } ?>
-													<li><a href="http://training.rocktape.ua/" target="_blank">Обучение</a></li>
+													<?php //} ?>
+													<!-- <li><a href="http://training.rocktape.ua/" target="_blank">Обучение</a></li> -->
 													<li><a href="http://rocklab.rocktape.ua" target="_blank">RockLab</a></li>
 													<li><a href="https://rocktape.ua/dostavka" title="Доставка">Доставка</a></li>
 													<li><a href="https://rocktape.ua/contact-info" title="Контакты">Контакты</a></li>
