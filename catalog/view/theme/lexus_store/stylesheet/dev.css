@@ -1226,7 +1226,6 @@ input.button.bbtn:hover,
     text-transform: uppercase;
     color: #000;
     margin-bottom: 20px;
-    text-align: left;
 }
 .ppb-button {
     background-color: #C72828;
@@ -1405,7 +1404,54 @@ input.button.bbtn:hover,
 }
 
 
+.ppb-instructors {
+    min-height: 520px;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
+    border-width: 0px;
+    border-color: transparent;
+    padding: 50px 0;
+    background: #000000 url("/image/data/education/pmt.jpg") no-repeat center center;
+    background-size: cover;
+}
 
+.instructor {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+}
+.instructor:hover img {
+    box-shadow: 0px 0px 25px rgba(255,255,255,0.5),0px 0px 25px rgba(255,255,255,0.5);
+}
+.instructor__foto {
+    margin: 0 auto 15px;
+    text-align: center;
+}
+.instructor__foto img {
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.instructor__name {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.instructor__post {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.instructor__text {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
 
 
 
@@ -1444,5 +1490,14 @@ input.button.bbtn:hover,
     }
 
 }
+
+
+.color--white {
+    color: #fff;
+}
+.mb0 {
+    margin-bottom: 0;
+}
+
 /* #C72828; */
 /* New Blog /end/ */

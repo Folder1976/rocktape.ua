@@ -1,4 +1,12 @@
 <?php echo $header; ?>
+
+<?php
+/*
+Обучение
+http://rocktape.ua/education
+*/
+?>
+
 <?php
 /*
 $version = "001";
