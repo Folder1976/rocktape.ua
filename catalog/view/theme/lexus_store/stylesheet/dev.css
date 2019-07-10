@@ -1688,6 +1688,57 @@ input.button.bbtn:hover,
 }
 
 
+
+.ppb-specials {
+    padding: 50px 0;
+}
+.ppb-specials__title {
+    font-size: 38px;
+    line-height: 1.2em;
+    font-weight: 400;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+    color: #c8102e;
+    text-align: center;
+}
+
+
+.ppb-specials-item .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  fill: #c8102e;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+.ppb-specials-item {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 40px;
+}
+.ppb-specials-item:hover .icon {
+    transform: scale(1.2);
+}
+
+.ppb-specials-item__icon {}
+.ppb-specials-item__title {
+    font-size: 30px;
+    color: #111;
+    text-align: left;
+}
+.ppb-specials-item__title span {
+    color: #c8102e;
+}
+.ppb-specials-item__text {
+    font-size: 18px;
+    color: #111;
+    text-align: left;
+}
+
+
 @media (max-width: 991px) {
     .page-product-blog__section-title,
     .seminar-short-info__title {
@@ -1712,6 +1763,25 @@ input.button.bbtn:hover,
     .advantage-item__title {
         font-size: 22px;
     }
+    .ppb-review-text__title {
+        font-size: 26px;
+    }
+    .ppb-specials__title {
+        font-size: 30px;
+    }
+    .ppb-specials-item__title {
+        font-size: 26px;
+    }
+    .ppb-specials-item__text {
+        font-size: 16px;
+    }
+    .ppb-specials-item .icon {
+        width: 50px;
+        height: 50px;
+    }
+    .ppb-specials-item {
+        padding-left: 75px;
+    }
 
 }
 
@@ -1731,6 +1801,25 @@ input.button.bbtn:hover,
     }
     .seminar-short-info p {
         font-size: 22px;
+    }
+    .ppb-review-text__title {
+        font-size: 22px;
+    }
+    .ppb-specials__title {
+        font-size: 24px;
+    }
+    .ppb-specials-item__title {
+        font-size: 20px;
+    }
+    .ppb-specials-item__text {
+        font-size: 14px;
+    }
+    .ppb-specials-item .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .ppb-specials-item {
+        padding-left: 50px;
     }
 }
 
