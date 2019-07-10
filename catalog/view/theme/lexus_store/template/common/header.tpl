@@ -22,6 +22,7 @@
 		$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/customize/'.$themeConfig['customize_theme'].'.css?'.$version  );
 	}
 
+	$helper->addCss( 'catalog/view/javascript/magnific-popup/magnific-popup.css?'.$version );
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/animation.css?'.$version );
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font-awesome.min.css?'.$version );
 	$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/font.css?'.$version );
@@ -29,6 +30,7 @@
 	$helper->addCss( 'catalog/view/javascript/jquery/colorbox/colorbox.css?'.$version );
 
 	$helper->addCss( 'catalog/view/javascript/slick-slider/slick.css?'.$version );
+	$helper->addScript( 'catalog/view/javascript/magnific-popup/jquery.magnific-popup.min.js?'.$version );
 	$helper->addScript( 'catalog/view/javascript/slick-slider/slick.min.js?'.$version );
 	$helper->addCssList( $styles );
 	$layoutMode = $helper->getParam( 'layout' );
