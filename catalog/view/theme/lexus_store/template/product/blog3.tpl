@@ -95,7 +95,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
             </div>
             <div id="accordion-seminar" class="col-md-4">
                 <div class="accordion">
-                    <div class="accordion__title" data-toggle="collapse" data-target="#accordion-1">Цели FMT Basic</div>
+                    <div class="accordion__title text-center" data-toggle="collapse" data-target="#accordion-1">Цели FMT Basic</div>
                     <div id="accordion-1" class="accordion__content collapse in">
                         <p><b>На курсе вы:</b></p>
                         <ul>
@@ -107,7 +107,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                     </div>
                 </div>
                 <div class="accordion">
-                    <div class="accordion__title collapsed" data-toggle="collapse" data-target="#accordion-2">Цели FMT Performance</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-2">Цели FMT Performance</div>
                     <div id="accordion-2" class="accordion__content collapse">
                         <p><b>На курсе вы:</b></p>
                         <ul>
@@ -131,7 +131,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
         <div class="row">
             <div class="col-md-6">
                 <div class="accordion">
-                    <div class="accordion__title collapsed" data-toggle="collapse" data-target="#accordion-basic">Подробная программа FMT Basic</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-basic">Подробная программа FMT Basic</div>
                     <div id="accordion-basic" class="accordion__content collapse">
                         <ul>
                             <li>Концепция и теоретические основы.</li>
@@ -146,7 +146,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
             </div>
             <div class="col-md-6">
                 <div class="accordion">
-                    <div class="accordion__title collapsed" data-toggle="collapse" data-target="#accordion-performance">Подробная программа FMT Performance</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-performance">Подробная программа FMT Performance</div>
                     <div id="accordion-performance" class="accordion__content collapse">
                         <ul>
                             <li>Обзор и повторение основ FMT Basic.</li>
@@ -169,7 +169,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
         <div class="row">
             <div class="col-md-6">
                 <div class="accordion">
-                    <div class="accordion__title collapsed" data-toggle="collapse" data-target="#accordion-price">Стоимость обучения</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-price">Стоимость обучения</div>
                     <div id="accordion-price" class="accordion__content collapse">
                         <ul>
                             <li>При оплате за 2 недели - 3100 грн.</li>
@@ -181,7 +181,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 
             <div class="col-md-6">
                 <div class="accordion">
-                    <div class="accordion__title collapsed" data-toggle="collapse" data-target="#accordion-included">Что входит в стоимость обучения</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-included">Что входит в стоимость обучения</div>
                     <div id="accordion-included" class="accordion__content collapse">Что входит в стоимость обучения fdafsdf</div>
                 </div>
             </div>

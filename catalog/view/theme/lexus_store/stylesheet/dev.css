@@ -1265,6 +1265,13 @@ input.button.bbtn:hover,
     font-weight: 700;
     font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
 }
+.accordion__content a,
+.seminar-description a {
+    color: #c8102e;
+}
+
+
+
 
 
 
@@ -1554,7 +1561,7 @@ input.button.bbtn:hover,
     padding: 20px;
     cursor: pointer;
     position: relative;
-    text-align: center;
+    /*text-align: center;*/
 }
 .accordion__title:after {
     content: "-";
@@ -1599,6 +1606,17 @@ input.button.bbtn:hover,
 .accordion__content ul li {
     text-align: left;
     line-height: 2em;
+}
+.accordion__content ol {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2em;
+    margin-bottom: 10px;
+    color: #000;
+}
+.accordion__content ol li {
+    margin-bottom: 20px;
 }
 
 
