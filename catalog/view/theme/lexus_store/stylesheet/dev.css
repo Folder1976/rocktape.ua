@@ -1667,6 +1667,27 @@ input.button.bbtn:hover,
 
 
 
+
+.ppb-review-foto {}
+.ppb-review-foto img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.ppb-review-text {
+    padding: 50px 0;
+}
+.ppb-review-text__title {
+    font-size: 30px;
+    line-height: 1.6em;
+    font-weight: 300;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+    text-align: center;
+    color: #111;
+}
+
+
 @media (max-width: 991px) {
     .page-product-blog__section-title,
     .seminar-short-info__title {
