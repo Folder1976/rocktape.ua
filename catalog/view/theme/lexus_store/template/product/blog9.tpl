@@ -30,7 +30,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="ppb-review-text__title">В Украине обучилось уже более 500 человек. Многие из них поделились своим впечатлением о наших курсах в социальных сетях.</h1>
+                <h1 class="ppb-review-text__title">В Украине обучилось уже более 600 человек. Многие из них поделились своим впечатлением о наших курсах в социальных сетях.</h1>
             </div>
         </div>
     </div>

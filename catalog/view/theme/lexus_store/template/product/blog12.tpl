@@ -368,10 +368,10 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
         <div class="row">
             <div class="col-md-12">
                 <h2 class="text-center">РАСПИСАНИЕ</h2>
-                <h4 class="text-center">Ближайшие семинары RockTape FMT в 2019 году.</h4>
+                <h4 class="text-center">Ближайшие семинары RockTape в 2019 году.</h4>
 
                 <div class="table-responsive">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-striped table-bordered ppb-schedul__table">
                         <tr>
                             <th>Название семинара</th>
                             <th>Город</th>
@@ -453,7 +453,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">Индивидуальное обучениее.</h2>
+                <h2 class="text-center">Индивидуальное обучение.</h2>
                 <h4 class="text-center">Хотите обучиться индивидуально — сообщите нам!</h4>
 
                 <form action="" class="form ppb-form">

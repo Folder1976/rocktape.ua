@@ -64,7 +64,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                         </svg>
                     </div>
                     <div class="ppb-specials-item__title">При повторном прохождении курса (программа FMT Refresh) – <span>30%.</span></div>
-                    <div class="ppb-specials-item__text">Мы не стоим на месте, каждый год программа круса меняется и дополняется. Вы можете пройти каждый из курсов повторно, получив хорошую скидку.</div>
+                    <div class="ppb-specials-item__text">Мы не стоим на месте, каждый год программа курса меняется и дополняется. Вы можете пройти каждый из курсов повторно, получив хорошую скидку.</div>
                 </div>
 
                 <div class="ppb-specials-item">
@@ -74,7 +74,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                         </svg>
                     </div>
                     <div class="ppb-specials-item__title">Для групп от 4 человек – индивидульно.</div>
-                    <div class="ppb-specials-item__text">Хотите пройти курс вместе с коллегами? Сообщите нам – мы готовы обсудить с вами специально предложение.</div>
+                    <div class="ppb-specials-item__text">Хотите пройти курс вместе с коллегами? Сообщите нам – мы готовы обсудить с вами специальное предложение.</div>
                 </div>
 
             </div>
@@ -82,7 +82,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
             <div class="col-md-12">
                 <br>
                 <br>
-                <p><b>Скидки не складываются с другими акциями и льготами!</b> То есть, вы можете получить только один тип скидки.</p>
+                <p><b>Скидки не складываются с другими акциями и льготами! То есть, вы можете получить только один тип скидки.</p>
             </div>
         </div>
     </div>

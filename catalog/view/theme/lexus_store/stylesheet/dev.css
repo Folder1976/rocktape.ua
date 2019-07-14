@@ -1375,6 +1375,17 @@ input.button.bbtn:hover,
     color: #000;
     margin-bottom: 20px;
 }
+.ppb-schedul__table {}
+table.table.ppb-schedul__table th {
+    text-align: center;
+}
+table.table.ppb-schedul__table td {
+    vertical-align: middle;
+    text-align: center;
+}
+table.table.ppb-schedul__table td:first-child {
+    text-align: left;
+}
 
 
 
@@ -1412,19 +1423,13 @@ input.button.bbtn:hover,
 
 
 .ppb-instructors {
-    min-height: 520px;
-    box-shadow: 0px 8px 8px rgba(0,0,0,0.5);
-    border-width: 0px;
-    border-color: transparent;
     padding: 50px 0;
-    background: #000000 url("/image/data/education/pmt.jpg") no-repeat center center;
-    background-size: cover;
 }
 
 .instructor {
     margin-bottom: 40px;
     text-align: center;
-    color: #fff;
+    color: #111111;
 }
 .instructor:hover img {
     box-shadow: 0px 0px 25px rgba(255,255,255,0.5),0px 0px 25px rgba(255,255,255,0.5);
@@ -1434,35 +1439,43 @@ input.button.bbtn:hover,
     text-align: center;
 }
 .instructor__foto img {
-    border-radius: 50%;
-    overflow: hidden;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 .instructor__name {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 7px;
+    font-size: 28px;
+    line-height: 2.1em;
+    font-weight: 400;
+    font-family: "Oswald", Helvetica, Arial, Lucida, sans-serif;
+    color: #111111;
 }
 .instructor__post {
+    padding-bottom: 7px;
+    color: #aaa;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 7px;
+    font-weight: 500;
 }
 .instructor__text {
     font-size: 14px;
     font-weight: 400;
-    font-style: italic;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
+.instructor__link {
+    display: block;
+    color: #c8102e;
+    text-align: left;
     font-family: 'Poppins', sans-serif;
 }
 
 
 .seminar-short-info {
-    padding: 50px 0;
+    padding: 50px 0 0;
+    margin-bottom: 0;
 }
 .seminar-short-info__title {
     font-size: 50px;
@@ -1602,10 +1615,12 @@ input.button.bbtn:hover,
     list-style-position: inside;
     margin-bottom: 10px;
     color: #000;
+    padding-left: 15px;
 }
 .accordion__content ul li {
     text-align: left;
     line-height: 2em;
+    list-style-position: initial;
 }
 .accordion__content ol {
     font-family: 'Poppins', sans-serif;

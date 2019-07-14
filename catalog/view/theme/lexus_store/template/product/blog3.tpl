@@ -39,45 +39,27 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
     </div>
 </section>
 
-
-
-<section class="page-product-blog__section ppb-galery">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <a href="/image/data/education/foto-basic/FG4A3885web.jpg" class="gallery-item">
-                    <img src="/image/data/education/foto-basic/FG4A3885web-400x284.jpg" alt="">
-                    <span class="ppb-galery__overlay"></span>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <a href="/image/data/education/foto-basic/FG4A3885web.jpg" class="gallery-item">
-                    <img src="/image/data/education/foto-basic/FG4A3885web-400x284.jpg" alt="">
-                    <span class="ppb-galery__overlay"></span>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <a href="/image/data/education/foto-basic/FG4A3885web.jpg" class="gallery-item">
-                    <img src="/image/data/education/foto-basic/FG4A3885web-400x284.jpg" alt="">
-                    <span class="ppb-galery__overlay"></span>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <a href="/image/data/education/foto-basic/FG4A3885web.jpg" class="gallery-item">
-                    <img src="/image/data/education/foto-basic/FG4A3885web-400x284.jpg" alt="">
-                    <span class="ppb-galery__overlay"></span>
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6">
-                <a href="/image/data/education/foto-basic/FG4A3885web.jpg" class="gallery-item">
-                    <img src="/image/data/education/foto-basic/FG4A3885web-400x284.jpg" alt="">
-                    <span class="ppb-galery__overlay"></span>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<?php include DIR_TEMPLATE."lexus_store/template/product/parts/foto-zoom-script.tpl"; ?>
+<?php
+$images = array(
+    1 => array (
+        'image' => "/image/data/education/foto-basic/fmt2.jpg",
+        'image_min' => "/image/data/education/foto-basic/fmt2.jpg"
+    ),
+    2 => array (
+        'image' => "/image/data/education/foto-basic/IMG_5486.JPG",
+        'image_min' => "/image/data/education/foto-basic/IMG_5486.JPG"
+    ),
+    3 => array (
+        'image' => "/image/data/education/foto-basic/IMG_5713.JPG",
+        'image_min' => "/image/data/education/foto-basic/IMG_5713.JPG"
+    ),
+    4 => array (
+        'image' => "/image/data/education/foto-basic/IMG_6738.JPG",
+        'image_min' => "/image/data/education/foto-basic/IMG_6738.JPG"
+    ),
+);
+?>
+<?php include DIR_TEMPLATE."lexus_store/template/product/parts/ppb-galery.tpl"; ?>
 
 
 <section class="page-product-blog__section seminar-description">
@@ -153,12 +135,12 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                             <li>Практический блок. Продвинутое симптоматическое тейпирование, комбинирование разных видов тейпирования – 10 примеров (зон).</li>
                             <li>Практический блок. Динамическое постуральное тейпирование (ДПТ) – выведение в правильное положение для облегчения двигательных паттернов и снижения болевой симптоматики.</li>
                             <li>Практический блок. Тейпирование со смещением тканей. Симптоматический тест скольжения и 10 примеров (зон).</li>
-                            <li>Теоретический и практический блок (основная часть семинара):</li>
-                            <li>— Power Taping.</li>
-                            <li>— Обзор фасциальной системы и миофасциальных линий (концепция анатомических поездов по Майерсу).</li>
-                            <li>— Понятие “Biotensegrity (биотенсегрити)” и взаимоотношение суставов.</li>
-                            <li>— Тесты двигательного анализа – подробный обзор, выполнение, обсуждение результатов.</li>
-                            <li>— Тейпирование функциональных линий (анатомических поездов) – варианты аппликаций по результатам проведенного тестирования.</li>
+                            <li>Теоретический и практический блок (основная часть семинара):
+                            <br>— Power Taping.
+                            <br>— Обзор фасциальной системы и миофасциальных линий (концепция анатомических поездов по Майерсу).
+                            <br>— Понятие “Biotensegrity (биотенсегрити)” и взаимоотношение суставов.
+                            <br>— Тесты двигательного анализа – подробный обзор, выполнение, обсуждение результатов.
+                            <br>— Тейпирование функциональных линий (анатомических поездов) – варианты аппликаций по результатам проведенного тестирования.</li>
                             <li>Тейпирование шрамов.</li>
                             <li>Подведение итогов.</li>
                         </ul>
