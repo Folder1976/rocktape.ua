@@ -1,3 +1,18 @@
+.iframe__container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.iframe__container iframe {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*
  * home video block
  */
@@ -1636,6 +1651,39 @@ table.table.ppb-schedul__table td:first-child {
 
 
 
+.ppb-youtube {
+    background-color: #111111;
+    padding: 50px 0;
+    margin-bottom: 0;
+}
+h2.ppb-youtube__title,
+.ppb-youtube p {
+    color: #fff;
+    font-weight: 300;
+    text-align: left;
+}
+
+h2.ppb-youtube__title {
+    font-size: 30px;
+}
+
+.ppb-youtube__count-rokdoc {
+    color: #c8102e;
+    font-size: 72px;
+    font-weight: 500;
+    text-align: center; 
+}
+.ppb-youtube__count-rokdoc-text {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
 .ppb-advantages {
     background-color: #111111;
     padding: 50px 0;
@@ -1754,6 +1802,8 @@ table.table.ppb-schedul__table td:first-child {
 }
 
 
+
+
 @media (max-width: 991px) {
     .page-product-blog__section-title,
     .seminar-short-info__title {
@@ -1797,7 +1847,10 @@ table.table.ppb-schedul__table td:first-child {
     .ppb-specials-item {
         padding-left: 75px;
     }
-
+    h2.ppb-youtube__title,
+    .ppb-youtube__count-rokdoc-text {
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1835,6 +1888,10 @@ table.table.ppb-schedul__table td:first-child {
     }
     .ppb-specials-item {
         padding-left: 50px;
+    }
+    h2.ppb-youtube__title,
+    .ppb-youtube__count-rokdoc-text {
+        font-size: 22px;
     }
 }
 
