@@ -11,10 +11,22 @@
                 <div class="ppb-youtube__count-rokdoc-text">РокДоков по всему миру</div>
             </div>
         </div>
+
+        <?php if ( isset($video_src) && count($video_src)>0 ) { ?>
         <div class="row">
-            <div class="iframe__container">
-              <iframe src="<?php echo $video_src; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <?php foreach ($video_src as $value) { ?>
+            <?php if ( count($video_src) == 1 ) { ?>
+            <div class="col-md-12">
+            <?php } else { ?>
+            <div class="col-md-6">
+            <?php } ?>
+                <div class="iframe__container">
+                  <iframe src="<?php echo $value; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
+            <?php } ?>
         </div>
+        <?php } ?>
+
     </div>
 </section>

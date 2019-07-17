@@ -220,8 +220,10 @@ $images = array(
     </div>
 </section>
 
-
-<?php $video_src = 'https://www.youtube.com/embed/7eWtHERheP4'; ?>
+<?php
+$video_src = array (
+    'https://www.youtube.com/embed/7eWtHERheP4',
+); ?>
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/youtube.tpl"; ?>
 
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/advantages.tpl"; ?>
