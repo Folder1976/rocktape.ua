@@ -4,8 +4,8 @@ $_['heading_title']                    = 'Администрирование';
 
 // Text
 $_['text_affiliate']                   = 'Партнерская программа';
-$_['text_attribute']                   = 'Атрибуты';
-$_['text_attribute_group']             = 'Группы атрибутов';
+$_['text_attribute']                   = 'Расписание';
+$_['text_attribute_group']             = 'Семинары';
 $_['text_backup']                      = 'Резервные копии';
 $_['text_banner']                      = 'Баннеры';
 $_['text_catalog']                     = 'Каталог';

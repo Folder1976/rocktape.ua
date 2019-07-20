@@ -184,6 +184,7 @@ class ControllerCatalogAttribute extends Controller {
 			$this->data['attributes'][] = array(
 				'attribute_id'    => $result['attribute_id'],
 				'name'            => $result['name'],
+				'date'            => $result['date'],
 				'attribute_group' => $result['attribute_group'],
 				'sort_order'      => $result['sort_order'],
 				'selected'        => isset($this->request->post['selected']) && in_array($result['attribute_id'], $this->request->post['selected']),

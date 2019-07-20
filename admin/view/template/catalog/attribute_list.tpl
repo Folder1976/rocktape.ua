@@ -27,6 +27,9 @@
                 <?php } else { ?>
                 <a href="<?php echo $sort_name; ?>"><?php echo $column_name; ?></a>
                 <?php } ?></td>
+              <td class="left">
+                Дата проведения
+              </td>
               <td class="left"><?php if ($sort == 'attribute_group') { ?>
                 <a href="<?php echo $sort_attribute_group; ?>" class="<?php echo strtolower($order); ?>"><?php echo $column_attribute_group; ?></a>
                 <?php } else { ?>
@@ -50,6 +53,7 @@
                 <input type="checkbox" name="selected[]" value="<?php echo $attribute['attribute_id']; ?>" />
                 <?php } ?></td>
               <td class="left"><?php echo $attribute['name']; ?></td>
+             <td class="left"><?php echo $attribute['date']; ?></td>
               <td class="left"><?php echo $attribute['attribute_group']; ?></td>
               <td class="right"><?php echo $attribute['sort_order']; ?></td>
               <td class="right"><?php foreach ($attribute['action'] as $action) { ?>

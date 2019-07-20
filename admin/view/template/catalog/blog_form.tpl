@@ -44,6 +44,128 @@
                 <td><?php echo $entry_description; ?></td>
                 <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description]" id="description<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description'] : ''; ?></textarea></td>
               </tr>
+  
+              <tr>
+                <td colspan="2"><h2>Блок 1</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 1</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name1]" size="100" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name1'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 1</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description1]" id="description1<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description1'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 2</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 2</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name2]" size="200" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name2'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 2</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description2]" id="description2<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description2'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 3</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 3</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name3]" size="300" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name3'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 3</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description3]" id="description3<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description3'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 4</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 4</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name4]" size="400" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name4'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 4</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description4]" id="description4<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description4'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 5</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 5</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name5]" size="500" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name5'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 5</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description5]" id="description5<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description5'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 6</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 6</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name6]" size="600" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name6'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 6</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description6]" id="description6<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description6'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 7</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 7</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name7]" size="700" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name7'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 7</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description7]" id="description7<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description7'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 8</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 8</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name8]" size="800" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name8'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 8</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description8]" id="description8<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description8'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 9</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 9</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name9]" size="900" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name9'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 9</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description9]" id="description9<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description9'] : ''; ?></textarea></td>
+              </tr>
+  
+             <tr>
+                <td colspan="2"><h2>Блок 10</h2></td>
+              </tr>
+              <tr>
+                <td><?php echo $entry_name; ?> 10</td>
+                <td><input type="text" name="blog_description[<?php echo $language['language_id']; ?>][name0]" size="000" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['name0'] : ''; ?>" />
+              </tr>
+              <tr>
+                <td><?php echo $entry_description; ?> 10</td>
+                <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][description0]" id="description0<?php echo $language['language_id']; ?>"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['description0'] : ''; ?></textarea></td>
+              </tr>
+  
+  
             </table>
           </div>
           <?php } ?>
@@ -196,6 +318,99 @@ CKEDITOR.replace('description<?php echo $language['language_id']; ?>', {
 	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
 	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
 });
+
+
+CKEDITOR.replace('description1<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description2<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description3<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description4<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description5<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description6<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description7<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description8<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description9<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+CKEDITOR.replace('description0<?php echo $language['language_id']; ?>', {
+	filebrowserBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashBrowseUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserImageUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>',
+	filebrowserFlashUploadUrl: 'index.php?route=common/filemanager&token=<?php echo $token; ?>'
+});
+
+
 <?php } ?>
 //--></script> 
 <script type="text/javascript"><!--

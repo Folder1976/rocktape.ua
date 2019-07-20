@@ -25,6 +25,14 @@
               <span class="error"><?php echo $error_name[$language['language_id']]; ?></span><br />
               <?php } ?>
               <?php } ?></td>
+           </tr>
+          <tr>
+            <td>Линк на семинар</td>
+              <td><?php foreach ($languages as $language) { ?>
+              <input type="text" name="attribute_group_description[<?php echo $language['language_id']; ?>][link]" value="<?php echo isset($attribute_group_description[$language['language_id']]) ? $attribute_group_description[$language['language_id']]['link'] : ''; ?>" />
+              <img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /><br />
+              <?php } ?></td>
+            
           </tr>
           <tr>
             <td><?php echo $entry_sort_order; ?></td>
