@@ -31,69 +31,20 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
            </div>
         </div>
         <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <div class="instructor">
-                    <div class="instructor__foto">
-                       <img src="/image/data/instructors/yan.jpg" alt="Янь Нгуен">
+            <?php foreach($banners as $banner){ ?>
+                <div class="col-md-3 col-sm-6">
+                    <div class="instructor">
+                        <div class="instructor__foto">
+                           <img src="<?php echo $banner['image']; ?>" alt="<?php echo $banner['title']; ?>">
+                        </div>
+                        <div class="instructor__name"><?php echo $banner['title']; ?></div>
+                        <div class="instructor__post"><?php echo $banner['btn_text']; ?></div>
+                        <div class="instructor__text"><?php echo $banner['text']; ?></div>
+                        <a href="<?php echo $banner['link']; ?>" target="_blank" class="instructor__link"><?php echo $banner['background']; ?></a>
                     </div>
-                    <div class="instructor__name">Янь Нгуен</div>
-                    <div class="instructor__post">Инструктор RockTape FMT. Медицинский директор.</div>
-                    <div class="instructor__text">Физиотерапевт, кинезиолог, RockDoc, аспирант Charles University (Prague), специалист DNS и PNF. Руководитель отделения реабилитации в «Спорт Клинике», Санкт-Петербург.</div>
-                    <a href="https://www.instagram.com/yantherapy/" class="instructor__link">@yantherapy</a>
                 </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="instructor">
-                    <div class="instructor__foto">
-                       <img src="/image/data/instructors/Max.jpg" alt="Максим Панкратов">
-                    </div>
-                    <div class="instructor__name">Максим Панкратов</div>
-                    <div class="instructor__post">Инструктор RockTape FMT.</div>
-                    <div class="instructor__text">Практикующий спортивный врач, травматолог-ортопед, специалист по ударно-волновой терапии (частная практика). Опытный лектор и преподаватель курсов FMT.
-                    Ведет прием в «Ист Клиник», Москва.</div>
-                    <a href="https://www.instagram.com/treatrasta/" class="instructor__link">@treatrasta</a>
-                </div>
-            </div>
-
-            <div class="clearfix visible-sm"></div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="instructor">
-                    <div class="instructor__foto">
-                       <img src="/image/data/instructors/natalia.jpg" alt="Наталья Лабзова">
-                    </div>
-                    <div class="instructor__name">Наталья Лабзова</div>
-                    <div class="instructor__post">Инструктор RockTape FMT.</div>
-                    <div class="instructor__text">Терапевт, врач ЛФК и спортивной медицины, реабилитолог, массажист.
-                    Образование: УГМУ, СПбГМУ. Повышение квалификации в области реабилитации, массажа, кинезиотейпирования и спортивной медицины на базе: СПбГМУ им. Мечникова, ПСПбГМУ им. акад. И. П. Павлова, Образовательного Центра Rocktape USA. Ведет прием в «Спорт Клинике», Санкт-Петербург.</div>
-                    <a href="https://www.instagram.com/gostrongerlonger/" class="instructor__link">@gostrongerlonger</a>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="instructor">
-                    <div class="instructor__foto">
-                       <img src="/image/data/instructors/artem.png" alt="Артем Сгурский">
-                    </div>
-                    <div class="instructor__name">Артем Сгурский</div>
-                    <div class="instructor__post">Инструктор, RockTape UA</div>
-                    <div class="instructor__text">Физический терапевт, в работе использует методы Mulligan, Kaltenborn, Maitland, McKenzie, Cyriax. Опытный преподаватель.</div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="col-md-3 col-sm-6">
-                <div class="instructor">
-                    <div class="instructor__foto">
-                       <img src="/image/data/instructors/viktor.png" alt="Виктор Рыбка">
-                    </div>
-                    <div class="instructor__name">Виктор Рыбка</div>
-                    <div class="instructor__post">Инструктор, RockTape UA</div>
-                    <div class="instructor__text">Ортопед-травматолог, практикующий хирург, кинезиолог. В работе использует современные методы реабилитации и кинезиотейпирование.</div>
-                </div>
-            </div>
+            <?php } ?>
+         
         </div>
     </div>
 </section>
@@ -103,3 +54,4 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 
 
 <?php echo $footer; ?>
+

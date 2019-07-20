@@ -26,7 +26,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="ppb-specials__title">Мы хотим, чтобы знания были доступны каждому, поэтому у нас предусмотрена постоянная система скидок на все виды образовательных программ FMT.</h1>
+                <h1 class="ppb-specials__title"><?php echo $name1; ?></h1>
             </div>
         </div>
     </div>
@@ -43,8 +43,8 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                           <use xlink:href="#student"></use>
                         </svg>
                     </div>
-                    <div class="ppb-specials-item__title">Для студентов – <span>20%.</span></div>
-                    <div class="ppb-specials-item__text">Обязательным условием получения этого вида скидки является предоставление подтверждающего документа. RockTape оставляет за собой право проверить достоверность переданных сведений и отказать в предоставлении скидки.</div>
+                    <div class="ppb-specials-item__title"><?php echo $name2; ?></div>
+                    <div class="ppb-specials-item__text"><?php echo $description2; ?></div>
                 </div>
 
                 <div class="ppb-specials-item">
@@ -53,8 +53,8 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                           <use xlink:href="#stopwatch"></use>
                         </svg>
                     </div>
-                    <div class="ppb-specials-item__title">При ранней регистрации – <span>10%.</span></div>
-                    <div class="ppb-specials-item__text">Обязательным условием получения этого вида скидки является внесении 50% стоимости семинара за 14 дней до даты проведения. Предоплата не возвращается.</div>
+                    <div class="ppb-specials-item__title"><?php echo $name3; ?></div>
+                    <div class="ppb-specials-item__text"><?php echo $description3; ?></div>
                 </div>
 
                 <div class="ppb-specials-item">
@@ -63,8 +63,8 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                           <use xlink:href="#reload"></use>
                         </svg>
                     </div>
-                    <div class="ppb-specials-item__title">При повторном прохождении курса (программа FMT Refresh) – <span>30%.</span></div>
-                    <div class="ppb-specials-item__text">Мы не стоим на месте, каждый год программа курса меняется и дополняется. Вы можете пройти каждый из курсов повторно, получив хорошую скидку.</div>
+                    <div class="ppb-specials-item__title"><?php echo $name4; ?></div>
+                    <div class="ppb-specials-item__text"><?php echo $description4; ?></div>
                 </div>
 
                 <div class="ppb-specials-item">
@@ -73,8 +73,8 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                           <use xlink:href="#persons-in-group-of-four"></use>
                         </svg>
                     </div>
-                    <div class="ppb-specials-item__title">Для групп от 4 человек – индивидульно.</div>
-                    <div class="ppb-specials-item__text">Хотите пройти курс вместе с коллегами? Сообщите нам – мы готовы обсудить с вами специальное предложение.</div>
+                    <div class="ppb-specials-item__title"><?php echo $name5; ?></div>
+                    <div class="ppb-specials-item__text"><?php echo $description5; ?></div>
                 </div>
 
             </div>
@@ -82,7 +82,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
             <div class="col-md-12">
                 <br>
                 <br>
-                <p><b>Скидки не складываются с другими акциями и льготами! То есть, вы можете получить только один тип скидки.</p>
+                <p><b><?php echo $description6; ?></p>
             </div>
         </div>
     </div>
@@ -112,3 +112,4 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 </svg>
 
 <?php echo $footer; ?>
+
