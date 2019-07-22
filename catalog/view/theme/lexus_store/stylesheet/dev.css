@@ -1259,6 +1259,10 @@ input.button.bbtn:hover,
     transition: all .3s;
     text-align: center;
 }
+.ppb-button:hover {
+    color: #fff;
+    background-color: #840527;
+}
 
 .page-product-blog h2 {
     font-size: 38px;

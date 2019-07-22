@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <?php echo str_replace('et_pb_module', 'et_pb_module col-md-6', $description1); ?>
+                <?php echo str_replace('et_pb_module', 'et_pb_module col-md-4', $description1); ?>
             </div>
         </div>
     </div>
