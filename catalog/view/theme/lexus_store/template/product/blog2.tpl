@@ -31,7 +31,19 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
            </div>
         </div>
         <div class="row">
+            <?php
+            $row = 1;
+            $col = 0;
+            ?>
             <?php foreach($banners as $banner){ ?>
+                <?php
+                if ( $col == 4 ) {
+                    $row++;
+                    $col = 1;
+                } else {
+                    $col++;
+                }
+                ?>
                 <div class="col-md-3 col-sm-6">
                     <div class="instructor">
                         <div class="instructor__foto">
@@ -43,6 +55,14 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                         <a href="<?php echo $banner['link']; ?>" target="_blank" class="instructor__link"><?php echo $banner['background']; ?></a>
                     </div>
                 </div>
+
+                <?php if ( $col == 2 ) { ?>
+                    <div class="clearfix visible-sm"></div>
+                <?php } ?>
+    
+                <?php if ( $col == 4 ) { ?>
+                    <div class="clearfix"></div>
+                <?php } ?>
             <?php } ?>
          
         </div>
