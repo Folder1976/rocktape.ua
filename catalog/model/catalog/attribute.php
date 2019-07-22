@@ -17,7 +17,7 @@ class ModelCatalogAttribute extends Model {
 														LEFT JOIN " . DB_PREFIX . "attribute_description ad ON (a.attribute_id = ad.attribute_id)
 														WHERE a.attribute_group_id = '" . (int)$product_attribute_group['attribute_group_id'] . "' AND
 														ad.language_id = '" . (int)$this->config->get('config_language_id') . "'
-														ORDER BY a.sort_order, ad.name");
+														ORDER BY ad.date ASC, a.sort_order, ad.name");
 
 			foreach ($product_attribute_query->rows as $product_attribute) {
 				$product_attribute_data[] = array(

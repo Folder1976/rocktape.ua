@@ -29,7 +29,7 @@
           <tr>
             <td>Дата проведения</td>
             <td><?php foreach ($languages as $language) { ?>
-              <input type="text" name="attribute_description[<?php echo $language['language_id']; ?>][date]" value="<?php echo isset($attribute_description[$language['language_id']]) ? $attribute_description[$language['language_id']]['date'] : ''; ?>" />
+              <input type="text" placeholder="<?php echo date('Y-m-d'); ?>" name="attribute_description[<?php echo $language['language_id']; ?>][date]" value="<?php echo isset($attribute_description[$language['language_id']]) ? $attribute_description[$language['language_id']]['date'] : ''; ?>" />
               <img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /><br />
               <?php } ?></td>
           </tr>

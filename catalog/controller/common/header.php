@@ -150,6 +150,7 @@ class ControllerCommonHeader extends Controller {
 					'column'   => $category['column'] ? $category['column'] : 1,
 					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
 				);
+				
 			}
 		}
 
@@ -175,18 +176,20 @@ class ControllerCommonHeader extends Controller {
 
 					$children_data[] = array(
 						'name'  => $child['name'],
-						'href'  => $this->url->link('product/blog', 'blogpath=' . $blog['blog_id'] . '_' . $child['blog_id'])
+						'href'  => str_replace('%23', '#', $this->url->link('product/blog', 'blogpath=' . $blog['blog_id'] . '_' . $child['blog_id'])),
 					);						
 				}
 
 				// Level 1
 				$this->data['blogs'][] = array(
+					'blog_id'     => $blog['blog_id'],
 					'name'     => $blog['name'],
 					'children' => $children_data,
 					'column'   => $blog['column'] ? $blog['column'] : 1,
-					'href'     => $this->url->link('product/blog', 'blogpath=' . $blog['blog_id'])
+					'href'     => $this->url->link('product/blog', 'blogpath=' . $blog['blog_id']),
 				);
 			}
+				
 		}
 
 		$this->children = array(
@@ -295,3 +298,4 @@ class ControllerCommonHeader extends Controller {
 	} 	
 }
 ?>
+

@@ -75,3 +75,4 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 
 <?php echo $footer; ?>
 
+

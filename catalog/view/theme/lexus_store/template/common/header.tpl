@@ -748,4 +748,3 @@ $class = $helper->calculateSpans( $ospans, $cols );
 	
 </script>
 		
-

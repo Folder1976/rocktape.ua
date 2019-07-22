@@ -2,7 +2,7 @@
     <div class="container" id="reg_seminars">
         <div class="row">
             <div class="col-md-12">
-                 <h2 class="text-center">Индивидуальное обучение.</h2>
+                 <h2 class="text-center">Индивидуальное обучение</h2>
                 <h4 class="text-center">Хотите обучиться индивидуально — сообщите нам!</h4>
 <br>
                 <form action="" class="form ppb-form" id="reg_form2">

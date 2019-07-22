@@ -33,6 +33,12 @@
                   <?php } ?></td>
               </tr>
               <tr>
+                <td>Линки на видео, через ;</td>
+                <td>
+                  <input type="text" name="blog_description[<?php echo $language['language_id']; ?>][video_src]" size="100" value="<?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['video_src'] : ''; ?>" />
+                </td>
+              </tr>
+             <tr>
                 <td><?php echo $entry_meta_description; ?></td>
                 <td><textarea name="blog_description[<?php echo $language['language_id']; ?>][meta_description]" cols="40" rows="5"><?php echo isset($blog_description[$language['language_id']]) ? $blog_description[$language['language_id']]['meta_description'] : ''; ?></textarea></td>
               </tr>

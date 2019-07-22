@@ -53,16 +53,10 @@
 
 </section>
 
-
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/reg-seminar.tpl"; ?>
 
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/seminar-list.tpl"; ?>
 
-
-<?php
-$video_src = array (
-    'https://www.youtube.com/embed/t4d8TTD4JAI',
-); ?>
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/youtube.tpl"; ?>
 
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/advantages.tpl"; ?>

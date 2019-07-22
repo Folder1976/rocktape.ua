@@ -21,12 +21,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <!-- секция для отзывов -->
+                <?php echo str_replace('et_pb_module', 'et_pb_module col-md-6', $description1); ?>
             </div>
         </div>
     </div>
 </section>
 
+<style>
+    .et_pb_module{
+        
+    }
+</style>
 
 
 <?php echo $footer; ?>

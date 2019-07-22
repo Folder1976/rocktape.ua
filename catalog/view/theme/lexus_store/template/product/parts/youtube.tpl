@@ -21,7 +21,7 @@
             <div class="col-md-6">
             <?php } ?>
                 <div class="iframe__container">
-                  <iframe src="<?php echo $value; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe src="<?php echo trim($value); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <?php } ?>
@@ -30,3 +30,4 @@
 
     </div>
 </section>
+

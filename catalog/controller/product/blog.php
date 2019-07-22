@@ -94,6 +94,14 @@ class ControllerProductBlog extends Controller {
 		$this->data['attributes'] = $this->model_catalog_attribute->getAttributes();
 		$this->data['attribute_groups'] = $this->model_catalog_attribute->getGroupAttributes();
 		
+		$width = 278;
+		$width_h = 1080;
+		
+		$height = 188;
+		$height_h = 721;
+		
+		
+		
 		if($blog_id == 2){
 			$this->data['banners'] = array();
 			$results = $this->model_design_banner->getBanner(14);
@@ -106,7 +114,7 @@ class ControllerProductBlog extends Controller {
 						'btn_text'  => $result['btn_text'],
 						'background'  => $result['background'],
 						'background_btn'  => $result['background_btn'],
-						'image' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], $width, $height),
 					);
 				}
 			}
@@ -118,8 +126,8 @@ class ControllerProductBlog extends Controller {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['images'][] = array(
 						'title' => $result['title'],
-						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
-						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+						'image_min' => $this->model_tool_image->resize($result['image'], $width, $height),
+						'image' => $this->model_tool_image->resize($result['image'], $width_h, $height_h),
 					);
 				}
 			}
@@ -131,8 +139,8 @@ class ControllerProductBlog extends Controller {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['images'][] = array(
 						'title' => $result['title'],
-						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
-						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+						'image_min' => $this->model_tool_image->resize($result['image'], $width, $height),
+						'image' => $this->model_tool_image->resize($result['image'], $width_h, $height_h),
 					);
 				}
 			}
@@ -144,8 +152,8 @@ class ControllerProductBlog extends Controller {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['images'][] = array(
 						'title' => $result['title'],
-						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
-						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+						'image_min' => $this->model_tool_image->resize($result['image'], $width, $height),
+						'image' => $this->model_tool_image->resize($result['image'], $width_h, $height_h),
 					);
 				}
 			}
@@ -157,8 +165,8 @@ class ControllerProductBlog extends Controller {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['images'][] = array(
 						'title' => $result['title'],
-						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
-						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+						'image_min' => $this->model_tool_image->resize($result['image'], $width, $height),
+						'image' => $this->model_tool_image->resize($result['image'], $width_h, $height_h),
 					);
 				}
 			}
@@ -170,8 +178,8 @@ class ControllerProductBlog extends Controller {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['images'][] = array(
 						'title' => $result['title'],
-						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
-						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+						'image_min' => $this->model_tool_image->resize($result['image'], $width, $height),
+						'image' => $this->model_tool_image->resize($result['image'], $width_h, $height_h),
 					);
 				}
 			}
@@ -183,8 +191,8 @@ class ControllerProductBlog extends Controller {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['images'][] = array(
 						'title' => $result['title'],
-						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
-						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+						'image_min' => $this->model_tool_image->resize($result['image'], $width, $height),
+						'image' => $this->model_tool_image->resize($result['image'], $width_h, $height_h),
 					);
 				}
 			}
@@ -196,8 +204,8 @@ class ControllerProductBlog extends Controller {
 				if (file_exists(DIR_IMAGE . $result['image'])) {
 					$this->data['images'][] = array(
 						'title' => $result['title'],
-						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
-						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+						'image_min' => $this->model_tool_image->resize($result['image'], $width, $height),
+						'image' => $this->model_tool_image->resize($result['image'], $width_h, $height_h),
 					);
 				}
 			}
@@ -265,6 +273,7 @@ class ControllerProductBlog extends Controller {
 				$this->data['thumb'] = '';
 			}
 
+			$this->data['video_src'] = explode(';', trim($blog_info['video_src'], ';'));
 			$this->data['name'] = html_entity_decode($blog_info['name'], ENT_QUOTES, 'UTF-8');
 			$this->data['name1'] = html_entity_decode($blog_info['name1'], ENT_QUOTES, 'UTF-8');
 			$this->data['name2'] = html_entity_decode($blog_info['name2'], ENT_QUOTES, 'UTF-8');

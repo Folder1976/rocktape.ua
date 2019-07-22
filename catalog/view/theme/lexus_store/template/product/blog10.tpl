@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="seminar-short-info__title"><?php echo $name1;?></h1>
-                <p><?php echo $description1; ?></p>
+                <?php echo $description1; ?>
             </div>
         </div>
     </div>

@@ -12,6 +12,7 @@ class ModelCatalogBlog extends Model {
 		foreach ($data['blog_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "blog_description SET blog_id = '" . (int)$blog_id . "',
 							 language_id = '" . (int)$language_id . "',
+							 video_src = '" . $this->db->escape($value['video_src']) . "',
 							 name = '" . $this->db->escape($value['name']) . "',
 							 name1 = '" . $this->db->escape($value['name1']) . "',
 							 name2 = '" . $this->db->escape($value['name2']) . "',
@@ -101,6 +102,7 @@ class ModelCatalogBlog extends Model {
 		foreach ($data['blog_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "blog_description SET
 							 blog_id = '" . (int)$blog_id . "', language_id = '" . (int)$language_id . "',
+							 video_src = '" . $this->db->escape($value['video_src']) . "',
 							 name = '" . $this->db->escape($value['name']) . "',
 							 name1 = '" . $this->db->escape($value['name1']) . "',
 							 name2 = '" . $this->db->escape($value['name2']) . "',
@@ -314,6 +316,7 @@ class ModelCatalogBlog extends Model {
 
 		foreach ($query->rows as $result) {
 			$blog_description_data[$result['language_id']] = array(
+				'video_src'             => $result['video_src'],
 				'name'             => $result['name'],
 				'name1'             => $result['name1'],
 				'name2'             => $result['name2'],

@@ -74,11 +74,6 @@
 
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/seminar-list.tpl"; ?>
 
-<?php
-$video_src = array (
-    'https://www.youtube.com/embed/RfJKEnP8TOg',
-    'https://www.youtube.com/embed/KEPqJ1VPj9Y',
-); ?>
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/youtube.tpl"; ?>
 
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/advantages.tpl"; ?>
