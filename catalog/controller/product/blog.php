@@ -87,6 +87,123 @@ class ControllerProductBlog extends Controller {
 			$blog_id = 0;
 		}
 
+		$this->load->model('design/banner');
+		$this->load->model('tool/image');
+		$this->load->model('catalog/attribute');
+
+		$this->data['attributes'] = $this->model_catalog_attribute->getAttributes();
+		$this->data['attribute_groups'] = $this->model_catalog_attribute->getGroupAttributes();
+		
+		if($blog_id == 2){
+			$this->data['banners'] = array();
+			$results = $this->model_design_banner->getBanner(14);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['banners'][] = array(
+						'title' => $result['title'],
+						'link'  => $result['link'],
+						'text'  => $result['text'],
+						'btn_text'  => $result['btn_text'],
+						'background'  => $result['background'],
+						'background_btn'  => $result['background_btn'],
+						'image' => $this->model_tool_image->resize($result['image'], 278, 278),
+					);
+				}
+			}
+			
+		}elseif($blog_id == 8){
+			$this->data['images'] = array();
+			$results = $this->model_design_banner->getBanner(15);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['images'][] = array(
+						'title' => $result['title'],
+						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+					);
+				}
+			}
+			
+		}elseif($blog_id == 3){
+			$this->data['images'] = array();
+			$results = $this->model_design_banner->getBanner(16);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['images'][] = array(
+						'title' => $result['title'],
+						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+					);
+				}
+			}
+			
+		}elseif($blog_id == 4){
+			$this->data['images'] = array();
+			$results = $this->model_design_banner->getBanner(17);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['images'][] = array(
+						'title' => $result['title'],
+						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+					);
+				}
+			}
+			
+		}elseif($blog_id == 5){
+			$this->data['images'] = array();
+			$results = $this->model_design_banner->getBanner(18);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['images'][] = array(
+						'title' => $result['title'],
+						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+					);
+				}
+			}
+			
+		}elseif($blog_id == 6){
+			$this->data['images'] = array();
+			$results = $this->model_design_banner->getBanner(19);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['images'][] = array(
+						'title' => $result['title'],
+						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+					);
+				}
+			}
+			
+		}elseif($blog_id == 7){
+			$this->data['images'] = array();
+			$results = $this->model_design_banner->getBanner(20);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['images'][] = array(
+						'title' => $result['title'],
+						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+					);
+				}
+			}
+	
+			}elseif($blog_id == 1){
+			$this->data['images'] = array();
+			$results = $this->model_design_banner->getBanner(21);
+			foreach ($results as $result) {
+				if (file_exists(DIR_IMAGE . $result['image'])) {
+					$this->data['images'][] = array(
+						'title' => $result['title'],
+						'image_min' => $this->model_tool_image->resize($result['image'], 278, 278),
+						'image' => $this->model_tool_image->resize($result['image'], 1080, 1080),
+					);
+				}
+			}
+			
+		}
+		
 		$blog_info = $this->model_catalog_blog->getCategory($blog_id);
 
 		if ($blog_info) {
@@ -148,7 +265,39 @@ class ControllerProductBlog extends Controller {
 				$this->data['thumb'] = '';
 			}
 
+			$this->data['name'] = html_entity_decode($blog_info['name'], ENT_QUOTES, 'UTF-8');
+			$this->data['name1'] = html_entity_decode($blog_info['name1'], ENT_QUOTES, 'UTF-8');
+			$this->data['name2'] = html_entity_decode($blog_info['name2'], ENT_QUOTES, 'UTF-8');
+			$this->data['name3'] = html_entity_decode($blog_info['name3'], ENT_QUOTES, 'UTF-8');
+			$this->data['name4'] = html_entity_decode($blog_info['name4'], ENT_QUOTES, 'UTF-8');
+			$this->data['name5'] = html_entity_decode($blog_info['name5'], ENT_QUOTES, 'UTF-8');
+			$this->data['name6'] = html_entity_decode($blog_info['name6'], ENT_QUOTES, 'UTF-8');
+			$this->data['name7'] = html_entity_decode($blog_info['name7'], ENT_QUOTES, 'UTF-8');
+			$this->data['name8'] = html_entity_decode($blog_info['name8'], ENT_QUOTES, 'UTF-8');
+			$this->data['name9'] = html_entity_decode($blog_info['name9'], ENT_QUOTES, 'UTF-8');
+			$this->data['name0'] = html_entity_decode($blog_info['name0'], ENT_QUOTES, 'UTF-8');
+			$this->data['name11'] = html_entity_decode($blog_info['name11'], ENT_QUOTES, 'UTF-8');
+			$this->data['name12'] = html_entity_decode($blog_info['name12'], ENT_QUOTES, 'UTF-8');
+			$this->data['name13'] = html_entity_decode($blog_info['name13'], ENT_QUOTES, 'UTF-8');
+			$this->data['name14'] = html_entity_decode($blog_info['name14'], ENT_QUOTES, 'UTF-8');
+			$this->data['name15'] = html_entity_decode($blog_info['name15'], ENT_QUOTES, 'UTF-8');
+			
 			$this->data['description'] = html_entity_decode($blog_info['description'], ENT_QUOTES, 'UTF-8');
+			$this->data['description1'] = html_entity_decode($blog_info['description1'], ENT_QUOTES, 'UTF-8');
+			$this->data['description2'] = html_entity_decode($blog_info['description2'], ENT_QUOTES, 'UTF-8');
+			$this->data['description3'] = html_entity_decode($blog_info['description3'], ENT_QUOTES, 'UTF-8');
+			$this->data['description4'] = html_entity_decode($blog_info['description4'], ENT_QUOTES, 'UTF-8');
+			$this->data['description5'] = html_entity_decode($blog_info['description5'], ENT_QUOTES, 'UTF-8');
+			$this->data['description6'] = html_entity_decode($blog_info['description6'], ENT_QUOTES, 'UTF-8');
+			$this->data['description7'] = html_entity_decode($blog_info['description7'], ENT_QUOTES, 'UTF-8');
+			$this->data['description8'] = html_entity_decode($blog_info['description8'], ENT_QUOTES, 'UTF-8');
+			$this->data['description9'] = html_entity_decode($blog_info['description9'], ENT_QUOTES, 'UTF-8');
+			$this->data['description0'] = html_entity_decode($blog_info['description0'], ENT_QUOTES, 'UTF-8');
+			$this->data['description11'] = html_entity_decode($blog_info['description11'], ENT_QUOTES, 'UTF-8');
+			$this->data['description12'] = html_entity_decode($blog_info['description12'], ENT_QUOTES, 'UTF-8');
+			$this->data['description13'] = html_entity_decode($blog_info['description13'], ENT_QUOTES, 'UTF-8');
+			$this->data['description14'] = html_entity_decode($blog_info['description14'], ENT_QUOTES, 'UTF-8');
+			$this->data['description15'] = html_entity_decode($blog_info['description15'], ENT_QUOTES, 'UTF-8');
 			$this->data['compare'] = $this->url->link('product/compare');
 
 			$url = '';

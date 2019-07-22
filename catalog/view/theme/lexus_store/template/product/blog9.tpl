@@ -1,24 +1,5 @@
 <?php echo $header; ?>
 
-<?php
-/*
-Отзывы
-http://rocktape.ua/review
-*/
-?>
-
-<?php
-/*
-$version = "001";
-	$themeConfig = (array)$this->config->get( 'themecontrol' );
-	$themeName =  $this->config->get('config_template');
-	require_once( DIR_TEMPLATE.$this->config->get('config_template')."/development/libs/framework.php" );
-	$helper = ThemeControlHelper::getInstance( $this->registry, $themeName );
-	$helper->setDirection( $direction );
-$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$version );
-*/
-?>
-
 
 </div></div></div>
 
@@ -49,3 +30,4 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 
 
 <?php echo $footer; ?>
+

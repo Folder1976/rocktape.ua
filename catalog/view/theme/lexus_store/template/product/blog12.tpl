@@ -1,25 +1,5 @@
 <?php echo $header; ?>
 
-<?php
-/*
-Обучение. "Узловая" страница
-http://rocktape.ua/education
-*/
-?>
-
-<?php
-/*
-$version = "001";
-	$themeConfig = (array)$this->config->get( 'themecontrol' );
-	$themeName =  $this->config->get('config_template');
-	require_once( DIR_TEMPLATE.$this->config->get('config_template')."/development/libs/framework.php" );
-	$helper = ThemeControlHelper::getInstance( $this->registry, $themeName );
-	$helper->setDirection( $direction );
-$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$version );
-*/
-?>
-
-
 </div></div></div>
 
 
@@ -60,30 +40,16 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="text-center">Движение – ключ к исцелению. И неважно, работаете ли вы с именитым спортсменом или с человеком, попавшим в автомобильную аварию.</h2>
+                <h2 class="text-center"><?php echo $name1; ?></h2>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-4">
-                <p><b>FMT (Functional Movement Techniques). Функциональные Двигательные Техники. Серия образовательных программ, которые разработаны и преподаются первоклассными специалистами в области анализа движения и устранения нарушений мобильности. Курсы FMT познакомят вас с революционным подходом к пониманию того, как мы двигаемся и почему получаем травмы.</b></p>
-                <p></p>
-                <p>На семинарах вы узнаете о стратегиях мобильности и стабильности, а также поймете, почему мы выбрали концепцию кинезиологического тейпирования движений, а не мышц. Наше обучение направлено на то, чтобы после него вы могли эффективно применять полученные знания и работать <b>НА РЕЗУЛЬТАТ.</b></p>
+                <?php echo $description1; ?>
             </div>
             <div class="col-md-8 col--black">
-                <p><b>Любая образовательная программа FMT базируется на нескольких важных концептах:</b>/</p>
-
-                <p><b>1. Пирамида Движения</b><br>
-                На всех курсах FMT мы применяем двухэтапную оценку движения – до и после применения методик и техник, изученных на курсе.</p>
-
-                <p><b>2. Доказательства</b><br>
-                Каждый FMT курс – это обязательное сочетание современных научных исследований и клинического опыта наших инструкторов, а также сертифицированных специалистов в области здравоохранения и фитнеса.</p>
-
-                <p><b>3. В фокусе – фасция</b><br>
-                Мы придерживаемся концепции мышечных цепей. Понимая эту систему, можно определить, почему произошло нарушение мобильности и как его исправить.</p>
-
-                <p><b>4. Практика – залог успешного обучения</b><br>
-                На наших курсах всегда динамично. Каждый участник должен быть вовлечен в процесс. Если вы планируете прийти к нам на семинар, приготовьтесь – двигаться придется много!</p>
+                <?php echo $description2; ?>
             </div>
 
         </div>
@@ -91,7 +57,7 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
         <div class="row">
 
             <div class="col-md-12 col--red">
-                <h4 class="text-center">Серия курсов FMT предназначена для профессионалов в области здравоохранения и физической культуры. Врачи различных специальностей, массажисты, тренеры – мы рады делиться знаниями с каждым.</h4>
+                <h4 class="text-center"><?php echo $name3; ?></h4>
             </div>
         </div>
     </div>
@@ -110,18 +76,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/FMT-Basic.png" alt="FMT-Basic" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>FMT Basic</h2>
-                <p>Этот курс представляет научно обоснованный подход к тейпированию при:</p>
-                <ul>
-                    <li>болевом* синдроме;</li>
-                    <li>проблемах с динамикой жидкостей;</li>
-                    <li>проблемах с осанкой;</li>
-                    <li>работе со шрамами;</li>
-                    <li>защемлении нервов.</li>
-                </ul>
-                <p><b>FMT Basic</b> изменит ваше представление о терапевтических свойствах тейпа и его влиянии на модуляцию боли, микроциркуляцию и проприоцепцию.</p>
-                <a href="/fmt_basic_performance" class="ppb-button">Подробнее о программе FMT Basic</a>
-            </div>
+                <h2><?php echo $name4; ?></h2>
+                <?php echo $description4; ?>
+                </div>
         </div>
 
 
@@ -130,9 +87,8 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/FMT-Performance.png" alt="FMT-Performance" class="ppb-kenzo__img">
             </div>
             <div class="col-md-8">
-                <h2>FMT Performance</h2>
-                <p>Курс углубит знания, полученные на FMT Basic, в области функционального тейпирования и реабилитации. Мы уделим особое внимание двигательной терапии и методам улучшения функциональности, эффективности движений и атлетических способностей. Мы изучим концепцию анатомических поездов, миофасциальных меридианов и разберем подходы к их тейпированию. На этом курсе вы научитесь анализировать и оценивать движения человека на предмет дисфункций, а также освоите методы исправления обнаруженных нарушений при помощи тейпа.</p>
-                <a href="/fmt_basic_performance" class="ppb-button">Подробнее о программе FMT Performance</a>
+                <h2><?php echo $name5; ?></h2>
+                <?php echo $description5; ?>
             </div>
         </div>
 
@@ -153,10 +109,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/fmt-screen.jpg" alt="FMT-Screen" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>FMT SCREEN</h2>
-                <p>На курсе мы изучим методы диагностики движения в 3 плоскостях, которые позволят выявить функциональные возможности и дисфункции пациента. Представим комплексный подход к анализу и оценке мобильности, познакомим с концепцией формирования движения на стадии онтогенеза, расскажем о роли центрации суставов, о принципе регионарной взаимосвязи, освоим важные функциональные и локальные тесты.</p>
-                <a href="/fmt_screen_movability" class="ppb-button">Подробнее о программе FMT SCREEN</a>
-            </div>
+                <h2><?php echo $name6; ?></h2>
+                <?php echo $description6; ?>
+             </div>
         </div>
 
 
@@ -165,10 +120,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/FMT-Movability.png" alt="FMT-Movability" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>FMT MOVABILITY</h2>
-                <p>Используя знания, полученные на FMT Screen, участники семинара FMT Movability научатся создавать алгоритмы корректирующих упражнений для улучшения функции движения, устранения нарушений мобильности, повышения атлетических показателей. В том числе при помощи различного инвентаря: ленты, петли, массажные ролики и мячи.</p>
-                <a href="/fmt_screen_movability" class="ppb-button">Подробнее о программе FMT MOVABILITY</a>
-            </div>
+                <h2><?php echo $name7; ?></h2>
+                <?php echo $description7; ?>
+             </div>
         </div>
 
     </div>
@@ -189,10 +143,8 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/FMT-Blades.png" alt="FMT-Blades" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>FMT Blades</h2>
-                <h4>Инструментальная мобилизация мягких тканей (IASTM)</h4>
-                <p>Данная программа посвящена двигательной терапии с использованием вспомогательных инструментов для мобилизации мягких тканей. В ходе курса подробно рассматривается  анатомия, физиология и, ЧТО САМОЕ ВАЖНОЕ, нейрофизиология миофасциальных тканей, а также приводятся соответствующие исследования. Изучим, как сочетать методы IASTM с тейпированием и корректирующими упражнениями для формирования комплексной терапии.</p>
-                <a href="/fmt_blades_blades_advanced" class="ppb-button">Подробнее о программе FMT Blades</a>
+                <h2><?php echo $name8; ?></h2>
+                <?php echo $description8; ?>
             </div>
         </div>
 
@@ -202,10 +154,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/FMT-Blades-Advanced.png" alt="FMT-Blades-Advanced" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>FMT Blades Advanced</h2>
-                <h4>Инструментальная мобилизация мягких тканей (IASTM)</h4>
-                <p>На курсе рассматривается концепция скольжения кожи, фасции и нервов, а также нейросенсорная модуляция боли при помощи инструментальной мобилизации мягких тканей. Во время обучения подробно рассматривается  анатомия, физиология и нейрофизиология миофасциальных тканей. Изучим специально разработанный инструмент Mohawk. Разберем, как применять насадку  «Силиконовый чехол» для скольжения тканей в комбинации с движением и нейродинамикой. Расскажем, как использовать насадку «Гребень» для стимуляции механорецепторов и модуляции боли*.</p>
-                <a href="/fmt_blades_blades_advanced" class="ppb-button">Подробнее о программе FMT Blades Advanced</a>
+                <h2><?php echo $name9; ?></h2>
+                <?php echo $description9; ?>
+ 
             </div>
         </div>
 
@@ -214,11 +165,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/FMT-RockFloss.png" alt="FMT-RockFloss" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>FMT RockFloss</h2>
-                <h4>Компрессионная терапия (флоссинг)</h4>
-                <p>Курс входит в систему сертификации по инструментальной мобилизации мягких тканей и базируется на концепции скольжения и декомпрессии тканей, фасции и нервов при помощи ленты-флосса для уменьшения отечности, улучшения мобильности (в том числе суставов) и модуляции боли*. На семинаре мы рассмотрим эффекты, которые оказывает флоссинг на скольжение, растяжение и декомпрессию тканей, с точки зрения анатомии, физиологии и неврологии. Изучим различные техники использования флосса (включая смещение и давление), расскажем, как интегрировать их в современные реабилитационные программы.</p>
-                <a href="/fmt_rockpods_rockfloss" class="ppb-button">Подробнее о программе FMT RockFloss</a>
-            </div>
+                <h2><?php echo $name0; ?></h2>
+                <?php echo $description0; ?>
+             </div>
         </div>
 
 
@@ -227,10 +176,8 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/FMT-RockPods-1.png" alt="FMT-RockPods-1" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>FMT RockPods</h2>
-                <h4>Баночная терапия (каппинг)</h4>
-                <p>Базируется на концепции декомпрессии мягких тканей и фасций при помощи силиконовых банок для изменения скольжения тканей, а также для улучшения мобильности и устранения болевых* ощущений. Мы рассмотрим эффекты, которые оказывает баночная миофасицальная терапия на скольжение, растяжение и декомпрессию тканей, с точки зрения анатомии, физиологии и неврологии. В рамках курса изучим различные техники использования метода, о которых упоминается в научной литературе, и расскажем об их интеграции в современные реабилитационные программы.</p>
-                <a href="/fmt_rockpods_rockfloss" class="ppb-button">Подробнее о программе FMT RockPods</a>
+                <h2><?php echo $name11; ?></h2>
+                <?php echo $description11; ?>
             </div>
         </div>
 
@@ -252,11 +199,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/special-rocktape-beauty.jpg" alt="special-rocktape-beauty" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>RockTape Beauty</h2>
-                <h4>Эстетическое кинезиотейпирование</h4>
-                <p>На курсе разберем, как работает тейп и как максимально эффективно применять его для решения различных косметологических задач. Курс является комплексным и максимально практичным: мы «пройдемся» от лица до стоп, рассмотрим самые распространенные проблемы каждой области. Бонусный блок курса, посвященный комбинированию кинезиотейпирования и некоторых косметологических процедур, будет особенно полезен тем, кто ведет свою профессиональную деятельность в бьюти-индустрии.</p>
-                <a href="/rocktape_beauty" class="ppb-button">Подробнее о RockTape Beauty</a>
-            </div>
+                <h2><?php echo $name12; ?></h2>
+                <?php echo $description12; ?>
+             </div>
         </div>
 
 
@@ -265,11 +210,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
                 <img src="/image/data/education/special-rocktape.jpg" alt="special-rocktape" class="ppb-kenzo__img">
             </div>
             <div class="col-sm-8">
-                <h2>RockTape LogopediX</h2>
-                <h4>Кинезиотейпирование в логопедии</h4>
-                <p>Программа разработана для логопедов, дефектологов, нейрофизиологов. Вы освоите инновационные техники тейпирования, которые эффективны в логопедической практике при широком спектре патологий, возникающих в контексте работы связочно-мышечного аппарата и нейрорефлекторных связей (в педиатрии, в реабилитации постинсультных больных, у людей с нарушением артикуляции, глотания, саливации). </p>
-                <a href="/rocktape_logopedix" class="ppb-button">Подробнее о RockTape LogopediX</a>
-            </div>
+                <h2><?php echo $name13; ?></h2>
+                <?php echo $description13; ?>
+           </div>
         </div>
 
     </div>
@@ -363,93 +306,16 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
 
 
 
-<section class="page-product-blog__section ppb-schedule">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center">РАСПИСАНИЕ</h2>
-                <h4 class="text-center">Ближайшие семинары RockTape в 2019 году.</h4>
+<?php include DIR_TEMPLATE."lexus_store/template/product/parts/seminar-list.tpl"; ?>
 
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered ppb-schedul__table">
-                        <tr>
-                            <th>Название семинара</th>
-                            <th>Город</th>
-                            <th>Дата</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td><a href="#">FMT Basic</a></td>
-                            <td>Киев</td>
-                            <td>2019.08.08</td>
-                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">FMT Basic</a></td>
-                            <td>Киев</td>
-                            <td>2019.09.08</td>
-                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">FMT Basic</a></td>
-                            <td>Киев</td>
-                            <td>2019.10.08</td>
-                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+<?php include DIR_TEMPLATE."lexus_store/template/product/parts/reg-seminar.tpl"; ?>
+
+<?php include DIR_TEMPLATE."lexus_store/template/product/parts/reg-seminar-individual.tpl"; ?>
 
 
 
-
-<section class="page-product-blog__section ppb-reg-seminar">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center">Форма регистрации</h2>
-
-                <form action="" class="form ppb-form">
-                    <div class="row">
-                        <div class="form-group col-sm-6">
-                            <input type="text" name="seminar_name" class="form-control" placeholder="Имя" required>
-                            <input type="text" name="seminar_surname" class="form-control" placeholder="Фамилия">
-                            <input type="text" name="seminar_phone" class="form-control" placeholder="Телефон" required>
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <input type="email" name="seminar_email" class="form-control" placeholder="Email">
-                            <select name="seminar_seminar" class="form-control" required>
-                                <option value="0">Семинар</option>
-                                <option value="1">FMT Basic</option>
-                                <option value="2">FMT Performance</option>
-                                <option value="3">FMT Screen + Movability</option>
-                                <option value="4">FMT Blades</option>
-                                <option value="5">FMT Blades Advanced</option>
-                                <option value="6">FMT RockPods</option>
-                                <option value="7">FMT RockFloss</option>
-                                <option value="8">RockTape Logopedix</option>
-                                <option value="9">RockTape Beauty</option>
-                            </select>
-                            <input type="submit" class="ppb-button pull-right" value="Зарегистрироваться">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-group col-sm-12">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="page-product-blog__section ppb-individual-training">
+<!--section class="page-product-blog__section ppb-individual-training">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -488,10 +354,11 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
             </div>
         </div>
     </div>
-</section>
+</section-->
 
 
 
 
 
 <?php echo $footer; ?>
+

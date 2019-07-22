@@ -1,11 +1,11 @@
 <section class="page-product-blog__section ppb-reg-seminar">
     <div class="container" id="reg_seminars">
         <div class="row">
-            <div class="modal_msg"></div>
             <div class="col-md-12">
-                <h2 class="text-center">Форма регистрации</h2>
-
-                <form action="" class="form ppb-form" id="reg_form">
+                 <h2 class="text-center">Индивидуальное обучение.</h2>
+                <h4 class="text-center">Хотите обучиться индивидуально — сообщите нам!</h4>
+<br>
+                <form action="" class="form ppb-form" id="reg_form2">
                     <div class="row">
                         <div class="form-group col-sm-6">
                             <input type="hidden" name="form_name" class="form-control" value="Форма регистрации">
@@ -33,8 +33,7 @@
                                 <option value="8">RockTape Logopedix</option>
                                 <option value="9">RockTape Beauty</option-->
                             </select>
-                            <input type="button" class="ppb-button pull-right" id="msg_send" value="Зарегистрироваться">
-                            <div class="msg"></div>
+                            <input type="button" class="ppb-button pull-right" id="msg_send2" value="Зарегистрироваться">
                         </div>
                     </div>
                     <div class="row">
@@ -50,12 +49,12 @@
 <script>
     
     
-$('#msg_send').on('click', function() {
+$('#msg_send2').on('click', function() {
    
   $.ajax({
     url: '/index.php?route=account/universalform',
     type: 'post',
-    data: $('#reg_form').serialize(),
+    data: $('#reg_form2').serialize(),
     dataType: 'json',
      beforeSend: function() {
       $('#msg_send').button('loading');
@@ -87,33 +86,6 @@ $('#msg_send').on('click', function() {
 });
     
 </script>
-<style>
-  .modal_msg{
-    display: none;
-    position: fixed;
-    width: 70%;
-    z-index: 99999;
-    background-color: white;
-    border: 1px solid;
-    padding: 20px 10px;
-    text-align: center;
-    left: 15%;
-    top: 40%;
-    font-weight: bold;
-    font-size: 2rem;
-    -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
-            box-shadow: 0 0 100px rgba(0, 0, 0, 0.7);
-  }
-</style>
-<script>
-  function show_modal_msg(msg){
-   
-    $('.modal_msg').html(msg);
-    $('.modal_msg').show();
-    
-    setTimeout(function(){
-      $('.modal_msg').hide(500);
-    }, 2000);
-  }
-</script>
+
+
 

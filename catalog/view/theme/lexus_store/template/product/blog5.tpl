@@ -1,25 +1,5 @@
 <?php echo $header; ?>
 
-<?php
-/*
-Страница семинара: FMT Blades + Blades Advanced
-http://rocktape.ua/fmt_blades_blades_advanced
-*/
-?>
-
-<?php
-/*
-$version = "001";
-	$themeConfig = (array)$this->config->get( 'themecontrol' );
-	$themeName =  $this->config->get('config_template');
-	require_once( DIR_TEMPLATE.$this->config->get('config_template')."/development/libs/framework.php" );
-	$helper = ThemeControlHelper::getInstance( $this->registry, $themeName );
-	$helper->setDirection( $direction );
-$helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$version );
-*/
-?>
-
-
 </div></div></div>
 
 <section class="page-product-blog__section seminar-short-info">
@@ -27,9 +7,9 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
         <div class="row">
             <div class="col-md-8">
                 <h1 class="seminar-short-info__title">FMT Blades + Blades Advanced</h1>
-                <p>Раньше, если вы хотели обучиться инструментальной мобилизации мягких тканей (IASTM), ваш выбор был весьма ограничен. К тому же, вам приходилось покупать дорогие инструменты и посещать недешевые курсы, которые «запирали» вас в рамках определенного шаблона по использованию метода. <br>ЭТО ВРЕМЯ ПРОШЛО.</p>
+                <?php echo $description; ?>
                 <p class="text-center">
-                    <a href="#" class="ppb-button">Посмотреть ближайшие семинары</a>
+                    <a href="<?php echo HTTP_SERVER.ltrim($_SERVER['REQUEST_URI'], '/').'#all_seminars'; ?>" class="ppb-button">Посмотреть ближайшие семинары</a>
                 </p>
            </div>
            <div class="col-md-4">
@@ -39,42 +19,6 @@ $helper->addCss( 'catalog/view/theme/'.$themeName.'/stylesheet/blog.css?'.$versi
     </div>
 </section>
 
-<?php
-$images = array(
-    1 => array (
-        'image' => "/image/data/education/blades_blades-advanced/IMG_5810.JPG",
-        'image_min' => "/image/data/education/blades_blades-advanced/IMG_5810.JPG"
-    ),
-    2 => array (
-        'image' => "/image/data/education/blades_blades-advanced/IMG_5816.JPG",
-        'image_min' => "/image/data/education/blades_blades-advanced/IMG_5816.JPG"
-    ),
-    3 => array (
-        'image' => "/image/data/education/blades_blades-advanced/IMG_5826.JPG",
-        'image_min' => "/image/data/education/blades_blades-advanced/IMG_5826.JPG"
-    ),
-    4 => array (
-        'image' => "/image/data/education/blades_blades-advanced/IMG_5848.JPG",
-        'image_min' => "/image/data/education/blades_blades-advanced/IMG_5848.JPG"
-    ),
-    5 => array (
-        'image' => "/image/data/education/blades_blades-advanced/mohawk_.jpg",
-        'image_min' => "/image/data/education/blades_blades-advanced/mohawk_.jpg"
-    ),
-    6 => array (
-        'image' => "/image/data/education/blades_blades-advanced/mohawk_1.jpg",
-        'image_min' => "/image/data/education/blades_blades-advanced/mohawk_1.jpg"
-    ),
-    7 => array (
-        'image' => "/image/data/education/blades_blades-advanced/mohawk_2.jpg",
-        'image_min' => "/image/data/education/blades_blades-advanced/mohawk_2.jpg"
-    ),
-    8 => array (
-        'image' => "/image/data/education/blades_blades-advanced/mohawk_3.jpg",
-        'image_min' => "/image/data/education/blades_blades-advanced/mohawk_3.jpg"
-    ),
-);
-?>
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/ppb-galery.tpl"; ?>
 
 
@@ -82,52 +26,21 @@ $images = array(
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <p>Понятие «инструментальная мобилизация мягких тканей» обычно ассоциируется со стальными инструментами, которыми прорабатывают те или иные зоны тела до красноты и даже образования гематом.</p>
-                <p><b>Курсы RockTape FMT, посвященные IASTM, базируются на совершенно другом концепте – концепте двигательной терапии с использованием щадящих  техник инструментальной мобилизации мягких тканей.</b> Наши инструменты могут показаться жесткими, однако техники их использования не требуют агрессивного подхода для достижения ощутимого результата.</p>
-                <p>Семинары, где мы обучаем IASTM, ведут сертифицированные инструкторы, каждый из них – практикующий врач. Вы всегда можете выбрать вариант обучения – с уже включенным в стоимость набором инструментов или без него. Образовательные программы FMT по IASTM предназначены для широкого спектра специалистов с разным уровнем подготовки по работе с мягкими тканями.</p>
-
-                <h5>FMT Blades</h5>
-                <p>Курс представляет концепцию двигательной терапии с использованием методик мобилизации мягких тканей при помощи вспомогательных инструментов (IASTM).</p>
-                <p>Эта образовательная программа включает в себя выявление нарушений двигательного стереотипа, а также варианты использования инструментов для усиления терапевтического эффекта. В ходе семинара подробно рассматривается анатомия, физиология и нейрофизиология миофасциальных тканей. Мы покажем, как правильно сочетать методики IASTM с кинезиологическим тейпированием и корректирующими упражнениями, чтобы ваша помощь пациенту или клиенту была комплексной.</p>
-                <p>Курс FMT Blades предназначен для практикующих специалистов и врачей с любым уровнем опыта работы с мягкими тканями. Продолжительность семинара – 8 часов.</p>
-
-                <h5>FMT Blades Advanced</h5>
-                <p>На курсе мы рассмотрим концепцию скольжения кожи, фасции и нервов, а также нейросенсорную модуляцию боли* при помощи инструментальной мобилизации мягких тканей (IASTM). Уделим особое внимание миофасциальным тканям, их анатомии, физиологии и неврологии. Изучим специально разработанный инструмент Mohawk. Разберем, как применять насадку  «Силиконовый чехол» для скольжения тканей в комбинации с движением и нейродинамикой. Расскажем, каким образом использовать насадку «Гребень» для модуляции боли* через стимуляцию механорецепторов.</p>
-                <p>Познакомим с био-психо-социальной моделью модуляции боли, которая, возможно, даст вам больше ответов, чем консервативное представление о том, что боль* может быть вызвана исключительно механическим повреждением тканей.</p>
-                <p>Мы покажем на семинаре новый уникальный неврологический скрининг, который будет дополнительным инструментом в ортопедической и нейродиагностике и реабилитации. Научим мышечному тестированию, скринингу дерматом, тестам нейронатяжения и провокационным тестам для выявления парестезий и нейропатологий. Научим вас проводить тест дифференциации 2-ух точек, рассмотрим важность сенсорного и тактильного восприятия в диагностике и модулировании боли*.</p>
-                <p>Этот семинар предназначен для специалистов с довольно высоким уровнем знаний о работе с мягкими тканями. FMT Blades Advanced можно назвать курсом IASTM с погружением в неврологию, поэтому в первую очередь мы ждем на обучении неврологов, ортопедов, травматологов, реабилитологв, специалистов ЛФК и АФК.</p>
-
+                <?php echo $description1; ?>
             </div>
             <div id="accordion-seminar" class="col-md-4">
                 <div class="accordion">
-                    <div class="accordion__title text-center" data-toggle="collapse" data-target="#accordion-1">Цели FMT Blades</div>
+                    <div class="accordion__title text-center" data-toggle="collapse" data-target="#accordion-1"><?php echo $name3; ?></div>
                     <div id="accordion-1" class="accordion__content collapse in">
-                        <p><b>После прохождения курса каждый участник сможет:</b></p>
-                        <ul>
-                            <li>Понимать и интегрировать шаблон действий миофасциальной терапии (ФАСЦИАЛЬНАЯ АНАТОМИЯ).</li>
-                            <li>Применять знания о нейроанатомии фасциальной подсистемы.</li>
-                            <li>Анализировать движения, выявлять дисфункции мобильности.</li>
-                            <li>Правильно интерпретировать информацию о IASTM, полученную из научной литературы.</li>
-                            <li>Использовать инструменты совместно с  кинезиологическим тейпированием для изменения качества движений.</li>
-                            <li>Понимать, как необходимо работать инструментами, чтобы добиться улучшения объема движений.</li>
-                        </ul>
-
+                        
+                        <?php echo $description3; ?>
                         <br>
                     </div>
                 </div>
                 <div class="accordion">
-                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-2">Цели FMT Blades Advanced</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-2"><?php echo $name4; ?></div>
                     <div id="accordion-2" class="accordion__content collapse">
-                        <p><b>После прохождения курса каждый участник сможет:</b></p>
-                        <ul>
-                            <li>Определить, понять и интегрировать шаблон действий миофасциальной терапии.</li>
-                            <li>Познакомиться с нейроанатомией кожи и фасциальной системы.</li>
-                            <li>Научиться скринингу и диагностике фасциального трения.</li>
-                            <li>Описывать и интерпретировать исследования IASTM в отношении скольжения соединительной ткани и модуляции боли*.</li>
-                            <li>Практиковать, демонстрировать и интегрировать методы инструментального фасциального воздействия.</li>
-                            <li>Применять терапевтические мануальные техники к наиболее распространенным нейропатологиям верхней и нижней конечности, связанных с миофасциальной компрессией кожного нерва и ПНС (парестетическая мералгия Бернгардта-Рота, борозда локтевого нерва, невропатия латерального кожного нерва бедра, компрессия седалищного нерва и др.).</li>
-                            <li>Выполнять фасциальное скольжение для устранения кожных нервных компрессий в сочетании с терапевтическими упражнениями и мобилизацией нервной ткани (Neurodynamic).</li>
-
+                        <?php echo $description4; ?>
                         <br>
                     </div>
                 </div>
@@ -138,41 +51,11 @@ $images = array(
         <div class="row">
             <div class="col-md-12">
                 <br>
-                <h4 class="text-center">В чем отличие FMT Blades от FMT Blades Advanced?</h4>
+                <h4 class="text-center"><?php echo $name2; ?></h4>
                 <br>
                 <div class="table-responsive">
-                    <table class="table">
-                        <tr>
-                            <td><b>FMT Blades</b></td>
-                            <td><b>FMT Blades Advanced</b></td>
-                        </tr>
-                        <tr>
-                            <td>Знакомство с IASTM, обучение 4-5 основным техникам.</td>
-                            <td>Неврологический курс.</td>
-                        </tr>
-                        <tr>
-                            <td>Симптоматический скрининг тканей. Техника смещения и вибрации.</td>
-                            <td>Обучение DRANS-скринингу (неврологический скрининг):<br>
-                                D – тест дискриминации двух точек<br>
-                                R – рестрикция тканей<br>
-                                A – асимметрия<br>
-                                N – неврологические знаки<br>
-                                S – sensitivity</td>
-                        </tr>
-                        <tr>
-                            <td>Техника «растушевка» (базовые знания).</td>
-                            <td>Тактильные волокна, углубленное изучение техники «растушевки».</td>
-                        </tr>
-                        <tr>
-                            <td>Лимфодренажная техника.</td>
-                            <td>Освобождение кожного нерва (8 основных нервов).</td>
-                        </tr>
-                        <tr>
-                            <td>Закрепление эффекта IASTM-терапии упражнениями.</td>
-                            <td>Мобилизация нерва при помощи нейродинамики.</td>
-                        </tr>
-                    </table>
-
+                    
+                        <?php echo $description2; ?>
                     <br>
                     <br>
                     <br>
@@ -186,126 +69,17 @@ $images = array(
         <div class="row">
             <div class="col-md-6">
                 <div class="accordion">
-                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-basic">Подробная программа FMT Blades</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-basic"><?php echo $name5; ?></div>
                     <div id="accordion-basic" class="accordion__content collapse">
-                        <p><b>Первый час:</b></p>
-                        <ul>
-                            <li>Движение как терапевтическая концепция. Представление концепции RockTape FMT и двигательной пирамиды.</li>
-                            <li>Знакомство с методом IASTM.</li>
-                            <li>Обзор традиционных техник инструментальной мобилизации мягких тканей. Отличие IASTM-методики RockTape от консервативного подхода.</li>
-                        </ul>
-
-                        <p><b>Второй час:</b></p>
-                        <ul>
-                            <li>Мобильность/стабильность и моторный контроль.</li>
-                            <li>Наука о боли. Био-психо-социальная модель.</li>
-                            <li>Неврологический и механический эффекты воздействия.</li>
-                            <li>Подробное описание неврологического влияния на тонус мышц.</li>
-                            <li>Описание механо-рецепторов.</li>
-                            <li>Тактильное восприятие, карта тела, тест дискриминации двух точек.</li>
-                        </ul>
-
-                        <p><b>Третий час:</b></p>
-                        <ul>
-                            <li>Введение в практику, описание инструмента и противопоказаний в терапии.</li>
-                            <li>Варианты терапии, углы воздействия и описание техник.</li>
-                            <li>Практика.</li>
-                            <li>Представление техники «растушевка».</li>
-                        </ul>
-
-                        <p><b>Четвертый час: Обеденный перерыв.</b></p>
-
-                        <p><b>Пятый час:</b></p>
-                        <ul>
-                            <li>Техника поверхностных осцилляций.</li>
-                            <li>Практика на нижних и верхних конечностях.</li>
-                            <li>Техника глубокого воздействия.</li>
-                            <li>Практическое применение для глубоких слоев тканей.</li>
-                        </ul>
-
-                        <p><b>Шестой час:</b></p>
-                        <ul>
-                            <li>Техника фасциального скольжения.</li>
-                            <li>Практика.</li>
-                            <li>Лимфодренажная техника.</li>
-                            <li>Практика.</li>
-                        </ul>
-
-                        <p><b>Седьмой час:</b></p>
-                        <ul>
-                            <li>Описание взаимосвязи техник.</li>
-                            <li>Возможные прогрессии.</li>
-                            <li>Влажный/сухой метод работы.</li>
-                        </ul>
-
-                        <p><b>Восьмой час:</b></p>
-                        <ul>
-                            <li>Комбинирование с терапевтическими упражнениями.</li>
-                            <li>Нейродинамика и ПНФ.</li>
-                            <li>Применение флоссинга.</li>
-                            <li>Описание фасции.</li>
-                        </ul>
+                        <?php echo $description5; ?>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="accordion">
-                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-performance">Подробная программа FMT Blades Advanced</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-performance"><?php echo $name6; ?></div>
                     <div id="accordion-performance" class="accordion__content collapse">
-                        <p><b>Первый час:</b></p>
-                        <ul>
-                            <li>Движение как терапевтическая концепция. Представление концепции RockTape FMT и</li>
-                            <li>двигательной пирамиды.</li>
-                            <li>Знакомство с IASTM и уникальным инструментом Mohawk.</li>
-                        </ul>
-
-                        <p><b>Второй час:</b></p>
-                        <ul>
-                            <li>Неврологическая диагностика: рефлексы, вибрация, скрининг дерматом, мышечное</li>
-                            <li>тестирование.</li>
-                            <li>Тесты нейронатяжения.</li>
-                            <li>Уникальный НЕЙРОСКРИНИНГ, включающий тестирование тактильного восприятия,</li>
-                            <li>тестирование скольжения и провокационные тесты.</li>
-                        </ul>
-
-                        <p><b>Третий час:</b></p>
-                        <ul>
-                            <li>Представление неврологического и механического эффекта при терапевтическом</li>
-                            <li>воздействии IASTM.</li>
-                            <li>Основные принципы ограничения мобильности — межфасциальное скольжение.</li>
-                            <li>Принципы сенсорного модулирования и био-психо-социальная теория контроля боли.</li>
-                            <li>Карта тела и тренировка тактильного восприятия.</li>
-                        </ul>
-
-                        <p><b>Четвертый час: Обеденный час</b></p>
-
-                        <p><b>Пятый час</b></p>
-                        <ul>
-                            <li>Техника воздействия на модулирование и смягчение боли с использованием Mohawk.</li>
-                            <li>Теоретический обзор исследований дермонеромодуляции и роль «СТ»-волокон в восприятии боли.</li>
-                            <li>Практика.</li>
-                        </ul>
-
-                        <p><b>Шестой час</b></p>
-                        <ul>
-                            <li>Концепция скольжения тканей.</li>
-                            <li>Теоретический обзор компрессии нервов.</li>
-                            <li>Практика.</li>
-                        </ul>
-
-                        <p><b>Седьмой час:</b></p>
-                        <ul>
-                            <li>Концепция скольжения нервов.</li>
-                            <li>Карпальный туннельный синдром, седалищный нерв, поверхностный малоберцовый нерв</li>
-                            <li>и другие.</li>
-                            <li>Практика.</li>
-                        </ul>
-
-                        <p><b>Восьмой час:</b></p>
-                        <ul>
-                            <li>Комбинирование с терапевтическими упражнениями.</li>
-                            <li>Нейродинамика и ПНФ.</li>
-                        </ul>
+                        <?php echo $description6; ?>
                     </div>
                 </div>
             </div>
@@ -313,41 +87,25 @@ $images = array(
         <div class="row">
             <div class="col-md-4">
                 <div class="accordion">
-                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-price">Стоимость обучения</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-price"><?php echo $name7; ?></div>
                     <div id="accordion-price" class="accordion__content collapse">
-                        <ul>
-                            <li>При оплате за 2 недели - 3100 грн.</li>
-                            <li>При оплате менее, чем за 2 недели - 3400 грн.</li>
-                        </ul>
+                        <?php echo $description7; ?>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="accordion">
-                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-included">Что входит в стоимость обучения</div>
-                    <div id="accordion-included" class="accordion__content collapse">Что входит в стоимость обучения fdafsdf</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-included"><?php echo $name8; ?></div>
+                    <div id="accordion-included" class="accordion__content collapse"><?php echo $description8; ?></div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="accordion">
-                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-faq">Частые вопросы</div>
+                    <div class="accordion__title text-center collapsed" data-toggle="collapse" data-target="#accordion-faq"><?php echo $name9; ?></div>
                     <div id="accordion-faq" class="accordion__content collapse">
-                        <p><b>– Это больно?</b></p>
-                        <p>Вот что чаще всего спрашивают пациенты при виде RockBlades. Нет, это не больно! Атравматичность – отличительная особенность применения IASTM в нашей концепции. Оба инструмента имеют вызывающий, брутальный вид, однако сами техники не требуют агрессивного подхода. Мы обучаем «мягкому» методу работы.</p>
-
-                        <p><b>– Чем метод IASTM RockTape отличается от того же гуа ша?</b></p>
-                        <p>Как мы уже написали выше – неагрессивностью. «Терапевтический синяк» – это не про нас. Больно пациенту быть не должно. Различаются и цели, которые преследует традиционная восточная терапия и наша методика. Например, мы очень много времени посвящаем модуляции боли* при помощи стимуляции механорецепторов в коже. В гуа ша такого нет. А еще наша инструментальная мобилизация мягких тканей неразрывно связана со скринингом, двигательной терапией и кинезиотейпированием. Мы считаем, что ключ к успешной работе – это понимание и использование всего комплекса знаний: «Зная метод, вы знаете метод. Зная концепцию, вы знаете тысячу методов».</p>
-
-                        <p>Кроме того, наши инструменты универсальны. Не нужно держать целый арсенал разных по форме и размеру предметов. Благодаря уникальной геометрии RockBlades вы сможете работать ими даже в анатомически сложных областях. Mohawk, обладая сменными насадками,  представляет собой сразу 3 инструмента в 1. Мы не настаиваем на покупке RockBlades 2.0 или Mohawk. Качественно и вдумчиво изучив нашу концепцию на обучении, вы сможете успешно проводить терапию хоть при помощи мобильного телефона, хоть при помощи обыкновенной расчески. Мы всего лишь создали удобные инструменты.
-                        Решение о покупке – всегда за вами.</p>
-
-                        <p><b>–  Окей, я куплю, к примеру, Mohawk. А что делать, если одна из его насадок выйдет из строя?</b></p>
-                        <p>Мы позаботились об этом (хотя все насадки изготовлены из прочных и качественных материалов – бывает всякое). У нас в продаже всегда есть новые насадки, которые можно приобрести отдельно.</p>
-
-                        <p><b>– Зачем на одном из инструментов открывашка?</b></p>
-                        <p>По прямому назначению! Если вам захотелось прохладительного напитка после долгого рабочего дня – «блейд» в этом поможет. Действительно универсальный инструмент!</p>
+                        <?php echo $description9; ?>
                     </div>
                 </div>
             </div>
@@ -355,54 +113,11 @@ $images = array(
     </div>
 
 </section>
-
-
-
 
 
 <?php include DIR_TEMPLATE."lexus_store/template/product/parts/reg-seminar.tpl"; ?>
 
-
-
-<section class="page-product-blog__section ppb-schedule">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="text-center">РАСПИСАНИЕ</h2>
-                <h4 class="text-center">Ближайшие семинары RockTape FMT в 2019 году.</h4>
-
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered">
-                        <tr>
-                            <th>Название семинара</th>
-                            <th>Город</th>
-                            <th>Дата</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td><a href="#">FMT Basic</a></td>
-                            <td>Киев</td>
-                            <td>2019.08.08</td>
-                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">FMT Basic</a></td>
-                            <td>Киев</td>
-                            <td>2019.09.08</td>
-                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#">FMT Basic</a></td>
-                            <td>Киев</td>
-                            <td>2019.10.08</td>
-                            <td><a href="#" class="ppb-button">Зарегистрироваться</a></td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include DIR_TEMPLATE."lexus_store/template/product/parts/seminar-list.tpl"; ?>
 
 <?php
 $video_src = array (
@@ -414,3 +129,4 @@ $video_src = array (
 
 
 <?php echo $footer; ?>
+
