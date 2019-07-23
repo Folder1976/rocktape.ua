@@ -498,6 +498,9 @@
     color: #fff;
     font-weight: 500;
 }
+.footer-box__list a:hover {
+    color: #B32424;
+}
 
 .footer-box__partners {
     display: grid;
