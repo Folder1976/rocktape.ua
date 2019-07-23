@@ -29,6 +29,24 @@
           <tr>
             <td>Линк на семинар</td>
               <td><?php foreach ($languages as $language) { ?>
+              
+              <select name="attribute_group_description[<?php echo $language['language_id']; ?>][blog_id]">
+                <?php foreach ($blogs as $blog) { ?>
+                <?php if ($blog['blog_id'] == $attribute_group_description[$language['language_id']]['blog_id']) { ?>
+                <option value="<?php echo $blog['blog_id']; ?>" selected="selected"><?php echo $blog['name']; ?></option>
+                <?php } else { ?>
+                <option value="<?php echo $blog['blog_id']; ?>"><?php echo $blog['name']; ?></option>
+                <?php } ?>
+                <?php } ?>
+              </select>
+              
+              <img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /><br />
+              <?php } ?></td>
+            
+          </tr>
+          <tr>
+            <td>Привязать статью</td>
+              <td><?php foreach ($languages as $language) { ?>
               <input type="text" name="attribute_group_description[<?php echo $language['language_id']; ?>][link]" value="<?php echo isset($attribute_group_description[$language['language_id']]) ? $attribute_group_description[$language['language_id']]['link'] : ''; ?>" />
               <img src="view/image/flags/<?php echo $language['image']; ?>" title="<?php echo $language['name']; ?>" /><br />
               <?php } ?></td>

@@ -91,8 +91,17 @@ class ControllerProductBlog extends Controller {
 		$this->load->model('tool/image');
 		$this->load->model('catalog/attribute');
 
-		$this->data['attributes'] = $this->model_catalog_attribute->getAttributes();
+		$this->data['blog_id'] = (int)$blog_id;
+		
+		$attributes = $this->model_catalog_attribute->getAttributes();
 		$this->data['attribute_groups'] = $this->model_catalog_attribute->getGroupAttributes();
+		
+		$this->data['attributes'] = array();
+		foreach($attributes as $attr){
+			if((int)$attr['blog_id'] == (int)$blog_id){
+				$this->data['attributes'][] = $attr;
+			}
+		}
 		
 		$width = 278;
 		$width_h = 1080;

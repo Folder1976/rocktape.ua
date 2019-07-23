@@ -326,6 +326,10 @@ class ControllerCatalogAttributeGroup extends Controller {
 
 		$this->data['languages'] = $this->model_localisation_language->getLanguages();
 
+		$this->load->model('catalog/blog');
+		$this->data['blogs'] = $this->model_catalog_blog->getCategories(array());
+		
+		
 		if (isset($this->request->post['attribute_group_description'])) {
 			$this->data['attribute_group_description'] = $this->request->post['attribute_group_description'];
 		} elseif (isset($this->request->get['attribute_group_id'])) {
@@ -334,6 +338,7 @@ class ControllerCatalogAttributeGroup extends Controller {
 			$this->data['attribute_group_description'] = array();
 		}
 
+	
 		if (isset($this->request->post['sort_order'])) {
 			$this->data['sort_order'] = $this->request->post['sort_order'];
 		} elseif (!empty($attribute_group_info)) {

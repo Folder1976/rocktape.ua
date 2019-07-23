@@ -9,6 +9,7 @@ class ModelCatalogAttributeGroup extends Model {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "attribute_group_description SET
 							 attribute_group_id = '" . (int)$attribute_group_id . "',
 							 language_id = '" . (int)$language_id . "',
+							 blog_id = '" . (int)$value['blog_id'] . "',
 							 name = '" . $this->db->escape($value['name']) . "',
 							 link = '" . $this->db->escape($value['link']) . "'
 							 ");
@@ -24,6 +25,7 @@ class ModelCatalogAttributeGroup extends Model {
 			$this->db->query("INSERT INTO " . DB_PREFIX . "attribute_group_description SET
 							 attribute_group_id = '" . (int)$attribute_group_id . "',
 							 language_id = '" . (int)$language_id . "',
+							 blog_id = '" . (int)$value['blog_id'] . "',
 							 name = '" . $this->db->escape($value['name']) . "',
 							 link = '" . $this->db->escape($value['link']) . "'
 							 ");
@@ -84,7 +86,11 @@ class ModelCatalogAttributeGroup extends Model {
 		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "attribute_group_description WHERE attribute_group_id = '" . (int)$attribute_group_id . "'");
 
 		foreach ($query->rows as $result) {
-			$attribute_group_data[$result['language_id']] = array('name' => $result['name'], 'link' => $result['link']);
+			$attribute_group_data[$result['language_id']] = array(
+										'name' => $result['name'],
+										'link' => $result['link'],
+										'blog_id' => $result['blog_id']
+										);
 		}
 
 		return $attribute_group_data;

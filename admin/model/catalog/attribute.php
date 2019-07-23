@@ -1,159 +1,117 @@
 <?php 
 class ModelCatalogAttribute extends Model {
-	public function addAttribute($data) {
-		$this->db->query("INSERT INTO " . DB_PREFIX . "attribute SET attribute_group_id = '" . (int)$data['attribute_group_id'] . "', sort_order = '" . (int)$data['sort_order'] . "'");
 
-		$attribute_id = $this->db->getLastId();
-
-		foreach ($data['attribute_description'] as $language_id => $value) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "attribute_description SET
-							 attribute_id = '" . (int)$attribute_id . "',
-							 language_id = '" . (int)$language_id . "',
-							 name = '" . $this->db->escape($value['name']) . "',
-							 date = '" . $this->db->escape($value['date']) . "'
-							 ");
+	public function getAttributes($group_id = 0) {
+		$product_attribute_group_data = array();
+		$product_attribute_data = array();
+		
+		if($group_id > 0){
+			$product_attribute_query = $this->db->query("SELECT a.attribute_id, agd.name AS group_name, link, blog_id, ad.date, ad.name
+													FROM " . DB_PREFIX . "attribute a 
+													LEFT JOIN " . DB_PREFIX . "attribute_description ad ON (a.attribute_id = ad.attribute_id)
+													LEFT JOIN " . DB_PREFIX . "attribute_group_description agd ON (a.attribute_group_id = agd.attribute_group_id)
+													WHERE a.attribute_group_id = '" . (int)$group_id . "' AND
+													ad.language_id = '" . (int)$this->config->get('config_language_id') . "' AND
+													agd.language_id = '" . (int)$this->config->get('config_language_id') . "'
+													ORDER BY ad.date ASC, a.sort_order, ad.name");
+		}else{
+			$product_attribute_query = $this->db->query("SELECT a.attribute_id, agd.name AS group_name, blog_id, link, ad.date, ad.name
+													FROM " . DB_PREFIX . "attribute a 
+													LEFT JOIN " . DB_PREFIX . "attribute_description ad ON (a.attribute_id = ad.attribute_id)
+													LEFT JOIN " . DB_PREFIX . "attribute_group_description agd ON (a.attribute_group_id = agd.attribute_group_id)
+													WHERE ad.language_id = '" . (int)$this->config->get('config_language_id') . "' AND
+													agd.language_id = '" . (int)$this->config->get('config_language_id') . "'
+													ORDER BY ad.date ASC, a.sort_order, ad.name");
 		}
+		
+													
+		foreach ($product_attribute_query->rows as $product_attribute) {
+			$product_attribute_data[] = array(
+				'attribute_id' => $product_attribute['attribute_id'],
+				'blog_id'         => $product_attribute['blog_id'],
+				'name'         => $product_attribute['name'],
+				'date'         => $product_attribute['date'],
+				'group_name'    => $product_attribute['group_name'],
+				'link'      	=> $product_attribute['link'],
+				'text'         => $product_attribute['text']		 	
+			);
+		}
+		/*
+		$product_attribute_group_data[] = array(
+			'attribute_group_id' => $product_attribute_group['attribute_group_id'],
+			'name'               => $product_attribute_group['name'],
+			'link'               => $product_attribute_group['link'],
+			'attribute'          => $product_attribute_data
+		);
+		*/
+	
+		return $product_attribute_data;
 	}
+	
+	public function getAttributesOnGroup($group_id) {
+		$product_attribute_group_data = array();
+		$product_attribute_data = array();
+		
+		$product_attribute_group_query = $this->db->query("SELECT ag.attribute_group_id, agd.name, agd.link FROM " . DB_PREFIX . "attribute a 
+														  LEFT JOIN " . DB_PREFIX . "attribute_group ag ON (a.attribute_group_id = ag.attribute_group_id)
+														  LEFT JOIN " . DB_PREFIX . "attribute_group_description agd ON (ag.attribute_group_id = agd.attribute_group_id)
+														  WHERE agd.language_id = '" . (int)$this->config->get('config_language_id') . "' GROUP BY ag.attribute_group_id ORDER BY ag.sort_order, agd.name");
 
-	public function editAttribute($attribute_id, $data) {
-		$this->db->query("UPDATE " . DB_PREFIX . "attribute SET attribute_group_id = '" . (int)$data['attribute_group_id'] . "', sort_order = '" . (int)$data['sort_order'] . "' WHERE attribute_id = '" . (int)$attribute_id . "'");
+		foreach ($product_attribute_group_query->rows as $product_attribute_group) {
+			
 
-		$this->db->query("DELETE FROM " . DB_PREFIX . "attribute_description WHERE attribute_id = '" . (int)$attribute_id . "'");
+			$product_attribute_query = $this->db->query("SELECT a.attribute_id, ad.name , ad.date
+														FROM " . DB_PREFIX . "attribute a 
+														LEFT JOIN " . DB_PREFIX . "attribute_description ad ON (a.attribute_id = ad.attribute_id)
+														WHERE a.attribute_group_id = '" . (int)$product_attribute_group['attribute_group_id'] . "' AND
+														ad.language_id = '" . (int)$this->config->get('config_language_id') . "'
+														ORDER BY ad.date ASC, a.sort_order, ad.name");
 
-		foreach ($data['attribute_description'] as $language_id => $value) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "attribute_description SET attribute_id = '" . (int)$attribute_id . "',
-							 language_id = '" . (int)$language_id . "',
-							 name = '" . $this->db->escape($value['name']) . "',
-							 date = '" . $this->db->escape($value['date']) . "'
-							 ");
+			foreach ($product_attribute_query->rows as $product_attribute) {
+				$product_attribute_data[] = array(
+					'attribute_id' => $product_attribute['attribute_id'],
+					'name'         => $product_attribute['name'],
+					'date'         => $product_attribute['date'],
+					'group_name'               => $product_attribute_group['name'],
+					'link'               => $product_attribute_group['link'],
+					'text'         => $product_attribute['text']		 	
+				);
+			}
+			/*
+			$product_attribute_group_data[] = array(
+				'attribute_group_id' => $product_attribute_group['attribute_group_id'],
+				'name'               => $product_attribute_group['name'],
+				'link'               => $product_attribute_group['link'],
+				'attribute'          => $product_attribute_data
+			);
+			*/
 		}
+
+		return $product_attribute_data;
 	}
+	
+	
+	public function getGroupAttributes() {
+		$product_attribute_group_data = array();
+		
+		$product_attribute_group_query = $this->db->query("SELECT ag.attribute_group_id, blog_id, agd.name , agd.link 
+														  FROM " . DB_PREFIX . "attribute_group ag 
+														  LEFT JOIN " . DB_PREFIX . "attribute_group_description agd ON (ag.attribute_group_id = agd.attribute_group_id)
+														  WHERE agd.language_id = '" . (int)$this->config->get('config_language_id') . "'
+														  GROUP BY ag.attribute_group_id ORDER BY ag.sort_order, agd.name");
 
-	public function deleteAttribute($attribute_id) {
-		$this->db->query("DELETE FROM " . DB_PREFIX . "attribute WHERE attribute_id = '" . (int)$attribute_id . "'");
-		$this->db->query("DELETE FROM " . DB_PREFIX . "attribute_description WHERE attribute_id = '" . (int)$attribute_id . "'");
+		foreach ($product_attribute_group_query->rows as $product_attribute_group) {
+
+			$product_attribute_group_data[] = array(
+				'attribute_group_id' => $product_attribute_group['attribute_group_id'],
+				'blog_id'               => $product_attribute_group['blog_id'],
+				'name'               => $product_attribute_group['name'],
+				'link'               => $product_attribute_group['link'],
+				
+			);
+		}
+
+		return $product_attribute_group_data;
 	}
-
-	public function getAttribute($attribute_id) {
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "attribute a LEFT JOIN " . DB_PREFIX . "attribute_description ad ON (a.attribute_id = ad.attribute_id) WHERE a.attribute_id = '" . (int)$attribute_id . "' AND ad.language_id = '" . (int)$this->config->get('config_language_id') . "'");
-
-		return $query->row;
-	}
-
-	public function getAttributes($data = array()) {
-		$sql = "SELECT *, (SELECT agd.name FROM " . DB_PREFIX . "attribute_group_description agd WHERE agd.attribute_group_id = a.attribute_group_id AND agd.language_id = '" . (int)$this->config->get('config_language_id') . "') AS attribute_group FROM " . DB_PREFIX . "attribute a LEFT JOIN " . DB_PREFIX . "attribute_description ad ON (a.attribute_id = ad.attribute_id) WHERE ad.language_id = '" . (int)$this->config->get('config_language_id') . "'";
-
-		if (!empty($data['filter_name'])) {
-			$sql .= " AND ad.name LIKE '" . $this->db->escape($data['filter_name']) . "%'";
-		}
-
-		if (!empty($data['filter_attribute_group_id'])) {
-			$sql .= " AND a.attribute_group_id = '" . $this->db->escape($data['filter_attribute_group_id']) . "'";
-		}
-
-		$sort_data = array(
-			'ad.name',
-			'attribute_group',
-			'a.sort_order'
-		);	
-
-		if (isset($data['sort']) && in_array($data['sort'], $sort_data)) {
-			$sql .= " ORDER BY " . $data['sort'];	
-		} else {
-			$sql .= " ORDER BY attribute_group, ad.name";	
-		}	
-
-		if (isset($data['order']) && ($data['order'] == 'DESC')) {
-			$sql .= " DESC";
-		} else {
-			$sql .= " ASC";
-		}
-
-		if (isset($data['start']) || isset($data['limit'])) {
-			if ($data['start'] < 0) {
-				$data['start'] = 0;
-			}				
-
-			if ($data['limit'] < 1) {
-				$data['limit'] = 20;
-			}	
-
-			$sql .= " LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
-		}	
-
-		$query = $this->db->query($sql);
-
-		return $query->rows;
-	}
-
-	public function getAttributeDescriptions($attribute_id) {
-		$attribute_data = array();
-
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "attribute_description WHERE attribute_id = '" . (int)$attribute_id . "'");
-
-		foreach ($query->rows as $result) {
-			$attribute_data[$result['language_id']] = array('name' => $result['name'],'date' => $result['date']);
-		}
-
-		return $attribute_data;
-	}
-
-	public function getAttributesByAttributeGroupId($data = array()) {
-		$sql = "SELECT *, (SELECT agd.name FROM " . DB_PREFIX . "attribute_group_description agd WHERE agd.attribute_group_id = a.attribute_group_id AND agd.language_id = '" . (int)$this->config->get('config_language_id') . "') AS attribute_group FROM " . DB_PREFIX . "attribute a LEFT JOIN " . DB_PREFIX . "attribute_description ad ON (a.attribute_id = ad.attribute_id) WHERE ad.language_id = '" . (int)$this->config->get('config_language_id') . "'";
-
-		if (!empty($data['filter_name'])) {
-			$sql .= " AND ad.name LIKE '" . $this->db->escape($data['filter_name']) . "%'";
-		}
-
-		if (!empty($data['filter_attribute_group_id'])) {
-			$sql .= " AND a.attribute_group_id = '" . $this->db->escape($data['filter_attribute_group_id']) . "'";
-		}
-
-		$sort_data = array(
-			'ad.name',
-			'attribute_group',
-			'a.sort_order'
-		);	
-
-		if (isset($data['sort']) && in_array($data['sort'], $sort_data)) {
-			$sql .= " ORDER BY " . $data['sort'];	
-		} else {
-			$sql .= " ORDER BY ad.name";	
-		}	
-
-		if (isset($data['order']) && ($data['order'] == 'DESC')) {
-			$sql .= " DESC";
-		} else {
-			$sql .= " ASC";
-		}
-
-		if (isset($data['start']) || isset($data['limit'])) {
-			if ($data['start'] < 0) {
-				$data['start'] = 0;
-			}				
-
-			if ($data['limit'] < 1) {
-				$data['limit'] = 20;
-			}	
-
-			$sql .= " LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
-		}	
-
-		$query = $this->db->query($sql);
-
-		return $query->rows;
-	}
-
-	public function getTotalAttributes() {
-		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "attribute");
-
-		return $query->row['total'];
-	}	
-
-	public function getTotalAttributesByAttributeGroupId($attribute_group_id) {
-		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "attribute WHERE attribute_group_id = '" . (int)$attribute_group_id . "'");
-
-		return $query->row['total'];
-	}		
+	
 }
-?>

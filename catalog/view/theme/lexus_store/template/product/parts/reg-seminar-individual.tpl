@@ -18,7 +18,7 @@
                             <select name="seminar_seminar" class="form-control" required>
                                 <option value="0">Семинар</option>
                                 <?php foreach($attribute_groups as $row){ ?>
-                                    <?php if(isset($_GET['seminar']) AND $_GET['seminar'] == $row['name']){ ?>
+                                    <?php if((isset($_GET['seminar']) AND $_GET['seminar'] == $row['name']) OR $blog_id == $row['blog_id']){ ?>
                                         <option value="<?php echo $row['name']; ?>" selected><?php echo $row['name']; ?></option>
                                     <?php }else{ ?>
                                         <option value="<?php echo $row['name']; ?>"><?php echo $row['name']; ?></option>
