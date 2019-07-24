@@ -97,9 +97,14 @@ class ControllerProductBlog extends Controller {
 		$this->data['attribute_groups'] = $this->model_catalog_attribute->getGroupAttributes();
 		
 		$this->data['attributes'] = array();
-		foreach($attributes as $attr){
-			if((int)$attr['blog_id'] == (int)$blog_id){
-				$this->data['attributes'][] = $attr;
+		
+		if($blog_id == 12){
+			$this->data['attributes'] = $attributes;
+		}else{
+			foreach($attributes as $attr){
+				if((int)$attr['blog_id'] == (int)$blog_id){
+					$this->data['attributes'][] = $attr;
+				}
 			}
 		}
 		
