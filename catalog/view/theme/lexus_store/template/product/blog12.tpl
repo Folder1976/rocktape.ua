@@ -18,10 +18,10 @@
                     <h1 class="home-full-video__title">Становитесь лучше.</h1>
                     <p class="home-full-video__text">Учитесь под руководством ведущих экспертов в области движения и реабилитации.</p>
                     <div class="hidden-xs">
-                        <a href="/timelist" class="home-full-video__link btn-theme-primary">Изучить образовательные программы</a>
+                        <a href="/education#all_seminars" class="home-full-video__link btn-theme-primary">Изучить образовательные программы</a>
                     </div>
                     <div class="visible-xs">
-                        <a href="/timelist" class="home-full-video__link btn-theme-primary">Изучить программы</a>
+                        <a href="/education#all_seminars" class="home-full-video__link btn-theme-primary">Изучить программы</a>
                     </div>
                     
                 </div>
