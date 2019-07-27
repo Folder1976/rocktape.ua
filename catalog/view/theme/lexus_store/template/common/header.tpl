@@ -322,7 +322,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 												<ul class="nav navbar-nav">
 													<!--li><a href="https://rocktape.ua/kinesio-tapes">Кинезио тейпы</a>
 													</li-->
-													<li class="parent dropdown deeper "><a href="https://rocktape.ua/rock-tape-producer" class="dropdown-toggle" data-toggle="dropdown">Продукция<b class="caret"></b></a>
+													<li class="parent dropdown deeper"><a href="https://rocktape.ua/rock-tape-producer">Продукция</a><span class="caret-wrap dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span>
 														<ul class="dropdown-menu">
 															<li><a href="https://rocktape.ua/kinesio-tapes">Кинезио тейпы</a></li>
 															<li><a href="https://rocktape.ua/outfit">Экипировка</a></li>
@@ -337,7 +337,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 													<!--li><a href="https://rocktape.ua/other">Другое</a></li-->
 													<?php if(true or $_SERVER['REMOTE_ADDR'] == '194.126.224.5' || $_SERVER['REMOTE_ADDR'] == '127.0.0.1') { ?>
 														<?php foreach($blogs as $blog){ ?>
-															<li class="parent dropdown deeper "><a href="<?php echo $blog['href']; ?>" target="_blank" class="dropdown-toggle" data-toggle="dropdown"><?php echo $blog['name']; ?><b class="caret"></b></a>
+															<li class="parent dropdown deeper "><a href="<?php echo $blog['href']; ?>" class="" ><?php echo $blog['name']; ?></a><span class="caret-wrap dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></span>
 																<ul class="dropdown-menu">
 																<?php foreach($blog['children'] as $blog1){ ?>
 																	<li><a href="<?php echo $blog1['href']; ?>" ><?php echo $blog1['name']; ?></a>
@@ -747,4 +747,3 @@ $class = $helper->calculateSpans( $ospans, $cols );
 	});
 	
 </script>
-		

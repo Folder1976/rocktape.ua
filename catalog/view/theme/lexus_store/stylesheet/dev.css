@@ -567,6 +567,25 @@
 /*
  * pav-megamenu
  */
+#pav-mainnav .navbar ul.nav > li > a {
+   display: inline-block;
+}
+.nav .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+.caret-wrap {
+    line-height: 24px;
+    position: relative;
+    float: right;
+    padding-top: 10px;
+    top: 0;
+    right: 12px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
 .pav-megamenu .nav.navbar-nav {
     display: -webkit-flex;
     display: -moz-flex;
@@ -606,12 +625,16 @@
     text-transform: uppercase;
     color: #fff;
     transition: all .3s;
-    display: block;
+    display: inline-block;
 }
 .mob-menu a:hover {
     opacity: .7;
 }
-.mob-menu a .caret {
+.mob-menu .caret-wrap {
+    width: 40px;
+    padding-top: 0;
+}
+.mob-menu .caret {
     border-top: 4px solid #fff;
 }
 .mob-menu .dropdown-menu {
