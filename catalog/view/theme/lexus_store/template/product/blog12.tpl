@@ -1,13 +1,24 @@
 <?php echo $header; ?>
 
+<?php
+/*
+Обучение. "Узловая" страница
+http://rocktape.ua/education
+*/
+?>
+
 </div></div></div>
 
 
 <section class="home-full-video page-product-blog__section">
     <div class="home-full-video__wrap">
-        <video loop="loop" autoplay="" playsinline="" muted="" preload="none" src="/image/data/education/FMT-Splash-v1.mp4" style="margin: 0px;" width="1280" height="720">
-            <source type="video/mp4" src="/image/data/education/FMT-Splash-v1.mp4">
+        <video loop="loop" autoplay="" playsinline="" muted="" preload="none" src="/image/data/video/video-1.mp4" style="margin: 0px;" width="1280" height="720">
+            <source type="video/mp4" src="/image/data/video/video-1.mp4">
+            <source type="video/webm" src="/image/data/video/video-1.webm">
         </video>
+        <!-- <video loop="loop" autoplay="" playsinline="" muted="" preload="none" src="/image/data/education/FMT-Splash-v1.mp4" style="margin: 0px;" width="1280" height="720">
+            <source type="video/mp4" src="/image/data/education/FMT-Splash-v1.mp4">
+        </video> -->
     </div>
 
     <div class="home-full-video__content">

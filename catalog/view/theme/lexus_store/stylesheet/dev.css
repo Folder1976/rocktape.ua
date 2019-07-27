@@ -100,7 +100,11 @@
         min-height: 100vh;
         height: auto;
     }
-    .home-full-video__wrap { display: none; }
+    /*.home-full-video__wrap { display: none; }*/
+    .home-full-video__wrap video {
+        width: auto;
+        height: 100%;
+    }
     .home-full-video__content {
         background-color: rgba(0,0,0,.6);
         padding: 0 20px;
@@ -114,6 +118,13 @@
     .home-full-video__link {
         font-size: 16px;
     }
+}
+
+@media (max-width: 600px) {
+    .home-full-video__wrap video { transform: translateX(-20%); }
+}
+@media (max-width: 400px) {
+    .home-full-video__wrap video { transform: translateX(-50%); }
 }
 
 
