@@ -290,6 +290,9 @@ $('#checkout_form select[name=\'country_id\']').trigger('change');
 				$('.wait').remove();
 			},
 			success: function(json) {
+				
+				console.log(json);
+				
 				$('.warning').remove();
 				$('.error').remove();
 
@@ -312,10 +315,13 @@ $('#checkout_form select[name=\'country_id\']').trigger('change');
 				} else {
 					if (json.result = "success") {
 						var confirm_btn = $('#button-confirm');
+						console.log(confirm_btn);
 						if (!confirm_btn){
+							$('.payment form').submit();
 							confirm_btn =$('.payment . buttons input.button')
 						}
 						confirm_btn.trigger('click');
+						$('.payment form').submit();
 					}
 				}
 			}
@@ -330,8 +336,12 @@ $('#checkout_form select[name=\'country_id\']').trigger('change');
 			data: 'payment_code='+$("input[name=payment_method]:checked").val(),
 			dataType: 'json',
 			success: function(json) {
+				
+				//console.log(json);
+				
 				 if (json.payment){
 					 $(".payment").html(json.payment);
+					 $(".payment").show();
 				 }
 				 $(".checkout-product").unmask();
 			}

@@ -10,7 +10,7 @@ class Log {
 		$file = DIR_LOGS . $this->filename;
 		
 		$handle = fopen($file, 'a+'); 
-		
+		//echo '<br>'.$file;
 		fwrite($handle, date('Y-m-d G:i:s') . ' - ' . print_r($message, true)  . "\n");
 			
 		fclose($handle); 
